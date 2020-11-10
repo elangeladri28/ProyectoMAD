@@ -4,7 +4,7 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        MsgBox("hola como estas?", vbOKOnly, "ejemplo")
+        'MsgBox("hola como estas?", vbOKOnly, "ejemplo")'
         Dim InicioSesion As New Form2()
         Me.Hide()
         InicioSesion.ShowDialog()
