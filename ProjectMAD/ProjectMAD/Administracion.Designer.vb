@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form2
+Partial Class FormAdministracion
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -24,18 +24,19 @@ Partial Class Form2
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.EmpresasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuAdministracion_AñadirEmpresa = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuAdministracion_AdministrarEmpresas = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AñadirEmpresaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AdministrarEmpresaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AñadirEmpleadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AdministrarEmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmpresasToolStripMenuItem, Me.EmpleadosToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmpresasToolStripMenuItem, Me.EmpleadosToolStripMenuItem, Me.ReportesToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(783, 28)
@@ -44,10 +45,22 @@ Partial Class Form2
         '
         'EmpresasToolStripMenuItem
         '
-        Me.EmpresasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AñadirEmpresaToolStripMenuItem, Me.AdministrarEmpresaToolStripMenuItem})
+        Me.EmpresasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuAdministracion_AñadirEmpresa, Me.MenuAdministracion_AdministrarEmpresas})
         Me.EmpresasToolStripMenuItem.Name = "EmpresasToolStripMenuItem"
         Me.EmpresasToolStripMenuItem.Size = New System.Drawing.Size(86, 24)
         Me.EmpresasToolStripMenuItem.Text = "Empresas"
+        '
+        'MenuAdministracion_AñadirEmpresa
+        '
+        Me.MenuAdministracion_AñadirEmpresa.Name = "MenuAdministracion_AñadirEmpresa"
+        Me.MenuAdministracion_AñadirEmpresa.Size = New System.Drawing.Size(236, 26)
+        Me.MenuAdministracion_AñadirEmpresa.Text = "Añadir Empresa"
+        '
+        'MenuAdministracion_AdministrarEmpresas
+        '
+        Me.MenuAdministracion_AdministrarEmpresas.Name = "MenuAdministracion_AdministrarEmpresas"
+        Me.MenuAdministracion_AdministrarEmpresas.Size = New System.Drawing.Size(236, 26)
+        Me.MenuAdministracion_AdministrarEmpresas.Text = "Administrar Empresas"
         '
         'EmpleadosToolStripMenuItem
         '
@@ -55,18 +68,6 @@ Partial Class Form2
         Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
         Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(97, 24)
         Me.EmpleadosToolStripMenuItem.Text = "Empleados"
-        '
-        'AñadirEmpresaToolStripMenuItem
-        '
-        Me.AñadirEmpresaToolStripMenuItem.Name = "AñadirEmpresaToolStripMenuItem"
-        Me.AñadirEmpresaToolStripMenuItem.Size = New System.Drawing.Size(236, 26)
-        Me.AñadirEmpresaToolStripMenuItem.Text = "Añadir Empresa"
-        '
-        'AdministrarEmpresaToolStripMenuItem
-        '
-        Me.AdministrarEmpresaToolStripMenuItem.Name = "AdministrarEmpresaToolStripMenuItem"
-        Me.AdministrarEmpresaToolStripMenuItem.Size = New System.Drawing.Size(236, 26)
-        Me.AdministrarEmpresaToolStripMenuItem.Text = "Administrar Empresas"
         '
         'AñadirEmpleadoToolStripMenuItem
         '
@@ -80,15 +81,23 @@ Partial Class Form2
         Me.AdministrarEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
         Me.AdministrarEmpleadosToolStripMenuItem.Text = "Administrar Empleados"
         '
-        'Form2
+        'ReportesToolStripMenuItem
+        '
+        Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
+        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(82, 24)
+        Me.ReportesToolStripMenuItem.Text = "Reportes"
+        '
+        'FormAdministracion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.SteelBlue
         Me.ClientSize = New System.Drawing.Size(783, 450)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "Form2"
-        Me.Text = "Form2"
+        Me.Name = "FormAdministracion"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
+        Me.Text = "Administración"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -98,9 +107,10 @@ Partial Class Form2
 
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents EmpresasToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AñadirEmpresaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AdministrarEmpresaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MenuAdministracion_AñadirEmpresa As ToolStripMenuItem
+    Friend WithEvents MenuAdministracion_AdministrarEmpresas As ToolStripMenuItem
     Friend WithEvents EmpleadosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AñadirEmpleadoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AdministrarEmpleadosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
 End Class
