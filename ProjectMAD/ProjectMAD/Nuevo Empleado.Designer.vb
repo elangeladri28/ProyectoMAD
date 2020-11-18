@@ -26,7 +26,7 @@ Partial Class FormNuevoEmpleado
         Me.LabelNuevoEmpleado_ID = New System.Windows.Forms.Label()
         Me.TextBoxNuevoEmpleado_ID = New System.Windows.Forms.TextBox()
         Me.LabelNuevoEmpleado_Contraseña = New System.Windows.Forms.Label()
-        Me.TextBoxNuevaEmpresa_Contraseña = New System.Windows.Forms.TextBox()
+        Me.TextBoxNuevoEmpleado_Contraseña = New System.Windows.Forms.TextBox()
         Me.LabelNuevoEmpleado_Nombres = New System.Windows.Forms.Label()
         Me.TextBoxNuevoEmpleado_Nombres = New System.Windows.Forms.TextBox()
         Me.LabelNuevoEmpleado_Trabajo = New System.Windows.Forms.Label()
@@ -34,7 +34,7 @@ Partial Class FormNuevoEmpleado
         Me.LabelNuevoEmpleado_Depto = New System.Windows.Forms.Label()
         Me.TextBoxNuevoEmpleado_ApPaterno = New System.Windows.Forms.TextBox()
         Me.LabelNuevoEmpleado_ApPaterno = New System.Windows.Forms.Label()
-        Me.TextBoxNuevaEmpresa_Nombres = New System.Windows.Forms.TextBox()
+        Me.TextBoxNuevoEmpleado_ApMaterno = New System.Windows.Forms.TextBox()
         Me.LabelNuevoEmpleado_ApMaterno = New System.Windows.Forms.Label()
         Me.TextBoxNuevoEmpleado_Depto = New System.Windows.Forms.TextBox()
         Me.LabelNuevoEmpleado_Puesto = New System.Windows.Forms.Label()
@@ -97,12 +97,12 @@ Partial Class FormNuevoEmpleado
         Me.LabelNuevoEmpleado_Contraseña.TabIndex = 3
         Me.LabelNuevoEmpleado_Contraseña.Text = "Contraseña"
         '
-        'TextBoxNuevaEmpresa_Contraseña
+        'TextBoxNuevoEmpleado_Contraseña
         '
-        Me.TextBoxNuevaEmpresa_Contraseña.Location = New System.Drawing.Point(32, 116)
-        Me.TextBoxNuevaEmpresa_Contraseña.Name = "TextBoxNuevaEmpresa_Contraseña"
-        Me.TextBoxNuevaEmpresa_Contraseña.Size = New System.Drawing.Size(232, 22)
-        Me.TextBoxNuevaEmpresa_Contraseña.TabIndex = 4
+        Me.TextBoxNuevoEmpleado_Contraseña.Location = New System.Drawing.Point(32, 116)
+        Me.TextBoxNuevoEmpleado_Contraseña.Name = "TextBoxNuevoEmpleado_Contraseña"
+        Me.TextBoxNuevoEmpleado_Contraseña.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_Contraseña.TabIndex = 4
         '
         'LabelNuevoEmpleado_Nombres
         '
@@ -161,12 +161,12 @@ Partial Class FormNuevoEmpleado
         Me.LabelNuevoEmpleado_ApPaterno.TabIndex = 7
         Me.LabelNuevoEmpleado_ApPaterno.Text = "Apellido Paterno"
         '
-        'TextBoxNuevaEmpresa_Nombres
+        'TextBoxNuevoEmpleado_ApMaterno
         '
-        Me.TextBoxNuevaEmpresa_Nombres.Location = New System.Drawing.Point(32, 263)
-        Me.TextBoxNuevaEmpresa_Nombres.Name = "TextBoxNuevaEmpresa_Nombres"
-        Me.TextBoxNuevaEmpresa_Nombres.Size = New System.Drawing.Size(232, 22)
-        Me.TextBoxNuevaEmpresa_Nombres.TabIndex = 10
+        Me.TextBoxNuevoEmpleado_ApMaterno.Location = New System.Drawing.Point(32, 263)
+        Me.TextBoxNuevoEmpleado_ApMaterno.Name = "TextBoxNuevoEmpleado_ApMaterno"
+        Me.TextBoxNuevoEmpleado_ApMaterno.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_ApMaterno.TabIndex = 10
         '
         'LabelNuevoEmpleado_ApMaterno
         '
@@ -276,14 +276,15 @@ Partial Class FormNuevoEmpleado
         'TextBoxNuevoEmpleado_Domicilio
         '
         Me.TextBoxNuevoEmpleado_Domicilio.Location = New System.Drawing.Point(408, 116)
+        Me.TextBoxNuevoEmpleado_Domicilio.Multiline = True
         Me.TextBoxNuevoEmpleado_Domicilio.Name = "TextBoxNuevoEmpleado_Domicilio"
-        Me.TextBoxNuevoEmpleado_Domicilio.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_Domicilio.Size = New System.Drawing.Size(232, 37)
         Me.TextBoxNuevoEmpleado_Domicilio.TabIndex = 26
         '
         'LabelNuevoEmpleado_Banco
         '
         Me.LabelNuevoEmpleado_Banco.AutoSize = True
-        Me.LabelNuevoEmpleado_Banco.Location = New System.Drawing.Point(408, 145)
+        Me.LabelNuevoEmpleado_Banco.Location = New System.Drawing.Point(408, 156)
         Me.LabelNuevoEmpleado_Banco.Name = "LabelNuevoEmpleado_Banco"
         Me.LabelNuevoEmpleado_Banco.Size = New System.Drawing.Size(48, 17)
         Me.LabelNuevoEmpleado_Banco.TabIndex = 27
@@ -291,7 +292,7 @@ Partial Class FormNuevoEmpleado
         '
         'TextBoxNuevoEmpleado_Banco
         '
-        Me.TextBoxNuevoEmpleado_Banco.Location = New System.Drawing.Point(408, 165)
+        Me.TextBoxNuevoEmpleado_Banco.Location = New System.Drawing.Point(408, 176)
         Me.TextBoxNuevoEmpleado_Banco.Name = "TextBoxNuevoEmpleado_Banco"
         Me.TextBoxNuevoEmpleado_Banco.Size = New System.Drawing.Size(232, 22)
         Me.TextBoxNuevoEmpleado_Banco.TabIndex = 28
@@ -299,7 +300,7 @@ Partial Class FormNuevoEmpleado
         'LabelNuevoEmpleado_NumCuenta
         '
         Me.LabelNuevoEmpleado_NumCuenta.AutoSize = True
-        Me.LabelNuevoEmpleado_NumCuenta.Location = New System.Drawing.Point(408, 194)
+        Me.LabelNuevoEmpleado_NumCuenta.Location = New System.Drawing.Point(408, 205)
         Me.LabelNuevoEmpleado_NumCuenta.Name = "LabelNuevoEmpleado_NumCuenta"
         Me.LabelNuevoEmpleado_NumCuenta.Size = New System.Drawing.Size(127, 17)
         Me.LabelNuevoEmpleado_NumCuenta.TabIndex = 29
@@ -307,7 +308,7 @@ Partial Class FormNuevoEmpleado
         '
         'TextBoxNuevoEmpleado_NumCuenta
         '
-        Me.TextBoxNuevoEmpleado_NumCuenta.Location = New System.Drawing.Point(408, 214)
+        Me.TextBoxNuevoEmpleado_NumCuenta.Location = New System.Drawing.Point(408, 225)
         Me.TextBoxNuevoEmpleado_NumCuenta.Name = "TextBoxNuevoEmpleado_NumCuenta"
         Me.TextBoxNuevoEmpleado_NumCuenta.Size = New System.Drawing.Size(232, 22)
         Me.TextBoxNuevoEmpleado_NumCuenta.TabIndex = 30
@@ -315,7 +316,7 @@ Partial Class FormNuevoEmpleado
         'LabelNuevoEmpleado_Email
         '
         Me.LabelNuevoEmpleado_Email.AutoSize = True
-        Me.LabelNuevoEmpleado_Email.Location = New System.Drawing.Point(408, 243)
+        Me.LabelNuevoEmpleado_Email.Location = New System.Drawing.Point(408, 254)
         Me.LabelNuevoEmpleado_Email.Name = "LabelNuevoEmpleado_Email"
         Me.LabelNuevoEmpleado_Email.Size = New System.Drawing.Size(42, 17)
         Me.LabelNuevoEmpleado_Email.TabIndex = 31
@@ -323,7 +324,7 @@ Partial Class FormNuevoEmpleado
         '
         'TextBoxNuevoEmpleado_Email
         '
-        Me.TextBoxNuevoEmpleado_Email.Location = New System.Drawing.Point(408, 262)
+        Me.TextBoxNuevoEmpleado_Email.Location = New System.Drawing.Point(408, 273)
         Me.TextBoxNuevoEmpleado_Email.Name = "TextBoxNuevoEmpleado_Email"
         Me.TextBoxNuevoEmpleado_Email.Size = New System.Drawing.Size(232, 22)
         Me.TextBoxNuevoEmpleado_Email.TabIndex = 32
@@ -331,7 +332,7 @@ Partial Class FormNuevoEmpleado
         'LabelNuevoEmpleado_Telefono
         '
         Me.LabelNuevoEmpleado_Telefono.AutoSize = True
-        Me.LabelNuevoEmpleado_Telefono.Location = New System.Drawing.Point(408, 292)
+        Me.LabelNuevoEmpleado_Telefono.Location = New System.Drawing.Point(408, 303)
         Me.LabelNuevoEmpleado_Telefono.Name = "LabelNuevoEmpleado_Telefono"
         Me.LabelNuevoEmpleado_Telefono.Size = New System.Drawing.Size(64, 17)
         Me.LabelNuevoEmpleado_Telefono.TabIndex = 33
@@ -339,14 +340,14 @@ Partial Class FormNuevoEmpleado
         '
         'TextBoxNuevoEmpleado_Telefono
         '
-        Me.TextBoxNuevoEmpleado_Telefono.Location = New System.Drawing.Point(408, 311)
+        Me.TextBoxNuevoEmpleado_Telefono.Location = New System.Drawing.Point(408, 322)
         Me.TextBoxNuevoEmpleado_Telefono.Name = "TextBoxNuevoEmpleado_Telefono"
         Me.TextBoxNuevoEmpleado_Telefono.Size = New System.Drawing.Size(232, 22)
         Me.TextBoxNuevoEmpleado_Telefono.TabIndex = 34
         '
         'MonthCalendarNuevoEmpleado_FechaNac
         '
-        Me.MonthCalendarNuevoEmpleado_FechaNac.Location = New System.Drawing.Point(408, 362)
+        Me.MonthCalendarNuevoEmpleado_FechaNac.Location = New System.Drawing.Point(408, 375)
         Me.MonthCalendarNuevoEmpleado_FechaNac.MaxSelectionCount = 1
         Me.MonthCalendarNuevoEmpleado_FechaNac.Name = "MonthCalendarNuevoEmpleado_FechaNac"
         Me.MonthCalendarNuevoEmpleado_FechaNac.TabIndex = 35
@@ -354,7 +355,7 @@ Partial Class FormNuevoEmpleado
         'LabelNuevoEmpleado_FechaNac
         '
         Me.LabelNuevoEmpleado_FechaNac.AutoSize = True
-        Me.LabelNuevoEmpleado_FechaNac.Location = New System.Drawing.Point(408, 340)
+        Me.LabelNuevoEmpleado_FechaNac.Location = New System.Drawing.Point(408, 349)
         Me.LabelNuevoEmpleado_FechaNac.Name = "LabelNuevoEmpleado_FechaNac"
         Me.LabelNuevoEmpleado_FechaNac.Size = New System.Drawing.Size(141, 17)
         Me.LabelNuevoEmpleado_FechaNac.TabIndex = 36
@@ -409,7 +410,7 @@ Partial Class FormNuevoEmpleado
         Me.Controls.Add(Me.TextBoxNuevoEmpleado_Puesto)
         Me.Controls.Add(Me.LabelNuevoEmpleado_Puesto)
         Me.Controls.Add(Me.TextBoxNuevoEmpleado_Depto)
-        Me.Controls.Add(Me.TextBoxNuevaEmpresa_Nombres)
+        Me.Controls.Add(Me.TextBoxNuevoEmpleado_ApMaterno)
         Me.Controls.Add(Me.LabelNuevoEmpleado_ApMaterno)
         Me.Controls.Add(Me.TextBoxNuevoEmpleado_ApPaterno)
         Me.Controls.Add(Me.LabelNuevoEmpleado_ApPaterno)
@@ -418,7 +419,7 @@ Partial Class FormNuevoEmpleado
         Me.Controls.Add(Me.LabelNuevoEmpleado_Trabajo)
         Me.Controls.Add(Me.TextBoxNuevoEmpleado_Nombres)
         Me.Controls.Add(Me.LabelNuevoEmpleado_Nombres)
-        Me.Controls.Add(Me.TextBoxNuevaEmpresa_Contraseña)
+        Me.Controls.Add(Me.TextBoxNuevoEmpleado_Contraseña)
         Me.Controls.Add(Me.LabelNuevoEmpleado_Contraseña)
         Me.Controls.Add(Me.TextBoxNuevoEmpleado_ID)
         Me.Controls.Add(Me.LabelNuevoEmpleado_ID)
@@ -435,7 +436,7 @@ Partial Class FormNuevoEmpleado
     Friend WithEvents LabelNuevoEmpleado_ID As Label
     Friend WithEvents TextBoxNuevoEmpleado_ID As TextBox
     Friend WithEvents LabelNuevoEmpleado_Contraseña As Label
-    Friend WithEvents TextBoxNuevaEmpresa_Contraseña As TextBox
+    Friend WithEvents TextBoxNuevoEmpleado_Contraseña As TextBox
     Friend WithEvents LabelNuevoEmpleado_Nombres As Label
     Friend WithEvents TextBoxNuevoEmpleado_Nombres As TextBox
     Friend WithEvents LabelNuevoEmpleado_Trabajo As Label
@@ -443,7 +444,7 @@ Partial Class FormNuevoEmpleado
     Friend WithEvents LabelNuevoEmpleado_Depto As Label
     Friend WithEvents TextBoxNuevoEmpleado_ApPaterno As TextBox
     Friend WithEvents LabelNuevoEmpleado_ApPaterno As Label
-    Friend WithEvents TextBoxNuevaEmpresa_Nombres As TextBox
+    Friend WithEvents TextBoxNuevoEmpleado_ApMaterno As TextBox
     Friend WithEvents LabelNuevoEmpleado_ApMaterno As Label
     Friend WithEvents TextBoxNuevoEmpleado_Depto As TextBox
     Friend WithEvents LabelNuevoEmpleado_Puesto As Label

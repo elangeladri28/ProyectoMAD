@@ -18,4 +18,52 @@
             Me.Close()
         End If
     End Sub
+
+    Private Sub TextBoxNuevoEmpleado_Nombres_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBoxNuevoEmpleado_Nombres.KeyPress
+        If Char.IsLetter(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsSeparator(e.KeyChar) Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TextBoxNuevoEmpleado_ApPaterno_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBoxNuevoEmpleado_ApPaterno.KeyPress
+        If Char.IsLetter(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsSeparator(e.KeyChar) Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TextBoxNuevoEmpleado_ApMaterno_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBoxNuevoEmpleado_ApMaterno.KeyPress
+        If Char.IsLetter(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsSeparator(e.KeyChar) Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub TextBoxNuevoEmpleado_Telefono_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBoxNuevoEmpleado_Telefono.KeyPress
+        If Char.IsNumber(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsControl(e.KeyChar) Then
+            e.Handled = False
+        ElseIf Char.IsSeparator(e.KeyChar) Then
+            e.Handled = False
+        Else
+            e.Handled = True
+        End If
+    End Sub
 End Class
