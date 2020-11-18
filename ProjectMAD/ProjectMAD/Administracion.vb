@@ -9,4 +9,9 @@
         AddEmpresa.ShowDialog()
         'Me.Close()
     End Sub
+
+    Private Sub MenuAdministracion_AñadirEmpleado_Click(sender As Object, e As EventArgs) Handles MenuAdministracion_AñadirEmpleado.Click
+        Dim AddEmpleado As New FormNuevoEmpleado()
+        AddEmpleado.ShowDialog()
+    End Sub
 End Class

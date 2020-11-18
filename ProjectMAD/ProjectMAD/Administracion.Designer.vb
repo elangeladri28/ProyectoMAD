@@ -27,7 +27,7 @@ Partial Class FormAdministracion
         Me.MenuAdministracion_AñadirEmpresa = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuAdministracion_AdministrarEmpresas = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AñadirEmpleadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuAdministracion_AñadirEmpleado = New System.Windows.Forms.ToolStripMenuItem()
         Me.AdministrarEmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
@@ -64,16 +64,16 @@ Partial Class FormAdministracion
         '
         'EmpleadosToolStripMenuItem
         '
-        Me.EmpleadosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AñadirEmpleadoToolStripMenuItem, Me.AdministrarEmpleadosToolStripMenuItem})
+        Me.EmpleadosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuAdministracion_AñadirEmpleado, Me.AdministrarEmpleadosToolStripMenuItem})
         Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
         Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(97, 24)
         Me.EmpleadosToolStripMenuItem.Text = "Empleados"
         '
-        'AñadirEmpleadoToolStripMenuItem
+        'MenuAdministracion_AñadirEmpleado
         '
-        Me.AñadirEmpleadoToolStripMenuItem.Name = "AñadirEmpleadoToolStripMenuItem"
-        Me.AñadirEmpleadoToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
-        Me.AñadirEmpleadoToolStripMenuItem.Text = "Añadir Empleado"
+        Me.MenuAdministracion_AñadirEmpleado.Name = "MenuAdministracion_AñadirEmpleado"
+        Me.MenuAdministracion_AñadirEmpleado.Size = New System.Drawing.Size(247, 26)
+        Me.MenuAdministracion_AñadirEmpleado.Text = "Añadir Empleado"
         '
         'AdministrarEmpleadosToolStripMenuItem
         '
@@ -110,7 +110,7 @@ Partial Class FormAdministracion
     Friend WithEvents MenuAdministracion_AñadirEmpresa As ToolStripMenuItem
     Friend WithEvents MenuAdministracion_AdministrarEmpresas As ToolStripMenuItem
     Friend WithEvents EmpleadosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AñadirEmpleadoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MenuAdministracion_AñadirEmpleado As ToolStripMenuItem
     Friend WithEvents AdministrarEmpleadosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
 End Class

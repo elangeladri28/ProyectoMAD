@@ -12,3 +12,4 @@ C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Proyecto Cheto\ProjectMAD\P
 C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Proyecto Cheto\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.FormNuevaEmpresa.resources
 C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Proyecto Cheto\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.FormLogin.resources
 C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Proyecto Cheto\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.FormAdministracion.resources
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Proyecto Cheto\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.FormNuevoEmpleado.resources

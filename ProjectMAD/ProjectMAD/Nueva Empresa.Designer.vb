@@ -36,6 +36,7 @@ Partial Class FormNuevaEmpresa
         Me.MonthCalendarNuevaEmpresa_InicioOperaciones = New System.Windows.Forms.MonthCalendar()
         Me.ButtonNuevaEmpresa_Cancelar = New System.Windows.Forms.Button()
         Me.ButtonNuevaEmpresa_Guardar = New System.Windows.Forms.Button()
+        Me.LabelNuevaEmpresa_InicioOperaciones = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'LabelNuevaEmpresa_Instruccion
@@ -130,7 +131,8 @@ Partial Class FormNuevaEmpresa
         '
         'MonthCalendarNuevaEmpresa_InicioOperaciones
         '
-        Me.MonthCalendarNuevaEmpresa_InicioOperaciones.Location = New System.Drawing.Point(418, 61)
+        Me.MonthCalendarNuevaEmpresa_InicioOperaciones.Location = New System.Drawing.Point(418, 74)
+        Me.MonthCalendarNuevaEmpresa_InicioOperaciones.MaxSelectionCount = 1
         Me.MonthCalendarNuevaEmpresa_InicioOperaciones.Name = "MonthCalendarNuevaEmpresa_InicioOperaciones"
         Me.MonthCalendarNuevaEmpresa_InicioOperaciones.TabIndex = 11
         '
@@ -152,12 +154,22 @@ Partial Class FormNuevaEmpresa
         Me.ButtonNuevaEmpresa_Guardar.Text = "Guardar"
         Me.ButtonNuevaEmpresa_Guardar.UseVisualStyleBackColor = True
         '
+        'LabelNuevaEmpresa_InicioOperaciones
+        '
+        Me.LabelNuevaEmpresa_InicioOperaciones.AutoSize = True
+        Me.LabelNuevaEmpresa_InicioOperaciones.Location = New System.Drawing.Point(415, 48)
+        Me.LabelNuevaEmpresa_InicioOperaciones.Name = "LabelNuevaEmpresa_InicioOperaciones"
+        Me.LabelNuevaEmpresa_InicioOperaciones.Size = New System.Drawing.Size(208, 17)
+        Me.LabelNuevaEmpresa_InicioOperaciones.TabIndex = 14
+        Me.LabelNuevaEmpresa_InicioOperaciones.Text = "Fecha de Inicio de Operaciones"
+        '
         'FormNuevaEmpresa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SteelBlue
         Me.ClientSize = New System.Drawing.Size(783, 450)
+        Me.Controls.Add(Me.LabelNuevaEmpresa_InicioOperaciones)
         Me.Controls.Add(Me.ButtonNuevaEmpresa_Guardar)
         Me.Controls.Add(Me.ButtonNuevaEmpresa_Cancelar)
         Me.Controls.Add(Me.MonthCalendarNuevaEmpresa_InicioOperaciones)
@@ -194,4 +206,5 @@ Partial Class FormNuevaEmpresa
     Friend WithEvents MonthCalendarNuevaEmpresa_InicioOperaciones As MonthCalendar
     Friend WithEvents ButtonNuevaEmpresa_Cancelar As Button
     Friend WithEvents ButtonNuevaEmpresa_Guardar As Button
+    Friend WithEvents LabelNuevaEmpresa_InicioOperaciones As Label
 End Class

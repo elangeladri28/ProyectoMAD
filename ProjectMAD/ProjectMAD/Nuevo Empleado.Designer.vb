@@ -1,0 +1,473 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class FormNuevoEmpleado
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.LabelNuevoEmpleado_Instruccion = New System.Windows.Forms.Label()
+        Me.LabelNuevoEmpleado_ID = New System.Windows.Forms.Label()
+        Me.TextBoxNuevoEmpleado_ID = New System.Windows.Forms.TextBox()
+        Me.LabelNuevoEmpleado_Contraseña = New System.Windows.Forms.Label()
+        Me.TextBoxNuevaEmpresa_Contraseña = New System.Windows.Forms.TextBox()
+        Me.LabelNuevoEmpleado_Nombres = New System.Windows.Forms.Label()
+        Me.TextBoxNuevoEmpleado_Nombres = New System.Windows.Forms.TextBox()
+        Me.LabelNuevoEmpleado_Trabajo = New System.Windows.Forms.Label()
+        Me.TextBoxNuevoEmpleado_Trabajo = New System.Windows.Forms.TextBox()
+        Me.LabelNuevoEmpleado_Depto = New System.Windows.Forms.Label()
+        Me.TextBoxNuevoEmpleado_ApPaterno = New System.Windows.Forms.TextBox()
+        Me.LabelNuevoEmpleado_ApPaterno = New System.Windows.Forms.Label()
+        Me.TextBoxNuevaEmpresa_Nombres = New System.Windows.Forms.TextBox()
+        Me.LabelNuevoEmpleado_ApMaterno = New System.Windows.Forms.Label()
+        Me.TextBoxNuevoEmpleado_Depto = New System.Windows.Forms.TextBox()
+        Me.LabelNuevoEmpleado_Puesto = New System.Windows.Forms.Label()
+        Me.TextBoxNuevoEmpleado_Puesto = New System.Windows.Forms.TextBox()
+        Me.LabelNuevoEmpleado_Salarial = New System.Windows.Forms.Label()
+        Me.TextBoxNuevoEmpleado_Salarial = New System.Windows.Forms.TextBox()
+        Me.LabelNuevoEmpleado_CURP = New System.Windows.Forms.Label()
+        Me.TextBoxNuevoEmpleado_CURP = New System.Windows.Forms.TextBox()
+        Me.LabelNuevoEmpleado_NSS = New System.Windows.Forms.Label()
+        Me.TextBoxNuevoEmpleado_NSS = New System.Windows.Forms.TextBox()
+        Me.LabelNuevoEmpleado_RFC = New System.Windows.Forms.Label()
+        Me.TextBoxNuevoEmpleado_RFC = New System.Windows.Forms.TextBox()
+        Me.LabelNuevoEmpleado_Domicilio = New System.Windows.Forms.Label()
+        Me.TextBoxNuevoEmpleado_Domicilio = New System.Windows.Forms.TextBox()
+        Me.LabelNuevoEmpleado_Banco = New System.Windows.Forms.Label()
+        Me.TextBoxNuevoEmpleado_Banco = New System.Windows.Forms.TextBox()
+        Me.LabelNuevoEmpleado_NumCuenta = New System.Windows.Forms.Label()
+        Me.TextBoxNuevoEmpleado_NumCuenta = New System.Windows.Forms.TextBox()
+        Me.LabelNuevoEmpleado_Email = New System.Windows.Forms.Label()
+        Me.TextBoxNuevoEmpleado_Email = New System.Windows.Forms.TextBox()
+        Me.LabelNuevoEmpleado_Telefono = New System.Windows.Forms.Label()
+        Me.TextBoxNuevoEmpleado_Telefono = New System.Windows.Forms.TextBox()
+        Me.MonthCalendarNuevoEmpleado_FechaNac = New System.Windows.Forms.MonthCalendar()
+        Me.LabelNuevoEmpleado_FechaNac = New System.Windows.Forms.Label()
+        Me.ButtonNuevoEmpleado_Cancelar = New System.Windows.Forms.Button()
+        Me.ButtonNuevoEmpleado_Guardar = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'LabelNuevoEmpleado_Instruccion
+        '
+        Me.LabelNuevoEmpleado_Instruccion.AutoSize = True
+        Me.LabelNuevoEmpleado_Instruccion.Location = New System.Drawing.Point(98, 9)
+        Me.LabelNuevoEmpleado_Instruccion.Name = "LabelNuevoEmpleado_Instruccion"
+        Me.LabelNuevoEmpleado_Instruccion.Size = New System.Drawing.Size(594, 17)
+        Me.LabelNuevoEmpleado_Instruccion.TabIndex = 0
+        Me.LabelNuevoEmpleado_Instruccion.Text = "LLENAR LOS SIGUIENTES CAMPOS PARA AGREGAR EL NUEVO EMPLEADO AL SISTEMA"
+        '
+        'LabelNuevoEmpleado_ID
+        '
+        Me.LabelNuevoEmpleado_ID.AutoSize = True
+        Me.LabelNuevoEmpleado_ID.Location = New System.Drawing.Point(29, 47)
+        Me.LabelNuevoEmpleado_ID.Name = "LabelNuevoEmpleado_ID"
+        Me.LabelNuevoEmpleado_ID.Size = New System.Drawing.Size(172, 17)
+        Me.LabelNuevoEmpleado_ID.TabIndex = 1
+        Me.LabelNuevoEmpleado_ID.Text = "Numero de Empleado (ID)"
+        '
+        'TextBoxNuevoEmpleado_ID
+        '
+        Me.TextBoxNuevoEmpleado_ID.Location = New System.Drawing.Point(32, 67)
+        Me.TextBoxNuevoEmpleado_ID.Name = "TextBoxNuevoEmpleado_ID"
+        Me.TextBoxNuevoEmpleado_ID.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_ID.TabIndex = 2
+        '
+        'LabelNuevoEmpleado_Contraseña
+        '
+        Me.LabelNuevoEmpleado_Contraseña.AutoSize = True
+        Me.LabelNuevoEmpleado_Contraseña.Location = New System.Drawing.Point(29, 96)
+        Me.LabelNuevoEmpleado_Contraseña.Name = "LabelNuevoEmpleado_Contraseña"
+        Me.LabelNuevoEmpleado_Contraseña.Size = New System.Drawing.Size(81, 17)
+        Me.LabelNuevoEmpleado_Contraseña.TabIndex = 3
+        Me.LabelNuevoEmpleado_Contraseña.Text = "Contraseña"
+        '
+        'TextBoxNuevaEmpresa_Contraseña
+        '
+        Me.TextBoxNuevaEmpresa_Contraseña.Location = New System.Drawing.Point(32, 116)
+        Me.TextBoxNuevaEmpresa_Contraseña.Name = "TextBoxNuevaEmpresa_Contraseña"
+        Me.TextBoxNuevaEmpresa_Contraseña.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevaEmpresa_Contraseña.TabIndex = 4
+        '
+        'LabelNuevoEmpleado_Nombres
+        '
+        Me.LabelNuevoEmpleado_Nombres.AutoSize = True
+        Me.LabelNuevoEmpleado_Nombres.Location = New System.Drawing.Point(29, 145)
+        Me.LabelNuevoEmpleado_Nombres.Name = "LabelNuevoEmpleado_Nombres"
+        Me.LabelNuevoEmpleado_Nombres.Size = New System.Drawing.Size(75, 17)
+        Me.LabelNuevoEmpleado_Nombres.TabIndex = 5
+        Me.LabelNuevoEmpleado_Nombres.Text = "Nombre(s)"
+        '
+        'TextBoxNuevoEmpleado_Nombres
+        '
+        Me.TextBoxNuevoEmpleado_Nombres.Location = New System.Drawing.Point(32, 165)
+        Me.TextBoxNuevoEmpleado_Nombres.Name = "TextBoxNuevoEmpleado_Nombres"
+        Me.TextBoxNuevoEmpleado_Nombres.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_Nombres.TabIndex = 6
+        '
+        'LabelNuevoEmpleado_Trabajo
+        '
+        Me.LabelNuevoEmpleado_Trabajo.AutoSize = True
+        Me.LabelNuevoEmpleado_Trabajo.Location = New System.Drawing.Point(29, 292)
+        Me.LabelNuevoEmpleado_Trabajo.Name = "LabelNuevoEmpleado_Trabajo"
+        Me.LabelNuevoEmpleado_Trabajo.Size = New System.Drawing.Size(132, 17)
+        Me.LabelNuevoEmpleado_Trabajo.TabIndex = 11
+        Me.LabelNuevoEmpleado_Trabajo.Text = "Empresa de trabajo"
+        '
+        'TextBoxNuevoEmpleado_Trabajo
+        '
+        Me.TextBoxNuevoEmpleado_Trabajo.Location = New System.Drawing.Point(32, 312)
+        Me.TextBoxNuevoEmpleado_Trabajo.Name = "TextBoxNuevoEmpleado_Trabajo"
+        Me.TextBoxNuevoEmpleado_Trabajo.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_Trabajo.TabIndex = 12
+        '
+        'LabelNuevoEmpleado_Depto
+        '
+        Me.LabelNuevoEmpleado_Depto.AutoSize = True
+        Me.LabelNuevoEmpleado_Depto.Location = New System.Drawing.Point(29, 341)
+        Me.LabelNuevoEmpleado_Depto.Name = "LabelNuevoEmpleado_Depto"
+        Me.LabelNuevoEmpleado_Depto.Size = New System.Drawing.Size(98, 17)
+        Me.LabelNuevoEmpleado_Depto.TabIndex = 13
+        Me.LabelNuevoEmpleado_Depto.Text = "Departamento"
+        '
+        'TextBoxNuevoEmpleado_ApPaterno
+        '
+        Me.TextBoxNuevoEmpleado_ApPaterno.Location = New System.Drawing.Point(32, 214)
+        Me.TextBoxNuevoEmpleado_ApPaterno.Name = "TextBoxNuevoEmpleado_ApPaterno"
+        Me.TextBoxNuevoEmpleado_ApPaterno.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_ApPaterno.TabIndex = 8
+        '
+        'LabelNuevoEmpleado_ApPaterno
+        '
+        Me.LabelNuevoEmpleado_ApPaterno.AutoSize = True
+        Me.LabelNuevoEmpleado_ApPaterno.Location = New System.Drawing.Point(29, 194)
+        Me.LabelNuevoEmpleado_ApPaterno.Name = "LabelNuevoEmpleado_ApPaterno"
+        Me.LabelNuevoEmpleado_ApPaterno.Size = New System.Drawing.Size(112, 17)
+        Me.LabelNuevoEmpleado_ApPaterno.TabIndex = 7
+        Me.LabelNuevoEmpleado_ApPaterno.Text = "Apellido Paterno"
+        '
+        'TextBoxNuevaEmpresa_Nombres
+        '
+        Me.TextBoxNuevaEmpresa_Nombres.Location = New System.Drawing.Point(32, 263)
+        Me.TextBoxNuevaEmpresa_Nombres.Name = "TextBoxNuevaEmpresa_Nombres"
+        Me.TextBoxNuevaEmpresa_Nombres.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevaEmpresa_Nombres.TabIndex = 10
+        '
+        'LabelNuevoEmpleado_ApMaterno
+        '
+        Me.LabelNuevoEmpleado_ApMaterno.AutoSize = True
+        Me.LabelNuevoEmpleado_ApMaterno.Location = New System.Drawing.Point(29, 243)
+        Me.LabelNuevoEmpleado_ApMaterno.Name = "LabelNuevoEmpleado_ApMaterno"
+        Me.LabelNuevoEmpleado_ApMaterno.Size = New System.Drawing.Size(114, 17)
+        Me.LabelNuevoEmpleado_ApMaterno.TabIndex = 9
+        Me.LabelNuevoEmpleado_ApMaterno.Text = "Apellido Materno"
+        '
+        'TextBoxNuevoEmpleado_Depto
+        '
+        Me.TextBoxNuevoEmpleado_Depto.Location = New System.Drawing.Point(32, 362)
+        Me.TextBoxNuevoEmpleado_Depto.Name = "TextBoxNuevoEmpleado_Depto"
+        Me.TextBoxNuevoEmpleado_Depto.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_Depto.TabIndex = 14
+        '
+        'LabelNuevoEmpleado_Puesto
+        '
+        Me.LabelNuevoEmpleado_Puesto.AutoSize = True
+        Me.LabelNuevoEmpleado_Puesto.Location = New System.Drawing.Point(29, 391)
+        Me.LabelNuevoEmpleado_Puesto.Name = "LabelNuevoEmpleado_Puesto"
+        Me.LabelNuevoEmpleado_Puesto.Size = New System.Drawing.Size(52, 17)
+        Me.LabelNuevoEmpleado_Puesto.TabIndex = 15
+        Me.LabelNuevoEmpleado_Puesto.Text = "Puesto"
+        '
+        'TextBoxNuevoEmpleado_Puesto
+        '
+        Me.TextBoxNuevoEmpleado_Puesto.Location = New System.Drawing.Point(32, 412)
+        Me.TextBoxNuevoEmpleado_Puesto.Name = "TextBoxNuevoEmpleado_Puesto"
+        Me.TextBoxNuevoEmpleado_Puesto.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_Puesto.TabIndex = 16
+        '
+        'LabelNuevoEmpleado_Salarial
+        '
+        Me.LabelNuevoEmpleado_Salarial.AutoSize = True
+        Me.LabelNuevoEmpleado_Salarial.Location = New System.Drawing.Point(29, 441)
+        Me.LabelNuevoEmpleado_Salarial.Name = "LabelNuevoEmpleado_Salarial"
+        Me.LabelNuevoEmpleado_Salarial.Size = New System.Drawing.Size(90, 17)
+        Me.LabelNuevoEmpleado_Salarial.TabIndex = 17
+        Me.LabelNuevoEmpleado_Salarial.Text = "Nivel Salarial"
+        '
+        'TextBoxNuevoEmpleado_Salarial
+        '
+        Me.TextBoxNuevoEmpleado_Salarial.Location = New System.Drawing.Point(32, 462)
+        Me.TextBoxNuevoEmpleado_Salarial.Name = "TextBoxNuevoEmpleado_Salarial"
+        Me.TextBoxNuevoEmpleado_Salarial.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_Salarial.TabIndex = 18
+        '
+        'LabelNuevoEmpleado_CURP
+        '
+        Me.LabelNuevoEmpleado_CURP.AutoSize = True
+        Me.LabelNuevoEmpleado_CURP.Location = New System.Drawing.Point(29, 491)
+        Me.LabelNuevoEmpleado_CURP.Name = "LabelNuevoEmpleado_CURP"
+        Me.LabelNuevoEmpleado_CURP.Size = New System.Drawing.Size(46, 17)
+        Me.LabelNuevoEmpleado_CURP.TabIndex = 19
+        Me.LabelNuevoEmpleado_CURP.Text = "CURP"
+        '
+        'TextBoxNuevoEmpleado_CURP
+        '
+        Me.TextBoxNuevoEmpleado_CURP.Location = New System.Drawing.Point(32, 511)
+        Me.TextBoxNuevoEmpleado_CURP.Name = "TextBoxNuevoEmpleado_CURP"
+        Me.TextBoxNuevoEmpleado_CURP.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_CURP.TabIndex = 20
+        '
+        'LabelNuevoEmpleado_NSS
+        '
+        Me.LabelNuevoEmpleado_NSS.AutoSize = True
+        Me.LabelNuevoEmpleado_NSS.Location = New System.Drawing.Point(29, 540)
+        Me.LabelNuevoEmpleado_NSS.Name = "LabelNuevoEmpleado_NSS"
+        Me.LabelNuevoEmpleado_NSS.Size = New System.Drawing.Size(208, 17)
+        Me.LabelNuevoEmpleado_NSS.TabIndex = 21
+        Me.LabelNuevoEmpleado_NSS.Text = "Numero de Seguro Social(NSS)"
+        '
+        'TextBoxNuevoEmpleado_NSS
+        '
+        Me.TextBoxNuevoEmpleado_NSS.Location = New System.Drawing.Point(32, 560)
+        Me.TextBoxNuevoEmpleado_NSS.Name = "TextBoxNuevoEmpleado_NSS"
+        Me.TextBoxNuevoEmpleado_NSS.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_NSS.TabIndex = 22
+        '
+        'LabelNuevoEmpleado_RFC
+        '
+        Me.LabelNuevoEmpleado_RFC.AutoSize = True
+        Me.LabelNuevoEmpleado_RFC.Location = New System.Drawing.Point(408, 47)
+        Me.LabelNuevoEmpleado_RFC.Name = "LabelNuevoEmpleado_RFC"
+        Me.LabelNuevoEmpleado_RFC.Size = New System.Drawing.Size(273, 17)
+        Me.LabelNuevoEmpleado_RFC.TabIndex = 23
+        Me.LabelNuevoEmpleado_RFC.Text = "Registro Federal de Contribuyentes (RFC)"
+        '
+        'TextBoxNuevoEmpleado_RFC
+        '
+        Me.TextBoxNuevoEmpleado_RFC.Location = New System.Drawing.Point(408, 66)
+        Me.TextBoxNuevoEmpleado_RFC.Name = "TextBoxNuevoEmpleado_RFC"
+        Me.TextBoxNuevoEmpleado_RFC.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_RFC.TabIndex = 24
+        '
+        'LabelNuevoEmpleado_Domicilio
+        '
+        Me.LabelNuevoEmpleado_Domicilio.AutoSize = True
+        Me.LabelNuevoEmpleado_Domicilio.Location = New System.Drawing.Point(408, 96)
+        Me.LabelNuevoEmpleado_Domicilio.Name = "LabelNuevoEmpleado_Domicilio"
+        Me.LabelNuevoEmpleado_Domicilio.Size = New System.Drawing.Size(127, 17)
+        Me.LabelNuevoEmpleado_Domicilio.TabIndex = 25
+        Me.LabelNuevoEmpleado_Domicilio.Text = "Domicilio Completo"
+        '
+        'TextBoxNuevoEmpleado_Domicilio
+        '
+        Me.TextBoxNuevoEmpleado_Domicilio.Location = New System.Drawing.Point(408, 116)
+        Me.TextBoxNuevoEmpleado_Domicilio.Name = "TextBoxNuevoEmpleado_Domicilio"
+        Me.TextBoxNuevoEmpleado_Domicilio.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_Domicilio.TabIndex = 26
+        '
+        'LabelNuevoEmpleado_Banco
+        '
+        Me.LabelNuevoEmpleado_Banco.AutoSize = True
+        Me.LabelNuevoEmpleado_Banco.Location = New System.Drawing.Point(408, 145)
+        Me.LabelNuevoEmpleado_Banco.Name = "LabelNuevoEmpleado_Banco"
+        Me.LabelNuevoEmpleado_Banco.Size = New System.Drawing.Size(48, 17)
+        Me.LabelNuevoEmpleado_Banco.TabIndex = 27
+        Me.LabelNuevoEmpleado_Banco.Text = "Banco"
+        '
+        'TextBoxNuevoEmpleado_Banco
+        '
+        Me.TextBoxNuevoEmpleado_Banco.Location = New System.Drawing.Point(408, 165)
+        Me.TextBoxNuevoEmpleado_Banco.Name = "TextBoxNuevoEmpleado_Banco"
+        Me.TextBoxNuevoEmpleado_Banco.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_Banco.TabIndex = 28
+        '
+        'LabelNuevoEmpleado_NumCuenta
+        '
+        Me.LabelNuevoEmpleado_NumCuenta.AutoSize = True
+        Me.LabelNuevoEmpleado_NumCuenta.Location = New System.Drawing.Point(408, 194)
+        Me.LabelNuevoEmpleado_NumCuenta.Name = "LabelNuevoEmpleado_NumCuenta"
+        Me.LabelNuevoEmpleado_NumCuenta.Size = New System.Drawing.Size(127, 17)
+        Me.LabelNuevoEmpleado_NumCuenta.TabIndex = 29
+        Me.LabelNuevoEmpleado_NumCuenta.Text = "Numero de Cuenta"
+        '
+        'TextBoxNuevoEmpleado_NumCuenta
+        '
+        Me.TextBoxNuevoEmpleado_NumCuenta.Location = New System.Drawing.Point(408, 214)
+        Me.TextBoxNuevoEmpleado_NumCuenta.Name = "TextBoxNuevoEmpleado_NumCuenta"
+        Me.TextBoxNuevoEmpleado_NumCuenta.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_NumCuenta.TabIndex = 30
+        '
+        'LabelNuevoEmpleado_Email
+        '
+        Me.LabelNuevoEmpleado_Email.AutoSize = True
+        Me.LabelNuevoEmpleado_Email.Location = New System.Drawing.Point(408, 243)
+        Me.LabelNuevoEmpleado_Email.Name = "LabelNuevoEmpleado_Email"
+        Me.LabelNuevoEmpleado_Email.Size = New System.Drawing.Size(42, 17)
+        Me.LabelNuevoEmpleado_Email.TabIndex = 31
+        Me.LabelNuevoEmpleado_Email.Text = "Email"
+        '
+        'TextBoxNuevoEmpleado_Email
+        '
+        Me.TextBoxNuevoEmpleado_Email.Location = New System.Drawing.Point(408, 262)
+        Me.TextBoxNuevoEmpleado_Email.Name = "TextBoxNuevoEmpleado_Email"
+        Me.TextBoxNuevoEmpleado_Email.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_Email.TabIndex = 32
+        '
+        'LabelNuevoEmpleado_Telefono
+        '
+        Me.LabelNuevoEmpleado_Telefono.AutoSize = True
+        Me.LabelNuevoEmpleado_Telefono.Location = New System.Drawing.Point(408, 292)
+        Me.LabelNuevoEmpleado_Telefono.Name = "LabelNuevoEmpleado_Telefono"
+        Me.LabelNuevoEmpleado_Telefono.Size = New System.Drawing.Size(64, 17)
+        Me.LabelNuevoEmpleado_Telefono.TabIndex = 33
+        Me.LabelNuevoEmpleado_Telefono.Text = "Telefono"
+        '
+        'TextBoxNuevoEmpleado_Telefono
+        '
+        Me.TextBoxNuevoEmpleado_Telefono.Location = New System.Drawing.Point(408, 311)
+        Me.TextBoxNuevoEmpleado_Telefono.Name = "TextBoxNuevoEmpleado_Telefono"
+        Me.TextBoxNuevoEmpleado_Telefono.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_Telefono.TabIndex = 34
+        '
+        'MonthCalendarNuevoEmpleado_FechaNac
+        '
+        Me.MonthCalendarNuevoEmpleado_FechaNac.Location = New System.Drawing.Point(408, 362)
+        Me.MonthCalendarNuevoEmpleado_FechaNac.MaxSelectionCount = 1
+        Me.MonthCalendarNuevoEmpleado_FechaNac.Name = "MonthCalendarNuevoEmpleado_FechaNac"
+        Me.MonthCalendarNuevoEmpleado_FechaNac.TabIndex = 35
+        '
+        'LabelNuevoEmpleado_FechaNac
+        '
+        Me.LabelNuevoEmpleado_FechaNac.AutoSize = True
+        Me.LabelNuevoEmpleado_FechaNac.Location = New System.Drawing.Point(408, 340)
+        Me.LabelNuevoEmpleado_FechaNac.Name = "LabelNuevoEmpleado_FechaNac"
+        Me.LabelNuevoEmpleado_FechaNac.Size = New System.Drawing.Size(141, 17)
+        Me.LabelNuevoEmpleado_FechaNac.TabIndex = 36
+        Me.LabelNuevoEmpleado_FechaNac.Text = "Fecha de Nacimiento"
+        '
+        'ButtonNuevoEmpleado_Cancelar
+        '
+        Me.ButtonNuevoEmpleado_Cancelar.Location = New System.Drawing.Point(539, 607)
+        Me.ButtonNuevoEmpleado_Cancelar.Name = "ButtonNuevoEmpleado_Cancelar"
+        Me.ButtonNuevoEmpleado_Cancelar.Size = New System.Drawing.Size(101, 30)
+        Me.ButtonNuevoEmpleado_Cancelar.TabIndex = 37
+        Me.ButtonNuevoEmpleado_Cancelar.Text = "Cancelar"
+        Me.ButtonNuevoEmpleado_Cancelar.UseVisualStyleBackColor = True
+        '
+        'ButtonNuevoEmpleado_Guardar
+        '
+        Me.ButtonNuevoEmpleado_Guardar.Location = New System.Drawing.Point(670, 607)
+        Me.ButtonNuevoEmpleado_Guardar.Name = "ButtonNuevoEmpleado_Guardar"
+        Me.ButtonNuevoEmpleado_Guardar.Size = New System.Drawing.Size(101, 30)
+        Me.ButtonNuevoEmpleado_Guardar.TabIndex = 38
+        Me.ButtonNuevoEmpleado_Guardar.Text = "Guardar"
+        Me.ButtonNuevoEmpleado_Guardar.UseVisualStyleBackColor = True
+        '
+        'FormNuevoEmpleado
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.SteelBlue
+        Me.ClientSize = New System.Drawing.Size(783, 659)
+        Me.Controls.Add(Me.ButtonNuevoEmpleado_Guardar)
+        Me.Controls.Add(Me.ButtonNuevoEmpleado_Cancelar)
+        Me.Controls.Add(Me.LabelNuevoEmpleado_FechaNac)
+        Me.Controls.Add(Me.MonthCalendarNuevoEmpleado_FechaNac)
+        Me.Controls.Add(Me.TextBoxNuevoEmpleado_Telefono)
+        Me.Controls.Add(Me.LabelNuevoEmpleado_Telefono)
+        Me.Controls.Add(Me.TextBoxNuevoEmpleado_Email)
+        Me.Controls.Add(Me.LabelNuevoEmpleado_Email)
+        Me.Controls.Add(Me.TextBoxNuevoEmpleado_NumCuenta)
+        Me.Controls.Add(Me.LabelNuevoEmpleado_NumCuenta)
+        Me.Controls.Add(Me.TextBoxNuevoEmpleado_Banco)
+        Me.Controls.Add(Me.LabelNuevoEmpleado_Banco)
+        Me.Controls.Add(Me.TextBoxNuevoEmpleado_Domicilio)
+        Me.Controls.Add(Me.LabelNuevoEmpleado_Domicilio)
+        Me.Controls.Add(Me.TextBoxNuevoEmpleado_RFC)
+        Me.Controls.Add(Me.LabelNuevoEmpleado_RFC)
+        Me.Controls.Add(Me.TextBoxNuevoEmpleado_NSS)
+        Me.Controls.Add(Me.LabelNuevoEmpleado_NSS)
+        Me.Controls.Add(Me.TextBoxNuevoEmpleado_CURP)
+        Me.Controls.Add(Me.LabelNuevoEmpleado_CURP)
+        Me.Controls.Add(Me.TextBoxNuevoEmpleado_Salarial)
+        Me.Controls.Add(Me.LabelNuevoEmpleado_Salarial)
+        Me.Controls.Add(Me.TextBoxNuevoEmpleado_Puesto)
+        Me.Controls.Add(Me.LabelNuevoEmpleado_Puesto)
+        Me.Controls.Add(Me.TextBoxNuevoEmpleado_Depto)
+        Me.Controls.Add(Me.TextBoxNuevaEmpresa_Nombres)
+        Me.Controls.Add(Me.LabelNuevoEmpleado_ApMaterno)
+        Me.Controls.Add(Me.TextBoxNuevoEmpleado_ApPaterno)
+        Me.Controls.Add(Me.LabelNuevoEmpleado_ApPaterno)
+        Me.Controls.Add(Me.LabelNuevoEmpleado_Depto)
+        Me.Controls.Add(Me.TextBoxNuevoEmpleado_Trabajo)
+        Me.Controls.Add(Me.LabelNuevoEmpleado_Trabajo)
+        Me.Controls.Add(Me.TextBoxNuevoEmpleado_Nombres)
+        Me.Controls.Add(Me.LabelNuevoEmpleado_Nombres)
+        Me.Controls.Add(Me.TextBoxNuevaEmpresa_Contraseña)
+        Me.Controls.Add(Me.LabelNuevoEmpleado_Contraseña)
+        Me.Controls.Add(Me.TextBoxNuevoEmpleado_ID)
+        Me.Controls.Add(Me.LabelNuevoEmpleado_ID)
+        Me.Controls.Add(Me.LabelNuevoEmpleado_Instruccion)
+        Me.Name = "FormNuevoEmpleado"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
+        Me.Text = "Nuevo Empleado"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+
+    Friend WithEvents LabelNuevoEmpleado_Instruccion As Label
+    Friend WithEvents LabelNuevoEmpleado_ID As Label
+    Friend WithEvents TextBoxNuevoEmpleado_ID As TextBox
+    Friend WithEvents LabelNuevoEmpleado_Contraseña As Label
+    Friend WithEvents TextBoxNuevaEmpresa_Contraseña As TextBox
+    Friend WithEvents LabelNuevoEmpleado_Nombres As Label
+    Friend WithEvents TextBoxNuevoEmpleado_Nombres As TextBox
+    Friend WithEvents LabelNuevoEmpleado_Trabajo As Label
+    Friend WithEvents TextBoxNuevoEmpleado_Trabajo As TextBox
+    Friend WithEvents LabelNuevoEmpleado_Depto As Label
+    Friend WithEvents TextBoxNuevoEmpleado_ApPaterno As TextBox
+    Friend WithEvents LabelNuevoEmpleado_ApPaterno As Label
+    Friend WithEvents TextBoxNuevaEmpresa_Nombres As TextBox
+    Friend WithEvents LabelNuevoEmpleado_ApMaterno As Label
+    Friend WithEvents TextBoxNuevoEmpleado_Depto As TextBox
+    Friend WithEvents LabelNuevoEmpleado_Puesto As Label
+    Friend WithEvents TextBoxNuevoEmpleado_Puesto As TextBox
+    Friend WithEvents LabelNuevoEmpleado_Salarial As Label
+    Friend WithEvents TextBoxNuevoEmpleado_Salarial As TextBox
+    Friend WithEvents LabelNuevoEmpleado_CURP As Label
+    Friend WithEvents TextBoxNuevoEmpleado_CURP As TextBox
+    Friend WithEvents LabelNuevoEmpleado_NSS As Label
+    Friend WithEvents TextBoxNuevoEmpleado_NSS As TextBox
+    Friend WithEvents LabelNuevoEmpleado_RFC As Label
+    Friend WithEvents TextBoxNuevoEmpleado_RFC As TextBox
+    Friend WithEvents LabelNuevoEmpleado_Domicilio As Label
+    Friend WithEvents TextBoxNuevoEmpleado_Domicilio As TextBox
+    Friend WithEvents LabelNuevoEmpleado_Banco As Label
+    Friend WithEvents TextBoxNuevoEmpleado_Banco As TextBox
+    Friend WithEvents LabelNuevoEmpleado_NumCuenta As Label
+    Friend WithEvents TextBoxNuevoEmpleado_NumCuenta As TextBox
+    Friend WithEvents LabelNuevoEmpleado_Email As Label
+    Friend WithEvents TextBoxNuevoEmpleado_Email As TextBox
+    Friend WithEvents LabelNuevoEmpleado_Telefono As Label
+    Friend WithEvents TextBoxNuevoEmpleado_Telefono As TextBox
+    Friend WithEvents MonthCalendarNuevoEmpleado_FechaNac As MonthCalendar
+    Friend WithEvents LabelNuevoEmpleado_FechaNac As Label
+    Friend WithEvents ButtonNuevoEmpleado_Cancelar As Button
+    Friend WithEvents ButtonNuevoEmpleado_Guardar As Button
+End Class
