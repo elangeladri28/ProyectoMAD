@@ -30,6 +30,9 @@ Partial Class FormAdministracion
         Me.MenuAdministracion_AñadirEmpleado = New System.Windows.Forms.ToolStripMenuItem()
         Me.AdministrarEmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NominasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PercepcionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeduccionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -64,7 +67,7 @@ Partial Class FormAdministracion
         '
         'EmpleadosToolStripMenuItem
         '
-        Me.EmpleadosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuAdministracion_AñadirEmpleado, Me.AdministrarEmpleadosToolStripMenuItem})
+        Me.EmpleadosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuAdministracion_AñadirEmpleado, Me.AdministrarEmpleadosToolStripMenuItem, Me.NominasToolStripMenuItem})
         Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
         Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(97, 24)
         Me.EmpleadosToolStripMenuItem.Text = "Empleados"
@@ -86,6 +89,25 @@ Partial Class FormAdministracion
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
         Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(82, 24)
         Me.ReportesToolStripMenuItem.Text = "Reportes"
+        '
+        'NominasToolStripMenuItem
+        '
+        Me.NominasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PercepcionesToolStripMenuItem, Me.DeduccionesToolStripMenuItem})
+        Me.NominasToolStripMenuItem.Name = "NominasToolStripMenuItem"
+        Me.NominasToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
+        Me.NominasToolStripMenuItem.Text = "Nominas"
+        '
+        'PercepcionesToolStripMenuItem
+        '
+        Me.PercepcionesToolStripMenuItem.Name = "PercepcionesToolStripMenuItem"
+        Me.PercepcionesToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.PercepcionesToolStripMenuItem.Text = "Percepciones"
+        '
+        'DeduccionesToolStripMenuItem
+        '
+        Me.DeduccionesToolStripMenuItem.Name = "DeduccionesToolStripMenuItem"
+        Me.DeduccionesToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.DeduccionesToolStripMenuItem.Text = "Deducciones"
         '
         'FormAdministracion
         '
@@ -113,4 +135,7 @@ Partial Class FormAdministracion
     Friend WithEvents MenuAdministracion_AñadirEmpleado As ToolStripMenuItem
     Friend WithEvents AdministrarEmpleadosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NominasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PercepcionesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DeduccionesToolStripMenuItem As ToolStripMenuItem
 End Class
