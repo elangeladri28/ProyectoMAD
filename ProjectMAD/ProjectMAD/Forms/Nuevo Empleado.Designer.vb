@@ -61,293 +61,330 @@ Partial Class FormNuevoEmpleado
         Me.LabelNuevoEmpleado_FechaNac = New System.Windows.Forms.Label()
         Me.ButtonNuevoEmpleado_Cancelar = New System.Windows.Forms.Button()
         Me.ButtonNuevoEmpleado_Guardar = New System.Windows.Forms.Button()
+        Me.DateTimePickerNuevoEmpleado_FechaNacimiento = New System.Windows.Forms.DateTimePicker()
         Me.SuspendLayout()
         '
         'LabelNuevoEmpleado_Instruccion
         '
         Me.LabelNuevoEmpleado_Instruccion.AutoSize = True
-        Me.LabelNuevoEmpleado_Instruccion.Location = New System.Drawing.Point(98, 9)
+        Me.LabelNuevoEmpleado_Instruccion.Location = New System.Drawing.Point(74, 7)
+        Me.LabelNuevoEmpleado_Instruccion.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelNuevoEmpleado_Instruccion.Name = "LabelNuevoEmpleado_Instruccion"
-        Me.LabelNuevoEmpleado_Instruccion.Size = New System.Drawing.Size(594, 17)
+        Me.LabelNuevoEmpleado_Instruccion.Size = New System.Drawing.Size(462, 13)
         Me.LabelNuevoEmpleado_Instruccion.TabIndex = 0
         Me.LabelNuevoEmpleado_Instruccion.Text = "LLENAR LOS SIGUIENTES CAMPOS PARA AGREGAR EL NUEVO EMPLEADO AL SISTEMA"
         '
         'LabelNuevoEmpleado_ID
         '
         Me.LabelNuevoEmpleado_ID.AutoSize = True
-        Me.LabelNuevoEmpleado_ID.Location = New System.Drawing.Point(29, 47)
+        Me.LabelNuevoEmpleado_ID.Location = New System.Drawing.Point(22, 38)
+        Me.LabelNuevoEmpleado_ID.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelNuevoEmpleado_ID.Name = "LabelNuevoEmpleado_ID"
-        Me.LabelNuevoEmpleado_ID.Size = New System.Drawing.Size(172, 17)
+        Me.LabelNuevoEmpleado_ID.Size = New System.Drawing.Size(129, 13)
         Me.LabelNuevoEmpleado_ID.TabIndex = 1
         Me.LabelNuevoEmpleado_ID.Text = "Numero de Empleado (ID)"
         '
         'TextBoxNuevoEmpleado_ID
         '
-        Me.TextBoxNuevoEmpleado_ID.Location = New System.Drawing.Point(32, 67)
+        Me.TextBoxNuevoEmpleado_ID.Location = New System.Drawing.Point(24, 54)
+        Me.TextBoxNuevoEmpleado_ID.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxNuevoEmpleado_ID.Name = "TextBoxNuevoEmpleado_ID"
-        Me.TextBoxNuevoEmpleado_ID.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_ID.Size = New System.Drawing.Size(175, 20)
         Me.TextBoxNuevoEmpleado_ID.TabIndex = 2
         '
         'LabelNuevoEmpleado_Contraseña
         '
         Me.LabelNuevoEmpleado_Contraseña.AutoSize = True
-        Me.LabelNuevoEmpleado_Contraseña.Location = New System.Drawing.Point(29, 96)
+        Me.LabelNuevoEmpleado_Contraseña.Location = New System.Drawing.Point(22, 78)
+        Me.LabelNuevoEmpleado_Contraseña.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelNuevoEmpleado_Contraseña.Name = "LabelNuevoEmpleado_Contraseña"
-        Me.LabelNuevoEmpleado_Contraseña.Size = New System.Drawing.Size(81, 17)
+        Me.LabelNuevoEmpleado_Contraseña.Size = New System.Drawing.Size(61, 13)
         Me.LabelNuevoEmpleado_Contraseña.TabIndex = 3
         Me.LabelNuevoEmpleado_Contraseña.Text = "Contraseña"
         '
         'TextBoxNuevoEmpleado_Contraseña
         '
-        Me.TextBoxNuevoEmpleado_Contraseña.Location = New System.Drawing.Point(32, 116)
+        Me.TextBoxNuevoEmpleado_Contraseña.Location = New System.Drawing.Point(24, 94)
+        Me.TextBoxNuevoEmpleado_Contraseña.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxNuevoEmpleado_Contraseña.Name = "TextBoxNuevoEmpleado_Contraseña"
-        Me.TextBoxNuevoEmpleado_Contraseña.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_Contraseña.Size = New System.Drawing.Size(175, 20)
         Me.TextBoxNuevoEmpleado_Contraseña.TabIndex = 4
         '
         'LabelNuevoEmpleado_Nombres
         '
         Me.LabelNuevoEmpleado_Nombres.AutoSize = True
-        Me.LabelNuevoEmpleado_Nombres.Location = New System.Drawing.Point(29, 145)
+        Me.LabelNuevoEmpleado_Nombres.Location = New System.Drawing.Point(22, 118)
+        Me.LabelNuevoEmpleado_Nombres.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelNuevoEmpleado_Nombres.Name = "LabelNuevoEmpleado_Nombres"
-        Me.LabelNuevoEmpleado_Nombres.Size = New System.Drawing.Size(75, 17)
+        Me.LabelNuevoEmpleado_Nombres.Size = New System.Drawing.Size(55, 13)
         Me.LabelNuevoEmpleado_Nombres.TabIndex = 5
         Me.LabelNuevoEmpleado_Nombres.Text = "Nombre(s)"
         '
         'TextBoxNuevoEmpleado_Nombres
         '
-        Me.TextBoxNuevoEmpleado_Nombres.Location = New System.Drawing.Point(32, 165)
+        Me.TextBoxNuevoEmpleado_Nombres.Location = New System.Drawing.Point(24, 134)
+        Me.TextBoxNuevoEmpleado_Nombres.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxNuevoEmpleado_Nombres.Name = "TextBoxNuevoEmpleado_Nombres"
-        Me.TextBoxNuevoEmpleado_Nombres.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_Nombres.Size = New System.Drawing.Size(175, 20)
         Me.TextBoxNuevoEmpleado_Nombres.TabIndex = 6
         '
         'LabelNuevoEmpleado_Trabajo
         '
         Me.LabelNuevoEmpleado_Trabajo.AutoSize = True
-        Me.LabelNuevoEmpleado_Trabajo.Location = New System.Drawing.Point(29, 292)
+        Me.LabelNuevoEmpleado_Trabajo.Location = New System.Drawing.Point(22, 237)
+        Me.LabelNuevoEmpleado_Trabajo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelNuevoEmpleado_Trabajo.Name = "LabelNuevoEmpleado_Trabajo"
-        Me.LabelNuevoEmpleado_Trabajo.Size = New System.Drawing.Size(132, 17)
+        Me.LabelNuevoEmpleado_Trabajo.Size = New System.Drawing.Size(98, 13)
         Me.LabelNuevoEmpleado_Trabajo.TabIndex = 11
         Me.LabelNuevoEmpleado_Trabajo.Text = "Empresa de trabajo"
         '
         'TextBoxNuevoEmpleado_Trabajo
         '
-        Me.TextBoxNuevoEmpleado_Trabajo.Location = New System.Drawing.Point(32, 312)
+        Me.TextBoxNuevoEmpleado_Trabajo.Location = New System.Drawing.Point(24, 254)
+        Me.TextBoxNuevoEmpleado_Trabajo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxNuevoEmpleado_Trabajo.Name = "TextBoxNuevoEmpleado_Trabajo"
-        Me.TextBoxNuevoEmpleado_Trabajo.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_Trabajo.Size = New System.Drawing.Size(175, 20)
         Me.TextBoxNuevoEmpleado_Trabajo.TabIndex = 12
         '
         'LabelNuevoEmpleado_Depto
         '
         Me.LabelNuevoEmpleado_Depto.AutoSize = True
-        Me.LabelNuevoEmpleado_Depto.Location = New System.Drawing.Point(29, 341)
+        Me.LabelNuevoEmpleado_Depto.Location = New System.Drawing.Point(22, 277)
+        Me.LabelNuevoEmpleado_Depto.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelNuevoEmpleado_Depto.Name = "LabelNuevoEmpleado_Depto"
-        Me.LabelNuevoEmpleado_Depto.Size = New System.Drawing.Size(98, 17)
+        Me.LabelNuevoEmpleado_Depto.Size = New System.Drawing.Size(74, 13)
         Me.LabelNuevoEmpleado_Depto.TabIndex = 13
         Me.LabelNuevoEmpleado_Depto.Text = "Departamento"
         '
         'TextBoxNuevoEmpleado_ApPaterno
         '
-        Me.TextBoxNuevoEmpleado_ApPaterno.Location = New System.Drawing.Point(32, 214)
+        Me.TextBoxNuevoEmpleado_ApPaterno.Location = New System.Drawing.Point(24, 174)
+        Me.TextBoxNuevoEmpleado_ApPaterno.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxNuevoEmpleado_ApPaterno.Name = "TextBoxNuevoEmpleado_ApPaterno"
-        Me.TextBoxNuevoEmpleado_ApPaterno.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_ApPaterno.Size = New System.Drawing.Size(175, 20)
         Me.TextBoxNuevoEmpleado_ApPaterno.TabIndex = 8
         '
         'LabelNuevoEmpleado_ApPaterno
         '
         Me.LabelNuevoEmpleado_ApPaterno.AutoSize = True
-        Me.LabelNuevoEmpleado_ApPaterno.Location = New System.Drawing.Point(29, 194)
+        Me.LabelNuevoEmpleado_ApPaterno.Location = New System.Drawing.Point(22, 158)
+        Me.LabelNuevoEmpleado_ApPaterno.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelNuevoEmpleado_ApPaterno.Name = "LabelNuevoEmpleado_ApPaterno"
-        Me.LabelNuevoEmpleado_ApPaterno.Size = New System.Drawing.Size(112, 17)
+        Me.LabelNuevoEmpleado_ApPaterno.Size = New System.Drawing.Size(84, 13)
         Me.LabelNuevoEmpleado_ApPaterno.TabIndex = 7
         Me.LabelNuevoEmpleado_ApPaterno.Text = "Apellido Paterno"
         '
         'TextBoxNuevoEmpleado_ApMaterno
         '
-        Me.TextBoxNuevoEmpleado_ApMaterno.Location = New System.Drawing.Point(32, 263)
+        Me.TextBoxNuevoEmpleado_ApMaterno.Location = New System.Drawing.Point(24, 214)
+        Me.TextBoxNuevoEmpleado_ApMaterno.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxNuevoEmpleado_ApMaterno.Name = "TextBoxNuevoEmpleado_ApMaterno"
-        Me.TextBoxNuevoEmpleado_ApMaterno.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_ApMaterno.Size = New System.Drawing.Size(175, 20)
         Me.TextBoxNuevoEmpleado_ApMaterno.TabIndex = 10
         '
         'LabelNuevoEmpleado_ApMaterno
         '
         Me.LabelNuevoEmpleado_ApMaterno.AutoSize = True
-        Me.LabelNuevoEmpleado_ApMaterno.Location = New System.Drawing.Point(29, 243)
+        Me.LabelNuevoEmpleado_ApMaterno.Location = New System.Drawing.Point(22, 197)
+        Me.LabelNuevoEmpleado_ApMaterno.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelNuevoEmpleado_ApMaterno.Name = "LabelNuevoEmpleado_ApMaterno"
-        Me.LabelNuevoEmpleado_ApMaterno.Size = New System.Drawing.Size(114, 17)
+        Me.LabelNuevoEmpleado_ApMaterno.Size = New System.Drawing.Size(86, 13)
         Me.LabelNuevoEmpleado_ApMaterno.TabIndex = 9
         Me.LabelNuevoEmpleado_ApMaterno.Text = "Apellido Materno"
         '
         'TextBoxNuevoEmpleado_Depto
         '
-        Me.TextBoxNuevoEmpleado_Depto.Location = New System.Drawing.Point(32, 362)
+        Me.TextBoxNuevoEmpleado_Depto.Location = New System.Drawing.Point(24, 294)
+        Me.TextBoxNuevoEmpleado_Depto.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxNuevoEmpleado_Depto.Name = "TextBoxNuevoEmpleado_Depto"
-        Me.TextBoxNuevoEmpleado_Depto.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_Depto.Size = New System.Drawing.Size(175, 20)
         Me.TextBoxNuevoEmpleado_Depto.TabIndex = 14
         '
         'LabelNuevoEmpleado_Puesto
         '
         Me.LabelNuevoEmpleado_Puesto.AutoSize = True
-        Me.LabelNuevoEmpleado_Puesto.Location = New System.Drawing.Point(29, 391)
+        Me.LabelNuevoEmpleado_Puesto.Location = New System.Drawing.Point(22, 318)
+        Me.LabelNuevoEmpleado_Puesto.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelNuevoEmpleado_Puesto.Name = "LabelNuevoEmpleado_Puesto"
-        Me.LabelNuevoEmpleado_Puesto.Size = New System.Drawing.Size(52, 17)
+        Me.LabelNuevoEmpleado_Puesto.Size = New System.Drawing.Size(40, 13)
         Me.LabelNuevoEmpleado_Puesto.TabIndex = 15
         Me.LabelNuevoEmpleado_Puesto.Text = "Puesto"
         '
         'TextBoxNuevoEmpleado_Puesto
         '
-        Me.TextBoxNuevoEmpleado_Puesto.Location = New System.Drawing.Point(32, 412)
+        Me.TextBoxNuevoEmpleado_Puesto.Location = New System.Drawing.Point(24, 335)
+        Me.TextBoxNuevoEmpleado_Puesto.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxNuevoEmpleado_Puesto.Name = "TextBoxNuevoEmpleado_Puesto"
-        Me.TextBoxNuevoEmpleado_Puesto.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_Puesto.Size = New System.Drawing.Size(175, 20)
         Me.TextBoxNuevoEmpleado_Puesto.TabIndex = 16
         '
         'LabelNuevoEmpleado_Salarial
         '
         Me.LabelNuevoEmpleado_Salarial.AutoSize = True
-        Me.LabelNuevoEmpleado_Salarial.Location = New System.Drawing.Point(29, 441)
+        Me.LabelNuevoEmpleado_Salarial.Location = New System.Drawing.Point(22, 358)
+        Me.LabelNuevoEmpleado_Salarial.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelNuevoEmpleado_Salarial.Name = "LabelNuevoEmpleado_Salarial"
-        Me.LabelNuevoEmpleado_Salarial.Size = New System.Drawing.Size(90, 17)
+        Me.LabelNuevoEmpleado_Salarial.Size = New System.Drawing.Size(68, 13)
         Me.LabelNuevoEmpleado_Salarial.TabIndex = 17
         Me.LabelNuevoEmpleado_Salarial.Text = "Nivel Salarial"
         '
         'TextBoxNuevoEmpleado_Salarial
         '
-        Me.TextBoxNuevoEmpleado_Salarial.Location = New System.Drawing.Point(32, 462)
+        Me.TextBoxNuevoEmpleado_Salarial.Location = New System.Drawing.Point(24, 375)
+        Me.TextBoxNuevoEmpleado_Salarial.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxNuevoEmpleado_Salarial.Name = "TextBoxNuevoEmpleado_Salarial"
-        Me.TextBoxNuevoEmpleado_Salarial.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_Salarial.Size = New System.Drawing.Size(175, 20)
         Me.TextBoxNuevoEmpleado_Salarial.TabIndex = 18
         '
         'LabelNuevoEmpleado_CURP
         '
         Me.LabelNuevoEmpleado_CURP.AutoSize = True
-        Me.LabelNuevoEmpleado_CURP.Location = New System.Drawing.Point(29, 491)
+        Me.LabelNuevoEmpleado_CURP.Location = New System.Drawing.Point(22, 399)
+        Me.LabelNuevoEmpleado_CURP.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelNuevoEmpleado_CURP.Name = "LabelNuevoEmpleado_CURP"
-        Me.LabelNuevoEmpleado_CURP.Size = New System.Drawing.Size(46, 17)
+        Me.LabelNuevoEmpleado_CURP.Size = New System.Drawing.Size(37, 13)
         Me.LabelNuevoEmpleado_CURP.TabIndex = 19
         Me.LabelNuevoEmpleado_CURP.Text = "CURP"
         '
         'TextBoxNuevoEmpleado_CURP
         '
-        Me.TextBoxNuevoEmpleado_CURP.Location = New System.Drawing.Point(32, 511)
+        Me.TextBoxNuevoEmpleado_CURP.Location = New System.Drawing.Point(24, 415)
+        Me.TextBoxNuevoEmpleado_CURP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxNuevoEmpleado_CURP.Name = "TextBoxNuevoEmpleado_CURP"
-        Me.TextBoxNuevoEmpleado_CURP.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_CURP.Size = New System.Drawing.Size(175, 20)
         Me.TextBoxNuevoEmpleado_CURP.TabIndex = 20
         '
         'LabelNuevoEmpleado_NSS
         '
         Me.LabelNuevoEmpleado_NSS.AutoSize = True
-        Me.LabelNuevoEmpleado_NSS.Location = New System.Drawing.Point(29, 540)
+        Me.LabelNuevoEmpleado_NSS.Location = New System.Drawing.Point(22, 439)
+        Me.LabelNuevoEmpleado_NSS.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelNuevoEmpleado_NSS.Name = "LabelNuevoEmpleado_NSS"
-        Me.LabelNuevoEmpleado_NSS.Size = New System.Drawing.Size(208, 17)
+        Me.LabelNuevoEmpleado_NSS.Size = New System.Drawing.Size(159, 13)
         Me.LabelNuevoEmpleado_NSS.TabIndex = 21
-        Me.LabelNuevoEmpleado_NSS.Text = "Numero de Seguro Social(NSS)"
+        Me.LabelNuevoEmpleado_NSS.Text = "Numero de Seguro Social (NSS)"
         '
         'TextBoxNuevoEmpleado_NSS
         '
-        Me.TextBoxNuevoEmpleado_NSS.Location = New System.Drawing.Point(32, 560)
+        Me.TextBoxNuevoEmpleado_NSS.Location = New System.Drawing.Point(24, 455)
+        Me.TextBoxNuevoEmpleado_NSS.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxNuevoEmpleado_NSS.Name = "TextBoxNuevoEmpleado_NSS"
-        Me.TextBoxNuevoEmpleado_NSS.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_NSS.Size = New System.Drawing.Size(175, 20)
         Me.TextBoxNuevoEmpleado_NSS.TabIndex = 22
         '
         'LabelNuevoEmpleado_RFC
         '
         Me.LabelNuevoEmpleado_RFC.AutoSize = True
-        Me.LabelNuevoEmpleado_RFC.Location = New System.Drawing.Point(408, 47)
+        Me.LabelNuevoEmpleado_RFC.Location = New System.Drawing.Point(306, 38)
+        Me.LabelNuevoEmpleado_RFC.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelNuevoEmpleado_RFC.Name = "LabelNuevoEmpleado_RFC"
-        Me.LabelNuevoEmpleado_RFC.Size = New System.Drawing.Size(273, 17)
+        Me.LabelNuevoEmpleado_RFC.Size = New System.Drawing.Size(202, 13)
         Me.LabelNuevoEmpleado_RFC.TabIndex = 23
         Me.LabelNuevoEmpleado_RFC.Text = "Registro Federal de Contribuyentes (RFC)"
         '
         'TextBoxNuevoEmpleado_RFC
         '
-        Me.TextBoxNuevoEmpleado_RFC.Location = New System.Drawing.Point(408, 66)
+        Me.TextBoxNuevoEmpleado_RFC.Location = New System.Drawing.Point(306, 54)
+        Me.TextBoxNuevoEmpleado_RFC.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxNuevoEmpleado_RFC.Name = "TextBoxNuevoEmpleado_RFC"
-        Me.TextBoxNuevoEmpleado_RFC.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_RFC.Size = New System.Drawing.Size(175, 20)
         Me.TextBoxNuevoEmpleado_RFC.TabIndex = 24
         '
         'LabelNuevoEmpleado_Domicilio
         '
         Me.LabelNuevoEmpleado_Domicilio.AutoSize = True
-        Me.LabelNuevoEmpleado_Domicilio.Location = New System.Drawing.Point(408, 96)
+        Me.LabelNuevoEmpleado_Domicilio.Location = New System.Drawing.Point(306, 78)
+        Me.LabelNuevoEmpleado_Domicilio.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelNuevoEmpleado_Domicilio.Name = "LabelNuevoEmpleado_Domicilio"
-        Me.LabelNuevoEmpleado_Domicilio.Size = New System.Drawing.Size(127, 17)
+        Me.LabelNuevoEmpleado_Domicilio.Size = New System.Drawing.Size(96, 13)
         Me.LabelNuevoEmpleado_Domicilio.TabIndex = 25
         Me.LabelNuevoEmpleado_Domicilio.Text = "Domicilio Completo"
         '
         'TextBoxNuevoEmpleado_Domicilio
         '
-        Me.TextBoxNuevoEmpleado_Domicilio.Location = New System.Drawing.Point(408, 116)
+        Me.TextBoxNuevoEmpleado_Domicilio.Location = New System.Drawing.Point(306, 94)
+        Me.TextBoxNuevoEmpleado_Domicilio.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxNuevoEmpleado_Domicilio.Multiline = True
         Me.TextBoxNuevoEmpleado_Domicilio.Name = "TextBoxNuevoEmpleado_Domicilio"
-        Me.TextBoxNuevoEmpleado_Domicilio.Size = New System.Drawing.Size(232, 37)
+        Me.TextBoxNuevoEmpleado_Domicilio.Size = New System.Drawing.Size(175, 31)
         Me.TextBoxNuevoEmpleado_Domicilio.TabIndex = 26
         '
         'LabelNuevoEmpleado_Banco
         '
         Me.LabelNuevoEmpleado_Banco.AutoSize = True
-        Me.LabelNuevoEmpleado_Banco.Location = New System.Drawing.Point(408, 156)
+        Me.LabelNuevoEmpleado_Banco.Location = New System.Drawing.Point(306, 127)
+        Me.LabelNuevoEmpleado_Banco.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelNuevoEmpleado_Banco.Name = "LabelNuevoEmpleado_Banco"
-        Me.LabelNuevoEmpleado_Banco.Size = New System.Drawing.Size(48, 17)
+        Me.LabelNuevoEmpleado_Banco.Size = New System.Drawing.Size(38, 13)
         Me.LabelNuevoEmpleado_Banco.TabIndex = 27
         Me.LabelNuevoEmpleado_Banco.Text = "Banco"
         '
         'TextBoxNuevoEmpleado_Banco
         '
-        Me.TextBoxNuevoEmpleado_Banco.Location = New System.Drawing.Point(408, 176)
+        Me.TextBoxNuevoEmpleado_Banco.Location = New System.Drawing.Point(306, 143)
+        Me.TextBoxNuevoEmpleado_Banco.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxNuevoEmpleado_Banco.Name = "TextBoxNuevoEmpleado_Banco"
-        Me.TextBoxNuevoEmpleado_Banco.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_Banco.Size = New System.Drawing.Size(175, 20)
         Me.TextBoxNuevoEmpleado_Banco.TabIndex = 28
         '
         'LabelNuevoEmpleado_NumCuenta
         '
         Me.LabelNuevoEmpleado_NumCuenta.AutoSize = True
-        Me.LabelNuevoEmpleado_NumCuenta.Location = New System.Drawing.Point(408, 205)
+        Me.LabelNuevoEmpleado_NumCuenta.Location = New System.Drawing.Point(306, 167)
+        Me.LabelNuevoEmpleado_NumCuenta.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelNuevoEmpleado_NumCuenta.Name = "LabelNuevoEmpleado_NumCuenta"
-        Me.LabelNuevoEmpleado_NumCuenta.Size = New System.Drawing.Size(127, 17)
+        Me.LabelNuevoEmpleado_NumCuenta.Size = New System.Drawing.Size(96, 13)
         Me.LabelNuevoEmpleado_NumCuenta.TabIndex = 29
         Me.LabelNuevoEmpleado_NumCuenta.Text = "Numero de Cuenta"
         '
         'TextBoxNuevoEmpleado_NumCuenta
         '
-        Me.TextBoxNuevoEmpleado_NumCuenta.Location = New System.Drawing.Point(408, 225)
+        Me.TextBoxNuevoEmpleado_NumCuenta.Location = New System.Drawing.Point(306, 183)
+        Me.TextBoxNuevoEmpleado_NumCuenta.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxNuevoEmpleado_NumCuenta.Name = "TextBoxNuevoEmpleado_NumCuenta"
-        Me.TextBoxNuevoEmpleado_NumCuenta.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_NumCuenta.Size = New System.Drawing.Size(175, 20)
         Me.TextBoxNuevoEmpleado_NumCuenta.TabIndex = 30
         '
         'LabelNuevoEmpleado_Email
         '
         Me.LabelNuevoEmpleado_Email.AutoSize = True
-        Me.LabelNuevoEmpleado_Email.Location = New System.Drawing.Point(408, 254)
+        Me.LabelNuevoEmpleado_Email.Location = New System.Drawing.Point(306, 206)
+        Me.LabelNuevoEmpleado_Email.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelNuevoEmpleado_Email.Name = "LabelNuevoEmpleado_Email"
-        Me.LabelNuevoEmpleado_Email.Size = New System.Drawing.Size(42, 17)
+        Me.LabelNuevoEmpleado_Email.Size = New System.Drawing.Size(32, 13)
         Me.LabelNuevoEmpleado_Email.TabIndex = 31
         Me.LabelNuevoEmpleado_Email.Text = "Email"
         '
         'TextBoxNuevoEmpleado_Email
         '
-        Me.TextBoxNuevoEmpleado_Email.Location = New System.Drawing.Point(408, 273)
+        Me.TextBoxNuevoEmpleado_Email.Location = New System.Drawing.Point(306, 222)
+        Me.TextBoxNuevoEmpleado_Email.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxNuevoEmpleado_Email.Name = "TextBoxNuevoEmpleado_Email"
-        Me.TextBoxNuevoEmpleado_Email.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_Email.Size = New System.Drawing.Size(175, 20)
         Me.TextBoxNuevoEmpleado_Email.TabIndex = 32
         '
         'LabelNuevoEmpleado_Telefono
         '
         Me.LabelNuevoEmpleado_Telefono.AutoSize = True
-        Me.LabelNuevoEmpleado_Telefono.Location = New System.Drawing.Point(408, 303)
+        Me.LabelNuevoEmpleado_Telefono.Location = New System.Drawing.Point(306, 246)
+        Me.LabelNuevoEmpleado_Telefono.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelNuevoEmpleado_Telefono.Name = "LabelNuevoEmpleado_Telefono"
-        Me.LabelNuevoEmpleado_Telefono.Size = New System.Drawing.Size(64, 17)
+        Me.LabelNuevoEmpleado_Telefono.Size = New System.Drawing.Size(49, 13)
         Me.LabelNuevoEmpleado_Telefono.TabIndex = 33
         Me.LabelNuevoEmpleado_Telefono.Text = "Telefono"
         '
         'TextBoxNuevoEmpleado_Telefono
         '
-        Me.TextBoxNuevoEmpleado_Telefono.Location = New System.Drawing.Point(408, 322)
+        Me.TextBoxNuevoEmpleado_Telefono.Location = New System.Drawing.Point(306, 262)
+        Me.TextBoxNuevoEmpleado_Telefono.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBoxNuevoEmpleado_Telefono.Name = "TextBoxNuevoEmpleado_Telefono"
-        Me.TextBoxNuevoEmpleado_Telefono.Size = New System.Drawing.Size(232, 22)
+        Me.TextBoxNuevoEmpleado_Telefono.Size = New System.Drawing.Size(175, 20)
         Me.TextBoxNuevoEmpleado_Telefono.TabIndex = 34
         '
         'MonthCalendarNuevoEmpleado_FechaNac
         '
-        Me.MonthCalendarNuevoEmpleado_FechaNac.Location = New System.Drawing.Point(408, 375)
+        Me.MonthCalendarNuevoEmpleado_FechaNac.Location = New System.Drawing.Point(325, 322)
+        Me.MonthCalendarNuevoEmpleado_FechaNac.Margin = New System.Windows.Forms.Padding(7, 7, 7, 7)
         Me.MonthCalendarNuevoEmpleado_FechaNac.MaxSelectionCount = 1
         Me.MonthCalendarNuevoEmpleado_FechaNac.Name = "MonthCalendarNuevoEmpleado_FechaNac"
         Me.MonthCalendarNuevoEmpleado_FechaNac.TabIndex = 35
@@ -355,36 +392,48 @@ Partial Class FormNuevoEmpleado
         'LabelNuevoEmpleado_FechaNac
         '
         Me.LabelNuevoEmpleado_FechaNac.AutoSize = True
-        Me.LabelNuevoEmpleado_FechaNac.Location = New System.Drawing.Point(408, 349)
+        Me.LabelNuevoEmpleado_FechaNac.Location = New System.Drawing.Point(306, 284)
+        Me.LabelNuevoEmpleado_FechaNac.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelNuevoEmpleado_FechaNac.Name = "LabelNuevoEmpleado_FechaNac"
-        Me.LabelNuevoEmpleado_FechaNac.Size = New System.Drawing.Size(141, 17)
+        Me.LabelNuevoEmpleado_FechaNac.Size = New System.Drawing.Size(108, 13)
         Me.LabelNuevoEmpleado_FechaNac.TabIndex = 36
         Me.LabelNuevoEmpleado_FechaNac.Text = "Fecha de Nacimiento"
         '
         'ButtonNuevoEmpleado_Cancelar
         '
-        Me.ButtonNuevoEmpleado_Cancelar.Location = New System.Drawing.Point(539, 607)
+        Me.ButtonNuevoEmpleado_Cancelar.Location = New System.Drawing.Point(404, 493)
+        Me.ButtonNuevoEmpleado_Cancelar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ButtonNuevoEmpleado_Cancelar.Name = "ButtonNuevoEmpleado_Cancelar"
-        Me.ButtonNuevoEmpleado_Cancelar.Size = New System.Drawing.Size(101, 30)
+        Me.ButtonNuevoEmpleado_Cancelar.Size = New System.Drawing.Size(76, 24)
         Me.ButtonNuevoEmpleado_Cancelar.TabIndex = 37
         Me.ButtonNuevoEmpleado_Cancelar.Text = "Cancelar"
         Me.ButtonNuevoEmpleado_Cancelar.UseVisualStyleBackColor = True
         '
         'ButtonNuevoEmpleado_Guardar
         '
-        Me.ButtonNuevoEmpleado_Guardar.Location = New System.Drawing.Point(670, 607)
+        Me.ButtonNuevoEmpleado_Guardar.Location = New System.Drawing.Point(502, 493)
+        Me.ButtonNuevoEmpleado_Guardar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ButtonNuevoEmpleado_Guardar.Name = "ButtonNuevoEmpleado_Guardar"
-        Me.ButtonNuevoEmpleado_Guardar.Size = New System.Drawing.Size(101, 30)
+        Me.ButtonNuevoEmpleado_Guardar.Size = New System.Drawing.Size(76, 24)
         Me.ButtonNuevoEmpleado_Guardar.TabIndex = 38
         Me.ButtonNuevoEmpleado_Guardar.Text = "Guardar"
         Me.ButtonNuevoEmpleado_Guardar.UseVisualStyleBackColor = True
         '
+        'DateTimePickerNuevoEmpleado_FechaNacimiento
+        '
+        Me.DateTimePickerNuevoEmpleado_FechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePickerNuevoEmpleado_FechaNacimiento.Location = New System.Drawing.Point(306, 300)
+        Me.DateTimePickerNuevoEmpleado_FechaNacimiento.Name = "DateTimePickerNuevoEmpleado_FechaNacimiento"
+        Me.DateTimePickerNuevoEmpleado_FechaNacimiento.Size = New System.Drawing.Size(174, 20)
+        Me.DateTimePickerNuevoEmpleado_FechaNacimiento.TabIndex = 39
+        '
         'FormNuevoEmpleado
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SteelBlue
-        Me.ClientSize = New System.Drawing.Size(783, 659)
+        Me.ClientSize = New System.Drawing.Size(587, 535)
+        Me.Controls.Add(Me.DateTimePickerNuevoEmpleado_FechaNacimiento)
         Me.Controls.Add(Me.ButtonNuevoEmpleado_Guardar)
         Me.Controls.Add(Me.ButtonNuevoEmpleado_Cancelar)
         Me.Controls.Add(Me.LabelNuevoEmpleado_FechaNac)
@@ -424,6 +473,7 @@ Partial Class FormNuevoEmpleado
         Me.Controls.Add(Me.TextBoxNuevoEmpleado_ID)
         Me.Controls.Add(Me.LabelNuevoEmpleado_ID)
         Me.Controls.Add(Me.LabelNuevoEmpleado_Instruccion)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FormNuevoEmpleado"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Nuevo Empleado"
@@ -471,4 +521,5 @@ Partial Class FormNuevoEmpleado
     Friend WithEvents LabelNuevoEmpleado_FechaNac As Label
     Friend WithEvents ButtonNuevoEmpleado_Cancelar As Button
     Friend WithEvents ButtonNuevoEmpleado_Guardar As Button
+    Friend WithEvents DateTimePickerNuevoEmpleado_FechaNacimiento As DateTimePicker
 End Class
