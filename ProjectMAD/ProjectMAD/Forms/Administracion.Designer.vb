@@ -26,6 +26,8 @@ Partial Class FormAdministracion
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.EmpresasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuAdministracion_AñadirEmpresa = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuAdministracion_AñadirDepartamento = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuAdministracion_AñadirPuesto = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuAdministracion_AdministrarEmpresas = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuAdministracion_AñadirEmpleado = New System.Windows.Forms.ToolStripMenuItem()
@@ -37,8 +39,12 @@ Partial Class FormAdministracion
         Me.MAD_PIADataSet = New ProjectMAD.MAD_PIADataSet()
         Me.EmpresasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.EmpresasTableAdapter = New ProjectMAD.MAD_PIADataSetTableAdapters.EmpresasTableAdapter()
-        Me.MenuAdministracion_AñadirPuesto = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuAdministracion_AñadirDepartamento = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AdministrarDatosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmpresasToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DepartamentosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PuestosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmpleadosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.MAD_PIADataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmpresasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -47,11 +53,11 @@ Partial Class FormAdministracion
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmpresasToolStripMenuItem, Me.EmpleadosToolStripMenuItem, Me.ReportesToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmpresasToolStripMenuItem, Me.EmpleadosToolStripMenuItem, Me.ReportesToolStripMenuItem, Me.AdministrarDatosToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1433, 30)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(814, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -59,63 +65,75 @@ Partial Class FormAdministracion
         '
         Me.EmpresasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuAdministracion_AñadirEmpresa, Me.MenuAdministracion_AñadirDepartamento, Me.MenuAdministracion_AñadirPuesto, Me.MenuAdministracion_AdministrarEmpresas})
         Me.EmpresasToolStripMenuItem.Name = "EmpresasToolStripMenuItem"
-        Me.EmpresasToolStripMenuItem.Size = New System.Drawing.Size(86, 26)
+        Me.EmpresasToolStripMenuItem.Size = New System.Drawing.Size(69, 20)
         Me.EmpresasToolStripMenuItem.Text = "Empresas"
         '
         'MenuAdministracion_AñadirEmpresa
         '
         Me.MenuAdministracion_AñadirEmpresa.Name = "MenuAdministracion_AñadirEmpresa"
-        Me.MenuAdministracion_AñadirEmpresa.Size = New System.Drawing.Size(237, 26)
+        Me.MenuAdministracion_AñadirEmpresa.Size = New System.Drawing.Size(189, 22)
         Me.MenuAdministracion_AñadirEmpresa.Text = "Añadir Empresa"
+        '
+        'MenuAdministracion_AñadirDepartamento
+        '
+        Me.MenuAdministracion_AñadirDepartamento.Name = "MenuAdministracion_AñadirDepartamento"
+        Me.MenuAdministracion_AñadirDepartamento.Size = New System.Drawing.Size(189, 22)
+        Me.MenuAdministracion_AñadirDepartamento.Text = "Añadir Departamento"
+        '
+        'MenuAdministracion_AñadirPuesto
+        '
+        Me.MenuAdministracion_AñadirPuesto.Name = "MenuAdministracion_AñadirPuesto"
+        Me.MenuAdministracion_AñadirPuesto.Size = New System.Drawing.Size(189, 22)
+        Me.MenuAdministracion_AñadirPuesto.Text = "Añadir Puesto"
         '
         'MenuAdministracion_AdministrarEmpresas
         '
         Me.MenuAdministracion_AdministrarEmpresas.Name = "MenuAdministracion_AdministrarEmpresas"
-        Me.MenuAdministracion_AdministrarEmpresas.Size = New System.Drawing.Size(237, 26)
+        Me.MenuAdministracion_AdministrarEmpresas.Size = New System.Drawing.Size(189, 22)
         Me.MenuAdministracion_AdministrarEmpresas.Text = "Administrar Empresas"
         '
         'EmpleadosToolStripMenuItem
         '
         Me.EmpleadosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuAdministracion_AñadirEmpleado, Me.AdministrarEmpleadosToolStripMenuItem, Me.NominasToolStripMenuItem})
         Me.EmpleadosToolStripMenuItem.Name = "EmpleadosToolStripMenuItem"
-        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(97, 26)
+        Me.EmpleadosToolStripMenuItem.Size = New System.Drawing.Size(77, 20)
         Me.EmpleadosToolStripMenuItem.Text = "Empleados"
         '
         'MenuAdministracion_AñadirEmpleado
         '
         Me.MenuAdministracion_AñadirEmpleado.Name = "MenuAdministracion_AñadirEmpleado"
-        Me.MenuAdministracion_AñadirEmpleado.Size = New System.Drawing.Size(247, 26)
+        Me.MenuAdministracion_AñadirEmpleado.Size = New System.Drawing.Size(197, 22)
         Me.MenuAdministracion_AñadirEmpleado.Text = "Añadir Empleado"
         '
         'AdministrarEmpleadosToolStripMenuItem
         '
         Me.AdministrarEmpleadosToolStripMenuItem.Name = "AdministrarEmpleadosToolStripMenuItem"
-        Me.AdministrarEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
+        Me.AdministrarEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
         Me.AdministrarEmpleadosToolStripMenuItem.Text = "Administrar Empleados"
         '
         'NominasToolStripMenuItem
         '
         Me.NominasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PercepcionesToolStripMenuItem, Me.DeduccionesToolStripMenuItem})
         Me.NominasToolStripMenuItem.Name = "NominasToolStripMenuItem"
-        Me.NominasToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
+        Me.NominasToolStripMenuItem.Size = New System.Drawing.Size(197, 22)
         Me.NominasToolStripMenuItem.Text = "Nominas"
         '
         'PercepcionesToolStripMenuItem
         '
         Me.PercepcionesToolStripMenuItem.Name = "PercepcionesToolStripMenuItem"
-        Me.PercepcionesToolStripMenuItem.Size = New System.Drawing.Size(178, 26)
+        Me.PercepcionesToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
         Me.PercepcionesToolStripMenuItem.Text = "Percepciones"
         '
         'DeduccionesToolStripMenuItem
         '
         Me.DeduccionesToolStripMenuItem.Name = "DeduccionesToolStripMenuItem"
-        Me.DeduccionesToolStripMenuItem.Size = New System.Drawing.Size(178, 26)
+        Me.DeduccionesToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
         Me.DeduccionesToolStripMenuItem.Text = "Deducciones"
         '
         'ReportesToolStripMenuItem
         '
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
-        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(82, 26)
+        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
         Me.ReportesToolStripMenuItem.Text = "Reportes"
         '
         'MAD_PIADataSet
@@ -132,27 +150,52 @@ Partial Class FormAdministracion
         '
         Me.EmpresasTableAdapter.ClearBeforeFill = True
         '
-        'MenuAdministracion_AñadirPuesto
+        'AdministrarDatosToolStripMenuItem
         '
-        Me.MenuAdministracion_AñadirPuesto.Name = "MenuAdministracion_AñadirPuesto"
-        Me.MenuAdministracion_AñadirPuesto.Size = New System.Drawing.Size(237, 26)
-        Me.MenuAdministracion_AñadirPuesto.Text = "Añadir Puesto"
+        Me.AdministrarDatosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmpresasToolStripMenuItem1, Me.DepartamentosToolStripMenuItem, Me.PuestosToolStripMenuItem, Me.EmpleadosToolStripMenuItem1, Me.UsuariosToolStripMenuItem})
+        Me.AdministrarDatosToolStripMenuItem.Name = "AdministrarDatosToolStripMenuItem"
+        Me.AdministrarDatosToolStripMenuItem.Size = New System.Drawing.Size(114, 20)
+        Me.AdministrarDatosToolStripMenuItem.Text = "Administrar Datos"
         '
-        'MenuAdministracion_AñadirDepartamento
+        'EmpresasToolStripMenuItem1
         '
-        Me.MenuAdministracion_AñadirDepartamento.Name = "MenuAdministracion_AñadirDepartamento"
-        Me.MenuAdministracion_AñadirDepartamento.Size = New System.Drawing.Size(237, 26)
-        Me.MenuAdministracion_AñadirDepartamento.Text = "Añadir Departamento"
+        Me.EmpresasToolStripMenuItem1.Name = "EmpresasToolStripMenuItem1"
+        Me.EmpresasToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.EmpresasToolStripMenuItem1.Text = "Empresas"
+        '
+        'DepartamentosToolStripMenuItem
+        '
+        Me.DepartamentosToolStripMenuItem.Name = "DepartamentosToolStripMenuItem"
+        Me.DepartamentosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.DepartamentosToolStripMenuItem.Text = "Departamentos"
+        '
+        'PuestosToolStripMenuItem
+        '
+        Me.PuestosToolStripMenuItem.Name = "PuestosToolStripMenuItem"
+        Me.PuestosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PuestosToolStripMenuItem.Text = "Puestos"
+        '
+        'EmpleadosToolStripMenuItem1
+        '
+        Me.EmpleadosToolStripMenuItem1.Name = "EmpleadosToolStripMenuItem1"
+        Me.EmpleadosToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.EmpleadosToolStripMenuItem1.Text = "Empleados"
+        '
+        'UsuariosToolStripMenuItem
+        '
+        Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'FormAdministracion
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SteelBlue
-        Me.ClientSize = New System.Drawing.Size(1433, 450)
+        Me.ClientSize = New System.Drawing.Size(814, 462)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FormAdministracion"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Administración"
@@ -181,4 +224,10 @@ Partial Class FormAdministracion
     Friend WithEvents EmpresasTableAdapter As MAD_PIADataSetTableAdapters.EmpresasTableAdapter
     Friend WithEvents MenuAdministracion_AñadirDepartamento As ToolStripMenuItem
     Friend WithEvents MenuAdministracion_AñadirPuesto As ToolStripMenuItem
+    Friend WithEvents AdministrarDatosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EmpresasToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents DepartamentosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PuestosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EmpleadosToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents UsuariosToolStripMenuItem As ToolStripMenuItem
 End Class
