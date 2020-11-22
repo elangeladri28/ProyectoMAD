@@ -74,6 +74,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrar Empresa.Designer.vb">
+      <DependentUpon>Administrar Empresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrar Empresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Nueva Empresa.Designer.vb">
       <DependentUpon>Nueva Empresa.vb</DependentUpon>
     </Compile>
@@ -133,6 +139,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Administrar Empresa.resx">
+      <DependentUpon>Administrar Empresa.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Nueva Empresa.resx">
       <DependentUpon>Nueva Empresa.vb</DependentUpon>
     </EmbeddedResource>

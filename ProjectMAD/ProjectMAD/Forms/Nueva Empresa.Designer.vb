@@ -42,121 +42,115 @@ Partial Class FormNuevaEmpresa
         'LabelNuevaEmpresa_Instruccion
         '
         Me.LabelNuevaEmpresa_Instruccion.AutoSize = True
-        Me.LabelNuevaEmpresa_Instruccion.Location = New System.Drawing.Point(45, 7)
-        Me.LabelNuevaEmpresa_Instruccion.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelNuevaEmpresa_Instruccion.Location = New System.Drawing.Point(51, 9)
         Me.LabelNuevaEmpresa_Instruccion.Name = "LabelNuevaEmpresa_Instruccion"
-        Me.LabelNuevaEmpresa_Instruccion.Size = New System.Drawing.Size(203, 39)
+        Me.LabelNuevaEmpresa_Instruccion.Size = New System.Drawing.Size(260, 51)
         Me.LabelNuevaEmpresa_Instruccion.TabIndex = 0
         Me.LabelNuevaEmpresa_Instruccion.Text = "LLENAR LOS SIGUIENTES CAMPOS" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "PARA AGREGAR LA NUEVA EMPRESA" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "AL SISTEMA"
         Me.LabelNuevaEmpresa_Instruccion.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'TextBoxNuevaEmpresa_RazonSocial
         '
-        Me.TextBoxNuevaEmpresa_RazonSocial.Location = New System.Drawing.Point(47, 76)
-        Me.TextBoxNuevaEmpresa_RazonSocial.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBoxNuevaEmpresa_RazonSocial.Location = New System.Drawing.Point(63, 94)
+        Me.TextBoxNuevaEmpresa_RazonSocial.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxNuevaEmpresa_RazonSocial.Name = "TextBoxNuevaEmpresa_RazonSocial"
-        Me.TextBoxNuevaEmpresa_RazonSocial.Size = New System.Drawing.Size(177, 20)
+        Me.TextBoxNuevaEmpresa_RazonSocial.Size = New System.Drawing.Size(235, 22)
         Me.TextBoxNuevaEmpresa_RazonSocial.TabIndex = 1
         '
         'LabelNuevaEmpresa_RazonSocial
         '
         Me.LabelNuevaEmpresa_RazonSocial.AutoSize = True
-        Me.LabelNuevaEmpresa_RazonSocial.Location = New System.Drawing.Point(47, 60)
-        Me.LabelNuevaEmpresa_RazonSocial.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelNuevaEmpresa_RazonSocial.Location = New System.Drawing.Point(63, 74)
         Me.LabelNuevaEmpresa_RazonSocial.Name = "LabelNuevaEmpresa_RazonSocial"
-        Me.LabelNuevaEmpresa_RazonSocial.Size = New System.Drawing.Size(175, 13)
+        Me.LabelNuevaEmpresa_RazonSocial.Size = New System.Drawing.Size(235, 17)
         Me.LabelNuevaEmpresa_RazonSocial.TabIndex = 2
         Me.LabelNuevaEmpresa_RazonSocial.Text = "Razon Social (Nombre de Empresa)"
         '
         'TextBoxNuevaEmpresa_DomicilioFiscal
         '
-        Me.TextBoxNuevaEmpresa_DomicilioFiscal.Location = New System.Drawing.Point(47, 124)
-        Me.TextBoxNuevaEmpresa_DomicilioFiscal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBoxNuevaEmpresa_DomicilioFiscal.Location = New System.Drawing.Point(63, 153)
+        Me.TextBoxNuevaEmpresa_DomicilioFiscal.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxNuevaEmpresa_DomicilioFiscal.Multiline = True
         Me.TextBoxNuevaEmpresa_DomicilioFiscal.Name = "TextBoxNuevaEmpresa_DomicilioFiscal"
-        Me.TextBoxNuevaEmpresa_DomicilioFiscal.Size = New System.Drawing.Size(177, 60)
+        Me.TextBoxNuevaEmpresa_DomicilioFiscal.Size = New System.Drawing.Size(235, 73)
         Me.TextBoxNuevaEmpresa_DomicilioFiscal.TabIndex = 3
         '
         'LabelNuevaEmpresa_DomicilioFiscal
         '
         Me.LabelNuevaEmpresa_DomicilioFiscal.AutoSize = True
-        Me.LabelNuevaEmpresa_DomicilioFiscal.Location = New System.Drawing.Point(47, 106)
-        Me.LabelNuevaEmpresa_DomicilioFiscal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelNuevaEmpresa_DomicilioFiscal.Location = New System.Drawing.Point(63, 130)
         Me.LabelNuevaEmpresa_DomicilioFiscal.Name = "LabelNuevaEmpresa_DomicilioFiscal"
-        Me.LabelNuevaEmpresa_DomicilioFiscal.Size = New System.Drawing.Size(79, 13)
+        Me.LabelNuevaEmpresa_DomicilioFiscal.Size = New System.Drawing.Size(104, 17)
         Me.LabelNuevaEmpresa_DomicilioFiscal.TabIndex = 4
         Me.LabelNuevaEmpresa_DomicilioFiscal.Text = "Domicilio Fiscal"
         '
         'LabelNuevaEmpresa_Contacto
         '
         Me.LabelNuevaEmpresa_Contacto.AutoSize = True
-        Me.LabelNuevaEmpresa_Contacto.Location = New System.Drawing.Point(47, 195)
-        Me.LabelNuevaEmpresa_Contacto.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelNuevaEmpresa_Contacto.Location = New System.Drawing.Point(63, 240)
         Me.LabelNuevaEmpresa_Contacto.Name = "LabelNuevaEmpresa_Contacto"
-        Me.LabelNuevaEmpresa_Contacto.Size = New System.Drawing.Size(101, 13)
+        Me.LabelNuevaEmpresa_Contacto.Size = New System.Drawing.Size(134, 17)
         Me.LabelNuevaEmpresa_Contacto.TabIndex = 5
         Me.LabelNuevaEmpresa_Contacto.Text = "Contacto (Teléfono)"
         '
         'TextBoxNuevaEmpresa_Contacto
         '
-        Me.TextBoxNuevaEmpresa_Contacto.Location = New System.Drawing.Point(47, 212)
-        Me.TextBoxNuevaEmpresa_Contacto.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBoxNuevaEmpresa_Contacto.Location = New System.Drawing.Point(63, 261)
+        Me.TextBoxNuevaEmpresa_Contacto.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxNuevaEmpresa_Contacto.Name = "TextBoxNuevaEmpresa_Contacto"
-        Me.TextBoxNuevaEmpresa_Contacto.Size = New System.Drawing.Size(177, 20)
+        Me.TextBoxNuevaEmpresa_Contacto.Size = New System.Drawing.Size(235, 22)
         Me.TextBoxNuevaEmpresa_Contacto.TabIndex = 6
         '
         'LabelNuevaEmpresa_RegistroPatronal
         '
         Me.LabelNuevaEmpresa_RegistroPatronal.AutoSize = True
-        Me.LabelNuevaEmpresa_RegistroPatronal.Location = New System.Drawing.Point(47, 238)
-        Me.LabelNuevaEmpresa_RegistroPatronal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelNuevaEmpresa_RegistroPatronal.Location = New System.Drawing.Point(63, 293)
         Me.LabelNuevaEmpresa_RegistroPatronal.Name = "LabelNuevaEmpresa_RegistroPatronal"
-        Me.LabelNuevaEmpresa_RegistroPatronal.Size = New System.Drawing.Size(88, 13)
+        Me.LabelNuevaEmpresa_RegistroPatronal.Size = New System.Drawing.Size(118, 17)
         Me.LabelNuevaEmpresa_RegistroPatronal.TabIndex = 7
         Me.LabelNuevaEmpresa_RegistroPatronal.Text = "Registro Patronal"
         '
         'TextBoxNuevaEmpresa_RegistroPatronal
         '
-        Me.TextBoxNuevaEmpresa_RegistroPatronal.Location = New System.Drawing.Point(47, 257)
-        Me.TextBoxNuevaEmpresa_RegistroPatronal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBoxNuevaEmpresa_RegistroPatronal.Location = New System.Drawing.Point(63, 316)
+        Me.TextBoxNuevaEmpresa_RegistroPatronal.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxNuevaEmpresa_RegistroPatronal.Name = "TextBoxNuevaEmpresa_RegistroPatronal"
-        Me.TextBoxNuevaEmpresa_RegistroPatronal.Size = New System.Drawing.Size(177, 20)
+        Me.TextBoxNuevaEmpresa_RegistroPatronal.Size = New System.Drawing.Size(235, 22)
         Me.TextBoxNuevaEmpresa_RegistroPatronal.TabIndex = 8
         '
         'LabelNuevaEmpresa_RFC
         '
         Me.LabelNuevaEmpresa_RFC.AutoSize = True
-        Me.LabelNuevaEmpresa_RFC.Location = New System.Drawing.Point(47, 280)
-        Me.LabelNuevaEmpresa_RFC.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelNuevaEmpresa_RFC.Location = New System.Drawing.Point(63, 345)
         Me.LabelNuevaEmpresa_RFC.Name = "LabelNuevaEmpresa_RFC"
-        Me.LabelNuevaEmpresa_RFC.Size = New System.Drawing.Size(28, 13)
+        Me.LabelNuevaEmpresa_RFC.Size = New System.Drawing.Size(35, 17)
         Me.LabelNuevaEmpresa_RFC.TabIndex = 9
         Me.LabelNuevaEmpresa_RFC.Text = "RFC"
         '
         'TextBoxNuevaEmpresa_RFC
         '
-        Me.TextBoxNuevaEmpresa_RFC.Location = New System.Drawing.Point(47, 295)
-        Me.TextBoxNuevaEmpresa_RFC.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBoxNuevaEmpresa_RFC.Location = New System.Drawing.Point(63, 363)
+        Me.TextBoxNuevaEmpresa_RFC.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxNuevaEmpresa_RFC.Name = "TextBoxNuevaEmpresa_RFC"
-        Me.TextBoxNuevaEmpresa_RFC.Size = New System.Drawing.Size(177, 20)
+        Me.TextBoxNuevaEmpresa_RFC.Size = New System.Drawing.Size(235, 22)
         Me.TextBoxNuevaEmpresa_RFC.TabIndex = 10
         '
         'ButtonNuevaEmpresa_Cancelar
         '
-        Me.ButtonNuevaEmpresa_Cancelar.Location = New System.Drawing.Point(50, 391)
-        Me.ButtonNuevaEmpresa_Cancelar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ButtonNuevaEmpresa_Cancelar.Location = New System.Drawing.Point(65, 481)
+        Me.ButtonNuevaEmpresa_Cancelar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonNuevaEmpresa_Cancelar.Name = "ButtonNuevaEmpresa_Cancelar"
-        Me.ButtonNuevaEmpresa_Cancelar.Size = New System.Drawing.Size(74, 26)
+        Me.ButtonNuevaEmpresa_Cancelar.Size = New System.Drawing.Size(99, 32)
         Me.ButtonNuevaEmpresa_Cancelar.TabIndex = 12
         Me.ButtonNuevaEmpresa_Cancelar.Text = "Cancelar"
         Me.ButtonNuevaEmpresa_Cancelar.UseVisualStyleBackColor = True
         '
         'ButtonNuevaEmpresa_Guardar
         '
-        Me.ButtonNuevaEmpresa_Guardar.Location = New System.Drawing.Point(148, 391)
-        Me.ButtonNuevaEmpresa_Guardar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ButtonNuevaEmpresa_Guardar.Location = New System.Drawing.Point(195, 481)
+        Me.ButtonNuevaEmpresa_Guardar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonNuevaEmpresa_Guardar.Name = "ButtonNuevaEmpresa_Guardar"
-        Me.ButtonNuevaEmpresa_Guardar.Size = New System.Drawing.Size(74, 26)
+        Me.ButtonNuevaEmpresa_Guardar.Size = New System.Drawing.Size(99, 32)
         Me.ButtonNuevaEmpresa_Guardar.TabIndex = 13
         Me.ButtonNuevaEmpresa_Guardar.Text = "Guardar"
         Me.ButtonNuevaEmpresa_Guardar.UseVisualStyleBackColor = True
@@ -164,10 +158,9 @@ Partial Class FormNuevaEmpresa
         'LabelNuevaEmpresa_InicioOperaciones
         '
         Me.LabelNuevaEmpresa_InicioOperaciones.AutoSize = True
-        Me.LabelNuevaEmpresa_InicioOperaciones.Location = New System.Drawing.Point(46, 322)
-        Me.LabelNuevaEmpresa_InicioOperaciones.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelNuevaEmpresa_InicioOperaciones.Location = New System.Drawing.Point(61, 396)
         Me.LabelNuevaEmpresa_InicioOperaciones.Name = "LabelNuevaEmpresa_InicioOperaciones"
-        Me.LabelNuevaEmpresa_InicioOperaciones.Size = New System.Drawing.Size(158, 13)
+        Me.LabelNuevaEmpresa_InicioOperaciones.Size = New System.Drawing.Size(208, 17)
         Me.LabelNuevaEmpresa_InicioOperaciones.TabIndex = 14
         Me.LabelNuevaEmpresa_InicioOperaciones.Text = "Fecha de Inicio de Operaciones"
         '
@@ -175,18 +168,19 @@ Partial Class FormNuevaEmpresa
         '
         Me.DateTimePickerNuevaEmpresa_InicioOperaciones.CustomFormat = ""
         Me.DateTimePickerNuevaEmpresa_InicioOperaciones.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePickerNuevaEmpresa_InicioOperaciones.Location = New System.Drawing.Point(46, 339)
+        Me.DateTimePickerNuevaEmpresa_InicioOperaciones.Location = New System.Drawing.Point(61, 417)
+        Me.DateTimePickerNuevaEmpresa_InicioOperaciones.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DateTimePickerNuevaEmpresa_InicioOperaciones.Name = "DateTimePickerNuevaEmpresa_InicioOperaciones"
-        Me.DateTimePickerNuevaEmpresa_InicioOperaciones.Size = New System.Drawing.Size(177, 20)
+        Me.DateTimePickerNuevaEmpresa_InicioOperaciones.Size = New System.Drawing.Size(235, 22)
         Me.DateTimePickerNuevaEmpresa_InicioOperaciones.TabIndex = 11
         Me.DateTimePickerNuevaEmpresa_InicioOperaciones.Value = New Date(2020, 11, 17, 21, 23, 0, 0)
         '
         'FormNuevaEmpresa
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SteelBlue
-        Me.ClientSize = New System.Drawing.Size(274, 471)
+        Me.ClientSize = New System.Drawing.Size(365, 580)
         Me.Controls.Add(Me.DateTimePickerNuevaEmpresa_InicioOperaciones)
         Me.Controls.Add(Me.LabelNuevaEmpresa_InicioOperaciones)
         Me.Controls.Add(Me.ButtonNuevaEmpresa_Guardar)
@@ -203,7 +197,7 @@ Partial Class FormNuevaEmpresa
         Me.Controls.Add(Me.TextBoxNuevaEmpresa_RazonSocial)
         Me.Controls.Add(Me.LabelNuevaEmpresa_Instruccion)
         Me.Location = New System.Drawing.Point(400, 400)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FormNuevaEmpresa"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Nueva Empresa"
