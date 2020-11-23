@@ -1,3 +1,3 @@
-﻿Public Class Administrar_Empresa
+﻿Public Class FormAdministrarEmpresa
 
 End Class
