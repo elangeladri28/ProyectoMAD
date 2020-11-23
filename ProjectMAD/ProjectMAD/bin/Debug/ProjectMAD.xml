@@ -32,7 +32,57 @@ Represents a strongly typed in-memory cache of data.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:ProjectMAD.MAD_PIADataSet.DeduccionesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ProjectMAD.MAD_PIADataSet.DepartamentosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ProjectMAD.MAD_PIADataSet.EmpleadosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ProjectMAD.MAD_PIADataSet.PercepcionesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ProjectMAD.MAD_PIADataSet.PuestosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:ProjectMAD.MAD_PIADataSet.EmpresasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ProjectMAD.MAD_PIADataSet.DeduccionesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ProjectMAD.MAD_PIADataSet.DepartamentosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ProjectMAD.MAD_PIADataSet.EmpleadosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ProjectMAD.MAD_PIADataSet.PercepcionesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ProjectMAD.MAD_PIADataSet.PuestosRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -42,7 +92,57 @@ Represents strongly named DataRow class.
 Row event argument class
 </summary>
 </member>
+<member name="T:ProjectMAD.MAD_PIADataSet.DeduccionesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ProjectMAD.MAD_PIADataSet.DepartamentosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ProjectMAD.MAD_PIADataSet.EmpleadosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ProjectMAD.MAD_PIADataSet.PercepcionesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ProjectMAD.MAD_PIADataSet.PuestosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:ProjectMAD.MAD_PIADataSetTableAdapters.EmpresasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ProjectMAD.MAD_PIADataSetTableAdapters.DeduccionesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ProjectMAD.MAD_PIADataSetTableAdapters.DepartamentosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ProjectMAD.MAD_PIADataSetTableAdapters.EmpleadosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ProjectMAD.MAD_PIADataSetTableAdapters.PercepcionesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ProjectMAD.MAD_PIADataSetTableAdapters.PuestosTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

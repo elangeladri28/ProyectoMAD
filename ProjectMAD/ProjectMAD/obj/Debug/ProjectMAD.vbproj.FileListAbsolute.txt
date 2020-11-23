@@ -30,3 +30,4 @@ C:\Users\david\Documents\.git\ProyectoMAD\ProjectMAD\ProjectMAD\bin\Debug\Projec
 C:\Users\david\Documents\.git\ProyectoMAD\ProjectMAD\ProjectMAD\bin\Debug\ProjectMAD.exe
 C:\Users\david\Documents\.git\ProyectoMAD\ProjectMAD\ProjectMAD\bin\Debug\ProjectMAD.pdb
 C:\Users\david\Documents\.git\ProyectoMAD\ProjectMAD\ProjectMAD\bin\Debug\ProjectMAD.xml
+C:\Users\david\Documents\.git\ProyectoMAD\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.FormAdministrarEmpresa.resources
