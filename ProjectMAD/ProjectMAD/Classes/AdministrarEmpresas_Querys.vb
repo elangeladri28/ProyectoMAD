@@ -1,4 +1,6 @@
-﻿Imports System.Data.SqlClient
+﻿Imports System.Data
+Imports System.Data.Sql
+Imports System.Data.SqlClient
 Imports ProjectMAD.SQL_Connection
 
 Public Class AdministrarEmpresas_Querys
@@ -11,8 +13,26 @@ Public Class AdministrarEmpresas_Querys
             Dim conect As New SQL_Connection()
             conect.ConectarSQL()
 
-            Dim sql As String = "SELECT NombreEmpresa, DomicilioFiscal, Telefono, RegistroPatronal, RFC, FechaInicio FROM dbo.Empresas"
-            Dim sqlCom As New SqlCommand(sql, conect.connection)
+            Dim query As String = "EXEC SelectAllFromEmpresas;"
+            Dim sqlCom As New SqlCommand(query, conect.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(ds, "Empresas")
+            conect.DesconectarSQL()
+            Return ds
+        Catch ex As Exception
+            Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
+            MessageBox.Show(errorsito, "OH NO!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
+    End Function
+
+    Public Function DeleteRowFromEmpresas(Nombre As String)
+        Try
+            Dim conect As New SQL_Connection()
+            conect.ConectarSQL()
+
+            Dim query As String = "EXEC EliminarEmpresa '" + Nombre + "';"
+            Dim sqlCom As New SqlCommand(query, conect.connection)
             dataadapter.SelectCommand = sqlCom
             dataadapter.Fill(ds, "Empresas")
             Return ds
@@ -20,9 +40,21 @@ Public Class AdministrarEmpresas_Querys
             Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
             MessageBox.Show(errorsito, "OH NO!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
-
-
-
     End Function
 
+    Public Function InsertEmpresa(Nombre As String, DomFis As String, Telefono As String, RegPat As String, RFC As String, Fecha As Date)
+        Try
+            Dim conect As New SQL_Connection()
+            conect.ConectarSQL()
+
+            Dim query As String = "EXEC InsertarEmpresa " + "'" + Nombre + "', '" + DomFis + "', '" + Telefono + "', '" + RegPat + "', '" + RFC + "', '" + Fecha + "';"
+            Dim sqlCom As New SqlCommand(query, conect.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(ds, "Empresas")
+            Return ds
+        Catch ex As Exception
+            Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
+            MessageBox.Show(errorsito, "OH NO!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Function
 End Class
