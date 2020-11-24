@@ -49,8 +49,9 @@ Public Class FormAdministrarEmpresa
             MessageBox.Show("Hay datos que no han sido rellenados", "OH NO!", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
         Else
+
             MessageBox.Show("Los datos se han guardado correctamente", "OH YES!", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            'AQUI SE PONEN LAS CAGADAS PARA MANDAR A LLAMAR EL UPDATE DEL SQL
+
         End If
 
     End Sub
@@ -71,7 +72,24 @@ Public Class FormAdministrarEmpresa
     End Sub
 
     Private Sub ButtonAdministrarEmpresa_Modificar_Click(sender As Object, e As EventArgs) Handles ButtonAdministrarEmpresa_Modificar.Click
+        Try
+            Dim nombreOriginal As String = DGVAdministrarEmpresas.CurrentRow.Cells("NombreEmpresa").Value
+            Dim RFCOriginal As String = DGVAdministrarEmpresas.CurrentRow.Cells("RFC").Value
 
+            If (TextBoxAdministrarEmpresa_RazonSocial.Text <> nombreOriginal And TextBoxAdministrarEmpresa_RFC.Text <> RFCOriginal) Then
+                MessageBox.Show("No puede modificar el Nombre de la empresa y el RFC al mismo tiempo", "Ahí viene el SAT!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Return
+            End If
+
+            Dim update As New AdministrarEmpresas_Querys()
+            update.ModificarEmpresa(TextBoxAdministrarEmpresa_RazonSocial.Text, TextBoxAdministrarEmpresa_DomicilioFiscal.Text,
+            TextBoxAdministrarEmpresa_Contacto.Text, TextBoxAdministrarEmpresa_RegistroPatronal.Text, TextBoxAdministrarEmpresa_RFC.Text,
+            DateTimePickerAdministrarEmpresa_InicioOperaciones.Value)
+            MessageBox.Show("Los datos se han modificado correctamente", "OH YES!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            FormAdministrarEmpresa_Load(sender, Nothing)
+        Catch ex As Exception
+            MessageBox.Show("Los datos NO se han modificado correctamente", "OH Repámpanos!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End Try
 
 
     End Sub

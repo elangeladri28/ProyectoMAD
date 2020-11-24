@@ -89,20 +89,20 @@ Partial Class FormAdministrarEmpresa
         '
         'ButtonAdministrarEmpresa_Guardar
         '
-        Me.ButtonAdministrarEmpresa_Guardar.Location = New System.Drawing.Point(814, 348)
+        Me.ButtonAdministrarEmpresa_Guardar.Location = New System.Drawing.Point(833, 390)
         Me.ButtonAdministrarEmpresa_Guardar.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonAdministrarEmpresa_Guardar.Name = "ButtonAdministrarEmpresa_Guardar"
-        Me.ButtonAdministrarEmpresa_Guardar.Size = New System.Drawing.Size(74, 26)
+        Me.ButtonAdministrarEmpresa_Guardar.Size = New System.Drawing.Size(74, 38)
         Me.ButtonAdministrarEmpresa_Guardar.TabIndex = 28
-        Me.ButtonAdministrarEmpresa_Guardar.Text = "Guardar"
+        Me.ButtonAdministrarEmpresa_Guardar.Text = "Guardar y Salir"
         Me.ButtonAdministrarEmpresa_Guardar.UseVisualStyleBackColor = True
         '
         'ButtonAdministrarEmpresa_Cancelar
         '
-        Me.ButtonAdministrarEmpresa_Cancelar.Location = New System.Drawing.Point(417, 348)
+        Me.ButtonAdministrarEmpresa_Cancelar.Location = New System.Drawing.Point(755, 390)
         Me.ButtonAdministrarEmpresa_Cancelar.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonAdministrarEmpresa_Cancelar.Name = "ButtonAdministrarEmpresa_Cancelar"
-        Me.ButtonAdministrarEmpresa_Cancelar.Size = New System.Drawing.Size(74, 26)
+        Me.ButtonAdministrarEmpresa_Cancelar.Size = New System.Drawing.Size(74, 38)
         Me.ButtonAdministrarEmpresa_Cancelar.TabIndex = 27
         Me.ButtonAdministrarEmpresa_Cancelar.Text = "Cancelar"
         Me.ButtonAdministrarEmpresa_Cancelar.UseVisualStyleBackColor = True
@@ -362,7 +362,7 @@ Partial Class FormAdministrarEmpresa
         '
         'ButtonAdministrarEmpresas_Borrar
         '
-        Me.ButtonAdministrarEmpresas_Borrar.Location = New System.Drawing.Point(734, 348)
+        Me.ButtonAdministrarEmpresas_Borrar.Location = New System.Drawing.Point(813, 331)
         Me.ButtonAdministrarEmpresas_Borrar.Name = "ButtonAdministrarEmpresas_Borrar"
         Me.ButtonAdministrarEmpresas_Borrar.Size = New System.Drawing.Size(75, 26)
         Me.ButtonAdministrarEmpresas_Borrar.TabIndex = 31
@@ -371,7 +371,7 @@ Partial Class FormAdministrarEmpresa
         '
         'ButtonAdministrarEmpresa_Modificar
         '
-        Me.ButtonAdministrarEmpresa_Modificar.Location = New System.Drawing.Point(496, 348)
+        Me.ButtonAdministrarEmpresa_Modificar.Location = New System.Drawing.Point(651, 331)
         Me.ButtonAdministrarEmpresa_Modificar.Name = "ButtonAdministrarEmpresa_Modificar"
         Me.ButtonAdministrarEmpresa_Modificar.Size = New System.Drawing.Size(75, 26)
         Me.ButtonAdministrarEmpresa_Modificar.TabIndex = 32
@@ -380,7 +380,7 @@ Partial Class FormAdministrarEmpresa
         '
         'ButtonAdministrarEmpresa_Insertar
         '
-        Me.ButtonAdministrarEmpresa_Insertar.Location = New System.Drawing.Point(653, 348)
+        Me.ButtonAdministrarEmpresa_Insertar.Location = New System.Drawing.Point(732, 331)
         Me.ButtonAdministrarEmpresa_Insertar.Name = "ButtonAdministrarEmpresa_Insertar"
         Me.ButtonAdministrarEmpresa_Insertar.Size = New System.Drawing.Size(75, 26)
         Me.ButtonAdministrarEmpresa_Insertar.TabIndex = 33
