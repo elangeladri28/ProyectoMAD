@@ -30,7 +30,6 @@ Partial Class FormNuevoEmpleado
         Me.LabelNuevoEmpleado_Nombres = New System.Windows.Forms.Label()
         Me.TextBoxNuevoEmpleado_Nombres = New System.Windows.Forms.TextBox()
         Me.LabelNuevoEmpleado_Trabajo = New System.Windows.Forms.Label()
-        Me.TextBoxNuevoEmpleado_Trabajo = New System.Windows.Forms.TextBox()
         Me.LabelNuevoEmpleado_Depto = New System.Windows.Forms.Label()
         Me.TextBoxNuevoEmpleado_ApPaterno = New System.Windows.Forms.TextBox()
         Me.LabelNuevoEmpleado_ApPaterno = New System.Windows.Forms.Label()
@@ -61,6 +60,7 @@ Partial Class FormNuevoEmpleado
         Me.DateTimePickerNuevoEmpleado_FechaNacimiento = New System.Windows.Forms.DateTimePicker()
         Me.ComboBoxNuevoEmpleado_Depto = New System.Windows.Forms.ComboBox()
         Me.ComboBoxNuevoEmpleado_Puesto = New System.Windows.Forms.ComboBox()
+        Me.ComboBoxNuevoEmpleado_Trabajo = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'LabelNuevoEmpleado_Instruccion
@@ -132,14 +132,6 @@ Partial Class FormNuevoEmpleado
         Me.LabelNuevoEmpleado_Trabajo.Size = New System.Drawing.Size(132, 17)
         Me.LabelNuevoEmpleado_Trabajo.TabIndex = 11
         Me.LabelNuevoEmpleado_Trabajo.Text = "Empresa de trabajo"
-        '
-        'TextBoxNuevoEmpleado_Trabajo
-        '
-        Me.TextBoxNuevoEmpleado_Trabajo.Location = New System.Drawing.Point(32, 313)
-        Me.TextBoxNuevoEmpleado_Trabajo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBoxNuevoEmpleado_Trabajo.Name = "TextBoxNuevoEmpleado_Trabajo"
-        Me.TextBoxNuevoEmpleado_Trabajo.Size = New System.Drawing.Size(232, 22)
-        Me.TextBoxNuevoEmpleado_Trabajo.TabIndex = 12
         '
         'LabelNuevoEmpleado_Depto
         '
@@ -380,7 +372,7 @@ Partial Class FormNuevoEmpleado
         '
         Me.DateTimePickerNuevoEmpleado_FechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateTimePickerNuevoEmpleado_FechaNacimiento.Location = New System.Drawing.Point(408, 455)
-        Me.DateTimePickerNuevoEmpleado_FechaNacimiento.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DateTimePickerNuevoEmpleado_FechaNacimiento.Margin = New System.Windows.Forms.Padding(4)
         Me.DateTimePickerNuevoEmpleado_FechaNacimiento.Name = "DateTimePickerNuevoEmpleado_FechaNacimiento"
         Me.DateTimePickerNuevoEmpleado_FechaNacimiento.Size = New System.Drawing.Size(231, 22)
         Me.DateTimePickerNuevoEmpleado_FechaNacimiento.TabIndex = 35
@@ -405,12 +397,21 @@ Partial Class FormNuevoEmpleado
         Me.ComboBoxNuevoEmpleado_Puesto.Sorted = True
         Me.ComboBoxNuevoEmpleado_Puesto.TabIndex = 16
         '
+        'ComboBoxNuevoEmpleado_Trabajo
+        '
+        Me.ComboBoxNuevoEmpleado_Trabajo.FormattingEnabled = True
+        Me.ComboBoxNuevoEmpleado_Trabajo.Location = New System.Drawing.Point(32, 311)
+        Me.ComboBoxNuevoEmpleado_Trabajo.Name = "ComboBoxNuevoEmpleado_Trabajo"
+        Me.ComboBoxNuevoEmpleado_Trabajo.Size = New System.Drawing.Size(232, 24)
+        Me.ComboBoxNuevoEmpleado_Trabajo.TabIndex = 12
+        '
         'FormNuevoEmpleado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SteelBlue
         Me.ClientSize = New System.Drawing.Size(783, 626)
+        Me.Controls.Add(Me.ComboBoxNuevoEmpleado_Trabajo)
         Me.Controls.Add(Me.ComboBoxNuevoEmpleado_Puesto)
         Me.Controls.Add(Me.ComboBoxNuevoEmpleado_Depto)
         Me.Controls.Add(Me.DateTimePickerNuevoEmpleado_FechaNacimiento)
@@ -441,7 +442,6 @@ Partial Class FormNuevoEmpleado
         Me.Controls.Add(Me.TextBoxNuevoEmpleado_ApPaterno)
         Me.Controls.Add(Me.LabelNuevoEmpleado_ApPaterno)
         Me.Controls.Add(Me.LabelNuevoEmpleado_Depto)
-        Me.Controls.Add(Me.TextBoxNuevoEmpleado_Trabajo)
         Me.Controls.Add(Me.LabelNuevoEmpleado_Trabajo)
         Me.Controls.Add(Me.TextBoxNuevoEmpleado_Nombres)
         Me.Controls.Add(Me.LabelNuevoEmpleado_Nombres)
@@ -468,7 +468,6 @@ Partial Class FormNuevoEmpleado
     Friend WithEvents LabelNuevoEmpleado_Nombres As Label
     Friend WithEvents TextBoxNuevoEmpleado_Nombres As TextBox
     Friend WithEvents LabelNuevoEmpleado_Trabajo As Label
-    Friend WithEvents TextBoxNuevoEmpleado_Trabajo As TextBox
     Friend WithEvents LabelNuevoEmpleado_Depto As Label
     Friend WithEvents TextBoxNuevoEmpleado_ApPaterno As TextBox
     Friend WithEvents LabelNuevoEmpleado_ApPaterno As Label
@@ -499,4 +498,5 @@ Partial Class FormNuevoEmpleado
     Friend WithEvents DateTimePickerNuevoEmpleado_FechaNacimiento As DateTimePicker
     Friend WithEvents ComboBoxNuevoEmpleado_Depto As ComboBox
     Friend WithEvents ComboBoxNuevoEmpleado_Puesto As ComboBox
+    Friend WithEvents ComboBoxNuevoEmpleado_Trabajo As ComboBox
 End Class

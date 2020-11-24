@@ -40,4 +40,17 @@ Public Class FormAdministrarEmpresa
     Private Sub DataGridView1_RowHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs)
 
     End Sub
+
+    Private Sub ButtonAdministrarEmpresa_Guardar_Click(sender As Object, e As EventArgs) Handles ButtonAdministrarEmpresa_Guardar.Click
+        If TextBoxAdministrarEmpresa_RazonSocial.Text = "" Or TextBoxAdministrarEmpresa_DomicilioFiscal.Text = "" Or
+             TextBoxAdministrarEmpresa_Contacto.Text = "" Or TextBoxAdministrarEmpresa_RegistroPatronal.Text = "" Or
+             TextBoxAdministrarEmpresa_RFC.Text = "" Then
+
+            MsgBox("Hay datos que no han sido rellenados", vbOK, "Aviso")
+
+        Else
+            MsgBox("Los datos se han guardado correctamente", vbOK, "Aviso")
+            'AQUI SE PONEN LAS CAGADAS PARA MANDAR A LLAMAR EL UPDATE DEL SQL
+        End If
+    End Sub
 End Class
