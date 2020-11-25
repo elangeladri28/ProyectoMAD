@@ -24,7 +24,7 @@ Partial Class Administrar_Departamento
     Private Sub InitializeComponent()
         Me.LabelAdministrarDepartamentos_Nombre = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBoxAdministrarDepartamentos_ = New System.Windows.Forms.TextBox()
+        Me.TextBoxAdministrarDepartamentos_Nombre = New System.Windows.Forms.TextBox()
         Me.TextBoxAdministrarDepartamentos_SueldoBase = New System.Windows.Forms.TextBox()
         Me.LabelAdministrarDepartamentos_Gerente = New System.Windows.Forms.Label()
         Me.TextBoxAdministrarDepartamentos_Gerente = New System.Windows.Forms.TextBox()
@@ -55,15 +55,17 @@ Partial Class Administrar_Departamento
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Sueldo Base:"
         '
-        'TextBoxAdministrarDepartamentos_
+        'TextBoxAdministrarDepartamentos_Nombre
         '
-        Me.TextBoxAdministrarDepartamentos_.Location = New System.Drawing.Point(15, 145)
-        Me.TextBoxAdministrarDepartamentos_.Name = "TextBoxAdministrarDepartamentos_"
-        Me.TextBoxAdministrarDepartamentos_.Size = New System.Drawing.Size(219, 20)
-        Me.TextBoxAdministrarDepartamentos_.TabIndex = 2
+        Me.TextBoxAdministrarDepartamentos_Nombre.Enabled = False
+        Me.TextBoxAdministrarDepartamentos_Nombre.Location = New System.Drawing.Point(15, 145)
+        Me.TextBoxAdministrarDepartamentos_Nombre.Name = "TextBoxAdministrarDepartamentos_Nombre"
+        Me.TextBoxAdministrarDepartamentos_Nombre.Size = New System.Drawing.Size(219, 20)
+        Me.TextBoxAdministrarDepartamentos_Nombre.TabIndex = 2
         '
         'TextBoxAdministrarDepartamentos_SueldoBase
         '
+        Me.TextBoxAdministrarDepartamentos_SueldoBase.Enabled = False
         Me.TextBoxAdministrarDepartamentos_SueldoBase.Location = New System.Drawing.Point(15, 199)
         Me.TextBoxAdministrarDepartamentos_SueldoBase.Name = "TextBoxAdministrarDepartamentos_SueldoBase"
         Me.TextBoxAdministrarDepartamentos_SueldoBase.Size = New System.Drawing.Size(85, 20)
@@ -80,6 +82,7 @@ Partial Class Administrar_Departamento
         '
         'TextBoxAdministrarDepartamentos_Gerente
         '
+        Me.TextBoxAdministrarDepartamentos_Gerente.Enabled = False
         Me.TextBoxAdministrarDepartamentos_Gerente.Location = New System.Drawing.Point(15, 259)
         Me.TextBoxAdministrarDepartamentos_Gerente.Name = "TextBoxAdministrarDepartamentos_Gerente"
         Me.TextBoxAdministrarDepartamentos_Gerente.Size = New System.Drawing.Size(219, 20)
@@ -108,6 +111,7 @@ Partial Class Administrar_Departamento
         Me.DGVAdministrarDepartamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGVAdministrarDepartamentos.Location = New System.Drawing.Point(270, 38)
         Me.DGVAdministrarDepartamentos.Name = "DGVAdministrarDepartamentos"
+        Me.DGVAdministrarDepartamentos.ReadOnly = True
         Me.DGVAdministrarDepartamentos.Size = New System.Drawing.Size(437, 275)
         Me.DGVAdministrarDepartamentos.TabIndex = 8
         '
@@ -153,7 +157,7 @@ Partial Class Administrar_Departamento
         Me.Controls.Add(Me.TextBoxAdministrarDepartamentos_Gerente)
         Me.Controls.Add(Me.LabelAdministrarDepartamentos_Gerente)
         Me.Controls.Add(Me.TextBoxAdministrarDepartamentos_SueldoBase)
-        Me.Controls.Add(Me.TextBoxAdministrarDepartamentos_)
+        Me.Controls.Add(Me.TextBoxAdministrarDepartamentos_Nombre)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.LabelAdministrarDepartamentos_Nombre)
         Me.Name = "Administrar_Departamento"
@@ -166,7 +170,7 @@ Partial Class Administrar_Departamento
 
     Friend WithEvents LabelAdministrarDepartamentos_Nombre As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBoxAdministrarDepartamentos_ As TextBox
+    Friend WithEvents TextBoxAdministrarDepartamentos_Nombre As TextBox
     Friend WithEvents TextBoxAdministrarDepartamentos_SueldoBase As TextBox
     Friend WithEvents LabelAdministrarDepartamentos_Gerente As Label
     Friend WithEvents TextBoxAdministrarDepartamentos_Gerente As TextBox
