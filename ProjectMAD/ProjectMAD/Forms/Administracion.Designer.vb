@@ -138,25 +138,25 @@ Partial Class FormAdministracion
         'DepartamentosToolStripMenuItem
         '
         Me.DepartamentosToolStripMenuItem.Name = "DepartamentosToolStripMenuItem"
-        Me.DepartamentosToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
+        Me.DepartamentosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.DepartamentosToolStripMenuItem.Text = "Departamentos"
         '
         'PuestosToolStripMenuItem
         '
         Me.PuestosToolStripMenuItem.Name = "PuestosToolStripMenuItem"
-        Me.PuestosToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
+        Me.PuestosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PuestosToolStripMenuItem.Text = "Puestos"
         '
         'EmpleadosToolStripMenuItem1
         '
         Me.EmpleadosToolStripMenuItem1.Name = "EmpleadosToolStripMenuItem1"
-        Me.EmpleadosToolStripMenuItem1.Size = New System.Drawing.Size(155, 22)
+        Me.EmpleadosToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.EmpleadosToolStripMenuItem1.Text = "Empleados"
         '
         'UsuariosToolStripMenuItem
         '
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'MAD_PIADataSet
@@ -181,7 +181,7 @@ Partial Class FormAdministracion
         Me.ClientSize = New System.Drawing.Size(731, 440)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FormAdministracion"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Administración"

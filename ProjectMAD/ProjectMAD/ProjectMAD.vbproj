@@ -77,10 +77,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Administrar Departamento.Designer.vb">
-      <DependentUpon>Administrar Departamento.vb</DependentUpon>
+    <Compile Include="Classes\AdministrarDepartamentos_Querys.vb" />
+    <Compile Include="Forms\Administrar Departamentos.Designer.vb">
+      <DependentUpon>Administrar Departamentos.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Administrar Departamento.vb">
+    <Compile Include="Forms\Administrar Departamentos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Administrar Empresa.Designer.vb">
@@ -156,6 +157,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\Administrar Departamentos.resx">
+      <DependentUpon>Administrar Departamentos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Administrar Empresa.resx">
       <DependentUpon>Administrar Empresa.vb</DependentUpon>
     </EmbeddedResource>

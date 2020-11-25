@@ -74,4 +74,23 @@ Public Class AdministrarEmpresas_Querys
             MessageBox.Show(errorsito, "OH NOoOoooOoO!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Function
+
+    Public Function GetAllEmpresasName()
+
+        Try
+            Dim con As New SQL_Connection()
+            con.ConectarSQL()
+            Dim query As String = "EXEC GetAllEmpresasName;"
+            Dim dt As New DataTable()
+            Dim sqlCom As New SqlCommand(query, con.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(dt)
+            con.DesconectarSQL()
+            Return dt
+        Catch ex As Exception
+            Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
+            MessageBox.Show(errorsito, "Cómo se llama?!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
+    End Function
 End Class

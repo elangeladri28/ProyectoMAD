@@ -6,6 +6,7 @@
     Dim addDepartamento As New FormNuevoDepartamento()
 
     Dim adminEmpresas As New FormAdministrarEmpresa()
+    Dim adminDepartamentos As New Administrar_Departamento()
 
     Private Sub FormAdministracion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'MAD_PIADataSet.Empresas' table. You can move, or remove it, as needed.
@@ -31,5 +32,9 @@
 
     Private Sub EmpresasToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles EmpresasToolStripMenuItem1.Click
         adminEmpresas.ShowDialog()
+    End Sub
+
+    Private Sub DepartamentosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DepartamentosToolStripMenuItem.Click
+        adminDepartamentos.ShowDialog()
     End Sub
 End Class
