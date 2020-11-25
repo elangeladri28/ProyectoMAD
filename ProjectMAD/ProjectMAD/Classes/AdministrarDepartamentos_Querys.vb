@@ -76,4 +76,23 @@ Public Class AdministrarDepartamentos_Querys
             MessageBox.Show(errorsito, "Oh, shimatta!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Function
+
+    Public Function GetAllDeptosName(Nombre As String)
+        Try
+
+            Dim con As New SQL_Connection()
+            con.ConectarSQL()
+            Dim query As String = "EXEC GetAllDeptosName '" + Nombre + "';"
+            Dim dt As New DataTable()
+            Dim sqlCom As New SqlCommand(query, con.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(dt)
+            con.DesconectarSQL()
+            Return dt
+
+        Catch ex As Exception
+            Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
+            MessageBox.Show(errorsito, "Oh, shimatta!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Function
 End Class

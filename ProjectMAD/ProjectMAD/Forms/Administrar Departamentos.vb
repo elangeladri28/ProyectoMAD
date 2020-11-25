@@ -43,6 +43,7 @@ Public Class Administrar_Departamento
             DGVAdministrarDepartamentos.Columns.Item(1).HeaderText = "Sueldo Base"
             DGVAdministrarDepartamentos.Columns.Item(2).HeaderText = "Gerente"
         End If
+
         TextBoxAdministrarDepartamentos_Nombre.Enabled = True
         TextBoxAdministrarDepartamentos_SueldoBase.Enabled = True
         TextBoxAdministrarDepartamentos_Gerente.Enabled = True

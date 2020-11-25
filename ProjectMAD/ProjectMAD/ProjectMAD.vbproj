@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\AdministrarDepartamentos_Querys.vb" />
+    <Compile Include="Classes\AdministrarPuestos_Querys.vb" />
     <Compile Include="Forms\Administrar Departamentos.Designer.vb">
       <DependentUpon>Administrar Departamentos.vb</DependentUpon>
     </Compile>

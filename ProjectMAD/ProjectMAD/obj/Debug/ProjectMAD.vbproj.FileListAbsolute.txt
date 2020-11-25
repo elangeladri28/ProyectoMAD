@@ -33,3 +33,8 @@ C:\Users\david\Documents\.git\ProyectoMAD\ProjectMAD\ProjectMAD\bin\Debug\Projec
 C:\Users\david\Documents\.git\ProyectoMAD\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.FormAdministrarEmpresa.resources
 C:\Users\david\Documents\.git\ProyectoMAD\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.Administrar_Departamento.resources
 C:\Users\david\Documents\.git\ProyectoMAD\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.Administrar_Puesto.resources
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Proyecto Cheto\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.Administrar_Departamento.resources
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Proyecto Cheto\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.FormAdministrarEmpresa.resources
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Proyecto Cheto\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.FormAdministrarPuestos.resources
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Proyecto Cheto\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.FormNuevoDepartamento.resources
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Proyecto Cheto\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.FormNuevoPuesto.resources

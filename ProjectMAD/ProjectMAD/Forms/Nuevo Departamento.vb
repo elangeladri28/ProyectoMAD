@@ -38,4 +38,8 @@
             Me.Close()
         End If
     End Sub
+
+    Private Sub FormNuevoDepartamento_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
