@@ -82,6 +82,7 @@ Public Class AdministrarDepartamentos_Querys
 
             Dim con As New SQL_Connection()
             con.ConectarSQL()
+
             Dim query As String = "EXEC GetAllDeptosName '" + Nombre + "';"
             Dim dt As New DataTable()
             Dim sqlCom As New SqlCommand(query, con.connection)
@@ -94,5 +95,24 @@ Public Class AdministrarDepartamentos_Querys
             Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
             MessageBox.Show(errorsito, "Oh, shimatta!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
+    End Function
+
+    Public Function GetOnlyMoneyDepto(Nombre As String)
+        Try
+            Dim con As New SQL_Connection()
+            con.ConectarSQL()
+
+            Dim query As String = "EXEC GetOnlyMoneyDepto '" + Nombre + "';"
+            Dim sqlCom As New SqlCommand(query, con.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(ds, "Departamentos")
+            con.DesconectarSQL()
+            Return ds
+
+        Catch ex As Exception
+            Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
+            MessageBox.Show(errorsito, "Oh, shimatta!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
     End Function
 End Class

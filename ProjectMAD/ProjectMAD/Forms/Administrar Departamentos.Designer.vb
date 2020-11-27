@@ -61,7 +61,7 @@ Partial Class Administrar_Departamento
         '
         Me.TextBoxAdministrarDepartamentos_Nombre.Enabled = False
         Me.TextBoxAdministrarDepartamentos_Nombre.Location = New System.Drawing.Point(20, 178)
-        Me.TextBoxAdministrarDepartamentos_Nombre.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBoxAdministrarDepartamentos_Nombre.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxAdministrarDepartamentos_Nombre.Name = "TextBoxAdministrarDepartamentos_Nombre"
         Me.TextBoxAdministrarDepartamentos_Nombre.Size = New System.Drawing.Size(291, 22)
         Me.TextBoxAdministrarDepartamentos_Nombre.TabIndex = 2
@@ -70,7 +70,7 @@ Partial Class Administrar_Departamento
         '
         Me.TextBoxAdministrarDepartamentos_SueldoBase.Enabled = False
         Me.TextBoxAdministrarDepartamentos_SueldoBase.Location = New System.Drawing.Point(20, 245)
-        Me.TextBoxAdministrarDepartamentos_SueldoBase.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBoxAdministrarDepartamentos_SueldoBase.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxAdministrarDepartamentos_SueldoBase.Name = "TextBoxAdministrarDepartamentos_SueldoBase"
         Me.TextBoxAdministrarDepartamentos_SueldoBase.Size = New System.Drawing.Size(112, 22)
         Me.TextBoxAdministrarDepartamentos_SueldoBase.TabIndex = 3
@@ -89,7 +89,7 @@ Partial Class Administrar_Departamento
         '
         Me.TextBoxAdministrarDepartamentos_Gerente.Enabled = False
         Me.TextBoxAdministrarDepartamentos_Gerente.Location = New System.Drawing.Point(20, 319)
-        Me.TextBoxAdministrarDepartamentos_Gerente.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBoxAdministrarDepartamentos_Gerente.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxAdministrarDepartamentos_Gerente.Name = "TextBoxAdministrarDepartamentos_Gerente"
         Me.TextBoxAdministrarDepartamentos_Gerente.Size = New System.Drawing.Size(291, 22)
         Me.TextBoxAdministrarDepartamentos_Gerente.TabIndex = 5
@@ -108,17 +108,17 @@ Partial Class Administrar_Departamento
         '
         Me.ComboBoxAdministrarDepartamentos_Empresa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBoxAdministrarDepartamentos_Empresa.FormattingEnabled = True
-        Me.ComboBoxAdministrarDepartamentos_Empresa.Location = New System.Drawing.Point(16, 68)
-        Me.ComboBoxAdministrarDepartamentos_Empresa.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComboBoxAdministrarDepartamentos_Empresa.Location = New System.Drawing.Point(19, 68)
+        Me.ComboBoxAdministrarDepartamentos_Empresa.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBoxAdministrarDepartamentos_Empresa.Name = "ComboBoxAdministrarDepartamentos_Empresa"
-        Me.ComboBoxAdministrarDepartamentos_Empresa.Size = New System.Drawing.Size(287, 24)
+        Me.ComboBoxAdministrarDepartamentos_Empresa.Size = New System.Drawing.Size(292, 24)
         Me.ComboBoxAdministrarDepartamentos_Empresa.TabIndex = 7
         '
         'DGVAdministrarDepartamentos
         '
         Me.DGVAdministrarDepartamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGVAdministrarDepartamentos.Location = New System.Drawing.Point(360, 47)
-        Me.DGVAdministrarDepartamentos.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DGVAdministrarDepartamentos.Margin = New System.Windows.Forms.Padding(4)
         Me.DGVAdministrarDepartamentos.Name = "DGVAdministrarDepartamentos"
         Me.DGVAdministrarDepartamentos.ReadOnly = True
         Me.DGVAdministrarDepartamentos.RowHeadersWidth = 51
@@ -128,7 +128,7 @@ Partial Class Administrar_Departamento
         'ButtonAdministrarDepartamentos_Insertar
         '
         Me.ButtonAdministrarDepartamentos_Insertar.Location = New System.Drawing.Point(360, 431)
-        Me.ButtonAdministrarDepartamentos_Insertar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonAdministrarDepartamentos_Insertar.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonAdministrarDepartamentos_Insertar.Name = "ButtonAdministrarDepartamentos_Insertar"
         Me.ButtonAdministrarDepartamentos_Insertar.Size = New System.Drawing.Size(100, 28)
         Me.ButtonAdministrarDepartamentos_Insertar.TabIndex = 9
@@ -138,7 +138,7 @@ Partial Class Administrar_Departamento
         'ButtonAdministrarEmpresas_Modificar
         '
         Me.ButtonAdministrarEmpresas_Modificar.Location = New System.Drawing.Point(468, 431)
-        Me.ButtonAdministrarEmpresas_Modificar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonAdministrarEmpresas_Modificar.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonAdministrarEmpresas_Modificar.Name = "ButtonAdministrarEmpresas_Modificar"
         Me.ButtonAdministrarEmpresas_Modificar.Size = New System.Drawing.Size(100, 28)
         Me.ButtonAdministrarEmpresas_Modificar.TabIndex = 10
@@ -148,7 +148,7 @@ Partial Class Administrar_Departamento
         'ButtonAdministrarEmpresas_Eliminar
         '
         Me.ButtonAdministrarEmpresas_Eliminar.Location = New System.Drawing.Point(576, 431)
-        Me.ButtonAdministrarEmpresas_Eliminar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonAdministrarEmpresas_Eliminar.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonAdministrarEmpresas_Eliminar.Name = "ButtonAdministrarEmpresas_Eliminar"
         Me.ButtonAdministrarEmpresas_Eliminar.Size = New System.Drawing.Size(100, 28)
         Me.ButtonAdministrarEmpresas_Eliminar.TabIndex = 11
@@ -173,7 +173,7 @@ Partial Class Administrar_Departamento
         Me.Controls.Add(Me.TextBoxAdministrarDepartamentos_Nombre)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.LabelAdministrarDepartamentos_Nombre)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Administrar_Departamento"
         Me.Text = "Administrar Departamentos"
         CType(Me.DGVAdministrarDepartamentos, System.ComponentModel.ISupportInitialize).EndInit()

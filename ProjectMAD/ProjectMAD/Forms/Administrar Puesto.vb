@@ -24,12 +24,12 @@ Public Class FormAdministrarPuestos
     Private Sub ComboBoxAdministrarPuestos_Departamento_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxAdministrarPuestos_Departamento.SelectedIndexChanged
 
         Dim cargarDGV As New AdministrarPuestos_Querys()
-            Dim EmpresaCombo As String = ComboBoxAdministrarPuestos_Empresa.Text
-            Dim DeptoCombo As String = ComboBoxAdministrarPuestos_Departamento.Text
-            DGVAdministrarPuestos.DataSource = cargarDGV.SelectAllFromPuestos(EmpresaCombo, DeptoCombo)
-            DGVAdministrarPuestos.DataMember = "Puestos"
+        Dim EmpresaCombo As String = ComboBoxAdministrarPuestos_Empresa.Text
+        Dim DeptoCombo As String = ComboBoxAdministrarPuestos_Departamento.Text
+        DGVAdministrarPuestos.DataSource = cargarDGV.SelectAllFromPuestos(EmpresaCombo, DeptoCombo)
+        DGVAdministrarPuestos.DataMember = "Puestos"
 
-            If (DGVAdministrarPuestos.Columns.Count <> 0) Then
+        If (DGVAdministrarPuestos.Columns.Count <> 0) Then
                 DGVAdministrarPuestos.Columns.Item(0).HeaderText = "Nombre de Puesto"
                 DGVAdministrarPuestos.Columns.Item(1).HeaderText = "Proporcion Salarial"
                 DGVAdministrarPuestos.Columns.Item(2).HeaderText = "Salario Diario"
@@ -41,5 +41,19 @@ Public Class FormAdministrarPuestos
 
 
 
+    End Sub
+
+    Private Sub ButtonAdministrarPuestos_Modificar_Click(sender As Object, e As EventArgs) Handles ButtonAdministrarPuestos_Modificar.Click
+        Try
+            Dim Update As New AdministrarPuestos_Querys()
+            Update.ModificarPuestos(TextBoxAdministrarPuestos_Puesto.Text, TextBoxAdministrarPuestos_Proporcion.Text,
+                            TextBoxAdministrarPuestos_Salario.Text, ComboBoxAdministrarPuestos_Departamento.Text)
+            MessageBox.Show("Los datos se han modificado correctamente", "OH YES!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            FormAdministrarPuestos_Load(sender, e)
+
+        Catch ex As Exception
+            MessageBox.Show("Los datos NO se han modificado correctamente", "OH Repámpanos!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+        End Try
     End Sub
 End Class
