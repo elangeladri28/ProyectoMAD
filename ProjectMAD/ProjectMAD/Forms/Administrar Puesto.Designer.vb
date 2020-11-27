@@ -37,7 +37,13 @@ Partial Class FormAdministrarPuestos
         Me.ButtonAdministrarPuestos_Modificar = New System.Windows.Forms.Button()
         Me.ButtonAdministrarPuestos_Eliminar = New System.Windows.Forms.Button()
         Me.ButtonAdministrarPuestos_Aceptar = New System.Windows.Forms.Button()
+        Me.TextBoxAdministrarPuestos_SueldoBase = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         CType(Me.DGVAdministrarPuestos, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LabelAdministrarPuestos_Empresa
@@ -111,7 +117,7 @@ Partial Class FormAdministrarPuestos
         'LabelAdministrarPuestos_Salario
         '
         Me.LabelAdministrarPuestos_Salario.AutoSize = True
-        Me.LabelAdministrarPuestos_Salario.Location = New System.Drawing.Point(28, 303)
+        Me.LabelAdministrarPuestos_Salario.Location = New System.Drawing.Point(258, 242)
         Me.LabelAdministrarPuestos_Salario.Name = "LabelAdministrarPuestos_Salario"
         Me.LabelAdministrarPuestos_Salario.Size = New System.Drawing.Size(97, 17)
         Me.LabelAdministrarPuestos_Salario.TabIndex = 9
@@ -119,10 +125,12 @@ Partial Class FormAdministrarPuestos
         '
         'TextBoxAdministrarPuestos_Salario
         '
-        Me.TextBoxAdministrarPuestos_Salario.Location = New System.Drawing.Point(28, 324)
+        Me.TextBoxAdministrarPuestos_Salario.Location = New System.Drawing.Point(258, 263)
         Me.TextBoxAdministrarPuestos_Salario.Name = "TextBoxAdministrarPuestos_Salario"
+        Me.TextBoxAdministrarPuestos_Salario.ReadOnly = True
         Me.TextBoxAdministrarPuestos_Salario.Size = New System.Drawing.Size(200, 22)
         Me.TextBoxAdministrarPuestos_Salario.TabIndex = 10
+        Me.TextBoxAdministrarPuestos_Salario.TabStop = False
         '
         'Label6
         '
@@ -137,7 +145,7 @@ Partial Class FormAdministrarPuestos
         'DGVAdministrarPuestos
         '
         Me.DGVAdministrarPuestos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVAdministrarPuestos.Location = New System.Drawing.Point(315, 79)
+        Me.DGVAdministrarPuestos.Location = New System.Drawing.Point(474, 59)
         Me.DGVAdministrarPuestos.Name = "DGVAdministrarPuestos"
         Me.DGVAdministrarPuestos.RowHeadersWidth = 51
         Me.DGVAdministrarPuestos.RowTemplate.Height = 24
@@ -146,7 +154,7 @@ Partial Class FormAdministrarPuestos
         '
         'ButtonAdministrarPuestos_Modificar
         '
-        Me.ButtonAdministrarPuestos_Modificar.Location = New System.Drawing.Point(525, 366)
+        Me.ButtonAdministrarPuestos_Modificar.Location = New System.Drawing.Point(185, 313)
         Me.ButtonAdministrarPuestos_Modificar.Name = "ButtonAdministrarPuestos_Modificar"
         Me.ButtonAdministrarPuestos_Modificar.Size = New System.Drawing.Size(109, 39)
         Me.ButtonAdministrarPuestos_Modificar.TabIndex = 12
@@ -155,7 +163,7 @@ Partial Class FormAdministrarPuestos
         '
         'ButtonAdministrarPuestos_Eliminar
         '
-        Me.ButtonAdministrarPuestos_Eliminar.Location = New System.Drawing.Point(315, 366)
+        Me.ButtonAdministrarPuestos_Eliminar.Location = New System.Drawing.Point(28, 313)
         Me.ButtonAdministrarPuestos_Eliminar.Name = "ButtonAdministrarPuestos_Eliminar"
         Me.ButtonAdministrarPuestos_Eliminar.Size = New System.Drawing.Size(109, 39)
         Me.ButtonAdministrarPuestos_Eliminar.TabIndex = 13
@@ -164,19 +172,71 @@ Partial Class FormAdministrarPuestos
         '
         'ButtonAdministrarPuestos_Aceptar
         '
-        Me.ButtonAdministrarPuestos_Aceptar.Location = New System.Drawing.Point(715, 366)
+        Me.ButtonAdministrarPuestos_Aceptar.Location = New System.Drawing.Point(331, 313)
         Me.ButtonAdministrarPuestos_Aceptar.Name = "ButtonAdministrarPuestos_Aceptar"
         Me.ButtonAdministrarPuestos_Aceptar.Size = New System.Drawing.Size(109, 39)
         Me.ButtonAdministrarPuestos_Aceptar.TabIndex = 14
         Me.ButtonAdministrarPuestos_Aceptar.Text = "Aceptar"
         Me.ButtonAdministrarPuestos_Aceptar.UseVisualStyleBackColor = True
         '
+        'TextBoxAdministrarPuestos_SueldoBase
+        '
+        Me.TextBoxAdministrarPuestos_SueldoBase.Location = New System.Drawing.Point(258, 139)
+        Me.TextBoxAdministrarPuestos_SueldoBase.Name = "TextBoxAdministrarPuestos_SueldoBase"
+        Me.TextBoxAdministrarPuestos_SueldoBase.ReadOnly = True
+        Me.TextBoxAdministrarPuestos_SueldoBase.Size = New System.Drawing.Size(200, 22)
+        Me.TextBoxAdministrarPuestos_SueldoBase.TabIndex = 15
+        Me.TextBoxAdministrarPuestos_SueldoBase.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(234, 139)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(21, 17)
+        Me.Label1.TabIndex = 16
+        Me.Label1.Text = "->"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(234, 263)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(21, 17)
+        Me.Label2.TabIndex = 17
+        Me.Label2.Text = "->"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(261, 116)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(92, 17)
+        Me.Label3.TabIndex = 18
+        Me.Label3.Text = "Sueldo Base:"
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(342, 59)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(26, 22)
+        Me.DataGridView1.TabIndex = 19
+        Me.DataGridView1.Visible = False
+        '
         'FormAdministrarPuestos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SteelBlue
-        Me.ClientSize = New System.Drawing.Size(879, 433)
+        Me.ClientSize = New System.Drawing.Size(1013, 407)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.TextBoxAdministrarPuestos_SueldoBase)
         Me.Controls.Add(Me.ButtonAdministrarPuestos_Aceptar)
         Me.Controls.Add(Me.ButtonAdministrarPuestos_Eliminar)
         Me.Controls.Add(Me.ButtonAdministrarPuestos_Modificar)
@@ -196,6 +256,7 @@ Partial Class FormAdministrarPuestos
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Administrar Puestos"
         CType(Me.DGVAdministrarPuestos, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -216,4 +277,9 @@ Partial Class FormAdministrarPuestos
     Friend WithEvents ButtonAdministrarPuestos_Modificar As Button
     Friend WithEvents ButtonAdministrarPuestos_Eliminar As Button
     Friend WithEvents ButtonAdministrarPuestos_Aceptar As Button
+    Friend WithEvents TextBoxAdministrarPuestos_SueldoBase As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents DataGridView1 As DataGridView
 End Class

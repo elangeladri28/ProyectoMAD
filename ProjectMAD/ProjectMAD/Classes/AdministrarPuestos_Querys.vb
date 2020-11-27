@@ -48,10 +48,10 @@ Public Class AdministrarPuestos_Querys
             Dim con As New SQL_Connection()
             con.ConectarSQL()
 
-            Dim query As String = "EXEC ModificarDepartamento '" + Nombre + "', '" + Prop + "', '" + SD + "', '" + Depto + "';"
+            Dim query As String = "EXEC ModificarPuestos '" + Nombre + "', " + Prop.ToString + ", " + SD.ToString + ", '" + Depto + "';"
             Dim sqlCom As New SqlCommand(query, con.connection)
             dataadapter.SelectCommand = sqlCom
-            dataadapter.Fill(ds, "Departamentos")
+            dataadapter.Fill(ds, "Puestos")
             con.DesconectarSQL()
             Return ds
         Catch ex As Exception
@@ -60,6 +60,21 @@ Public Class AdministrarPuestos_Querys
         End Try
     End Function
 
-    ''
+    Public Function EliminarPuesto(Nombre As String, Depto As String)
+        Try
+            Dim con As New SQL_Connection()
+            con.ConectarSQL()
+
+            Dim query As String = "EXEC EliminarPuesto '" + Nombre + "', '" + Depto + "';"
+            Dim sqlCom As New SqlCommand(query, con.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(ds, "Departamentos")
+            con.DesconectarSQL()
+            Return ds
+        Catch ex As Exception
+            Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
+            MessageBox.Show(errorsito, "Oh, shimatta!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Function
 
 End Class
