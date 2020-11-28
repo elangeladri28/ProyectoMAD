@@ -38,3 +38,4 @@ C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Proyecto Cheto\ProjectMAD\P
 C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Proyecto Cheto\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.FormNuevoDepartamento.resources
 C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Proyecto Cheto\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.FormNuevoPuesto.resources
 C:\Users\david\Documents\.git\ProyectoMAD\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.FormAdministrarPuestos.resources
+C:\Users\david\Documents\.git\ProyectoMAD\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.FormAdministrarEmpleados.resources

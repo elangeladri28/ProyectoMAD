@@ -8,6 +8,7 @@
     Dim adminEmpresas As New FormAdministrarEmpresa()
     Dim adminDepartamentos As New Administrar_Departamento()
     Dim adminPuestos As New FormAdministrarPuestos()
+    Dim adminEmpleados As New FormAdministrarEmpleados()
     Private Sub FormAdministracion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'MAD_PIADataSet.Empresas' table. You can move, or remove it, as needed.
         Me.EmpresasTableAdapter.Fill(Me.MAD_PIADataSet.Empresas)
@@ -40,5 +41,9 @@
 
     Private Sub PuestosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PuestosToolStripMenuItem.Click
         adminPuestos.ShowDialog()
+    End Sub
+
+    Private Sub EmpleadosToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles EmpleadosToolStripMenuItem1.Click
+        adminEmpleados.ShowDialog()
     End Sub
 End Class

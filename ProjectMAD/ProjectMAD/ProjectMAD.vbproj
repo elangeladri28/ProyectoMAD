@@ -78,11 +78,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\AdministrarDepartamentos_Querys.vb" />
+    <Compile Include="Classes\AdministrarEmpleados_Query.vb" />
     <Compile Include="Classes\AdministrarPuestos_Querys.vb" />
     <Compile Include="Forms\Administrar Departamentos.Designer.vb">
       <DependentUpon>Administrar Departamentos.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Administrar Departamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrar Empleados.Designer.vb">
+      <DependentUpon>Administrar Empleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administrar Empleados.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Administrar Empresa.Designer.vb">
@@ -160,6 +167,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Forms\Administrar Departamentos.resx">
       <DependentUpon>Administrar Departamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administrar Empleados.resx">
+      <DependentUpon>Administrar Empleados.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Administrar Empresa.resx">
       <DependentUpon>Administrar Empresa.vb</DependentUpon>
