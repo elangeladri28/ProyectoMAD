@@ -43,12 +43,12 @@ Public Class AdministrarDepartamentos_Querys
         End Try
     End Function
 
-    Public Function ModificarDepartamento(Nombre As String, SueldoBase As String, Gerente As String, Empresa As String)
+    Public Function ModificarDepartamento(ID As Integer, Nombre As String, SueldoBase As String, Gerente As String, Empresa As String)
         Try
             Dim con As New SQL_Connection()
             con.ConectarSQL()
 
-            Dim query As String = "EXEC ModificarDepartamento '" + Nombre + "', '" + SueldoBase + "', '" + Gerente + "', '" + Empresa + "';"
+            Dim query As String = "EXEC ModificarDepartamento " + ID.ToString + ",'" + Nombre + "', '" + SueldoBase + "', '" + Gerente + "', '" + Empresa + "';"
             Dim sqlCom As New SqlCommand(query, con.connection)
             dataadapter.SelectCommand = sqlCom
             dataadapter.Fill(ds, "Departamentos")

@@ -43,12 +43,12 @@ Public Class AdministrarPuestos_Querys
         End Try
 
     End Function
-    Public Function ModificarPuestos(Nombre As String, Prop As Decimal, SD As Decimal, Depto As String)
+    Public Function ModificarPuestos(ID As Integer, Nombre As String, Prop As Decimal, SD As Decimal, Depto As String, Empresa As String)
         Try
             Dim con As New SQL_Connection()
             con.ConectarSQL()
 
-            Dim query As String = "EXEC ModificarPuestos '" + Nombre + "', " + Prop.ToString + ", " + SD.ToString + ", '" + Depto + "';"
+            Dim query As String = "EXEC ModificarPuestos " + ID.ToString + ", '" + Nombre + "', " + Prop.ToString + ", " + SD.ToString + ", '" + Depto + "', '" + Empresa + "';"
             Dim sqlCom As New SqlCommand(query, con.connection)
             dataadapter.SelectCommand = sqlCom
             dataadapter.Fill(ds, "Puestos")
@@ -60,12 +60,12 @@ Public Class AdministrarPuestos_Querys
         End Try
     End Function
 
-    Public Function EliminarPuesto(Nombre As String, Depto As String)
+    Public Function EliminarPuesto(Nombre As String, Depto As String, Empresa As String)
         Try
             Dim con As New SQL_Connection()
             con.ConectarSQL()
 
-            Dim query As String = "EXEC EliminarPuesto '" + Nombre + "', '" + Depto + "';"
+            Dim query As String = "EXEC EliminarPuesto '" + Nombre + "', '" + Depto + "', '" + Empresa + "';"
             Dim sqlCom As New SqlCommand(query, con.connection)
             dataadapter.SelectCommand = sqlCom
             dataadapter.Fill(ds, "Departamentos")

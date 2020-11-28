@@ -26,12 +26,12 @@ Public Class AdministrarEmpresas_Querys
 
     End Function
 
-    Public Function DeleteRowFromEmpresas(Nombre As String)
+    Public Function DeleteRowFromEmpresas(ID As Integer)
         Try
             Dim conect As New SQL_Connection()
             conect.ConectarSQL()
 
-            Dim query As String = "EXEC EliminarEmpresa '" + Nombre + "';"
+            Dim query As String = "EXEC EliminarEmpresa " + ID.ToString + ";"
             Dim sqlCom As New SqlCommand(query, conect.connection)
             dataadapter.SelectCommand = sqlCom
             dataadapter.Fill(ds, "Empresas")
@@ -60,11 +60,11 @@ Public Class AdministrarEmpresas_Querys
         End Try
     End Function
 
-    Public Function ModificarEmpresa(Nombre As String, DomFis As String, Telefono As String, RegPat As String, RFC As String, Fecha As Date)
+    Public Function ModificarEmpresa(ID As Integer, Nombre As String, DomFis As String, Telefono As String, RegPat As String, RFC As String, Fecha As Date)
         Try
             Dim con As New SQL_Connection()
             con.ConectarSQL()
-            Dim query As String = "EXEC ModificarEmpresa " + "'" + Nombre + "', '" + DomFis + "', '" + Telefono + "', '" + RegPat + "', '" + RFC + "', '" + Fecha + "';"
+            Dim query As String = "EXEC ModificarEmpresa " + ID.ToString + ",'" + Nombre + "', '" + DomFis + "', '" + Telefono + "', '" + RegPat + "', '" + RFC + "', '" + Fecha + "';"
             Dim sqlCom As New SqlCommand(query, con.connection)
             dataadapter.SelectCommand = sqlCom
             dataadapter.Fill(ds, "Empresas")

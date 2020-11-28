@@ -39,9 +39,10 @@ Public Class Administrar_Departamento
         DGVAdministrarDepartamentos.DataMember = "Departamentos"
 
         If (DGVAdministrarDepartamentos.Columns.Count <> 0) Then
-            DGVAdministrarDepartamentos.Columns.Item(0).HeaderText = "Nombre de Departamento"
-            DGVAdministrarDepartamentos.Columns.Item(1).HeaderText = "Sueldo Base"
-            DGVAdministrarDepartamentos.Columns.Item(2).HeaderText = "Gerente"
+            DGVAdministrarDepartamentos.Columns.Item(0).HeaderText = "ID de Departamento"
+            DGVAdministrarDepartamentos.Columns.Item(1).HeaderText = "Nombre de Departamento"
+            DGVAdministrarDepartamentos.Columns.Item(2).HeaderText = "Sueldo Base"
+            DGVAdministrarDepartamentos.Columns.Item(3).HeaderText = "Gerente"
         End If
 
         TextBoxAdministrarDepartamentos_Nombre.Enabled = True
@@ -83,7 +84,7 @@ Public Class Administrar_Departamento
     Private Sub ButtonAdministrarEmpresas_Modificar_Click(sender As Object, e As EventArgs) Handles ButtonAdministrarEmpresas_Modificar.Click
         Try
             Dim update As New AdministrarDepartamentos_Querys()
-            update.ModificarDepartamento(TextBoxAdministrarDepartamentos_Nombre.Text, TextBoxAdministrarDepartamentos_SueldoBase.Text,
+            update.ModificarDepartamento(DGVAdministrarDepartamentos.CurrentRow.Cells("IDDepartamento").Value, TextBoxAdministrarDepartamentos_Nombre.Text, TextBoxAdministrarDepartamentos_SueldoBase.Text,
                                         TextBoxAdministrarDepartamentos_Gerente.Text, ComboBoxAdministrarDepartamentos_Empresa.Text)
             MessageBox.Show("Los datos se han modificado correctamente", "OH YES!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Administrar_Departamento_Load(sender, e)
@@ -106,7 +107,7 @@ Public Class Administrar_Departamento
     Private Sub ButtonAdministrarEmpresas_Eliminar_Click(sender As Object, e As EventArgs) Handles ButtonAdministrarEmpresas_Eliminar.Click
         Try
             Dim delete As New AdministrarDepartamentos_Querys()
-            delete.EliminarDepartamento(TextBoxAdministrarDepartamentos_Nombre.Text, ComboBoxAdministrarDepartamentos_Empresa.Text)
+            delete.EliminarDepartamento(DGVAdministrarDepartamentos.CurrentRow.Cells("IDDepartamento").Value, ComboBoxAdministrarDepartamentos_Empresa.Text)
             MessageBox.Show("Los datos se han eliminado correctamente", "OH YES!", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Administrar_Departamento_Load(sender, e)
         Catch ex As Exception

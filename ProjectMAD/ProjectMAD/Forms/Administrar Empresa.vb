@@ -19,21 +19,26 @@ Public Class FormAdministrarEmpresa
         DGVAdministrarEmpresas.DataSource = ola.SelectAllFromEmpresas()
         DGVAdministrarEmpresas.DataMember = "Empresas"
         If (DGVAdministrarEmpresas.Columns.Count <> 0) Then
-            DGVAdministrarEmpresas.Columns.Item(0).HeaderText = "Nombre de Empresa"
-            DGVAdministrarEmpresas.Columns.Item(1).HeaderText = "Domicilio Fiscal"
-            DGVAdministrarEmpresas.Columns.Item(2).HeaderText = "Teléfono de contacto"
-            DGVAdministrarEmpresas.Columns.Item(3).HeaderText = "Registro Patronal"
-            DGVAdministrarEmpresas.Columns.Item(5).HeaderText = "Inicio de Operaciones"
+            DGVAdministrarEmpresas.Columns.Item(0).HeaderText = "ID de Empresa"
+            DGVAdministrarEmpresas.Columns.Item(1).HeaderText = "Nombre de Empresa"
+            DGVAdministrarEmpresas.Columns.Item(2).HeaderText = "Domicilio Fiscal"
+            DGVAdministrarEmpresas.Columns.Item(3).HeaderText = "Teléfono de contacto"
+            DGVAdministrarEmpresas.Columns.Item(4).HeaderText = "Registro Patronal"
+            DGVAdministrarEmpresas.Columns.Item(6).HeaderText = "Inicio de Operaciones"
         End If
     End Sub
 
     Private Sub DGVAdministrarEmpresas_RowHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DGVAdministrarEmpresas.RowHeaderMouseClick
-        TextBoxAdministrarEmpresa_RazonSocial.Text = DGVAdministrarEmpresas.CurrentRow.Cells("NombreEmpresa").Value
-        TextBoxAdministrarEmpresa_DomicilioFiscal.Text = DGVAdministrarEmpresas.CurrentRow.Cells("DomicilioFiscal").Value
-        TextBoxAdministrarEmpresa_Contacto.Text = DGVAdministrarEmpresas.CurrentRow.Cells("Telefono").Value
-        TextBoxAdministrarEmpresa_RegistroPatronal.Text = DGVAdministrarEmpresas.CurrentRow.Cells("RegistroPatronal").Value
-        TextBoxAdministrarEmpresa_RFC.Text = DGVAdministrarEmpresas.CurrentRow.Cells("RFC").Value
-        DateTimePickerAdministrarEmpresa_InicioOperaciones.Value = Convert.ToDateTime(DGVAdministrarEmpresas.CurrentRow.Cells("FechaInicio").Value)
+        Try
+            TextBoxAdministrarEmpresa_RazonSocial.Text = DGVAdministrarEmpresas.CurrentRow.Cells("NombreEmpresa").Value
+            TextBoxAdministrarEmpresa_DomicilioFiscal.Text = DGVAdministrarEmpresas.CurrentRow.Cells("DomicilioFiscal").Value
+            TextBoxAdministrarEmpresa_Contacto.Text = DGVAdministrarEmpresas.CurrentRow.Cells("Telefono").Value
+            TextBoxAdministrarEmpresa_RegistroPatronal.Text = DGVAdministrarEmpresas.CurrentRow.Cells("RegistroPatronal").Value
+            TextBoxAdministrarEmpresa_RFC.Text = DGVAdministrarEmpresas.CurrentRow.Cells("RFC").Value
+            DateTimePickerAdministrarEmpresa_InicioOperaciones.Value = Convert.ToDateTime(DGVAdministrarEmpresas.CurrentRow.Cells("FechaInicio").Value)
+        Catch ex As Exception
+            MessageBox.Show("NO HAY DATOS EN EL DGV PUÑETAS", "OH NO!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
 
     End Sub
 
@@ -59,7 +64,7 @@ Public Class FormAdministrarEmpresa
     Private Sub ButtonAdministrarEmpresas_Borrar_Click(sender As Object, e As EventArgs) Handles ButtonAdministrarEmpresas_Borrar.Click
         Dim borrar As New AdministrarEmpresas_Querys()
         Dim contadorFilas As Integer = DGVAdministrarEmpresas.Rows.Count
-        borrar.DeleteRowFromEmpresas(TextBoxAdministrarEmpresa_RazonSocial.Text)
+        borrar.DeleteRowFromEmpresas(DGVAdministrarEmpresas.CurrentRow.Cells("IDEmpresa").Value)
         FormAdministrarEmpresa_Load(sender, Nothing)
         Dim nuevaCantidadFilas As Integer = DGVAdministrarEmpresas.Rows.Count
 
@@ -73,16 +78,16 @@ Public Class FormAdministrarEmpresa
 
     Private Sub ButtonAdministrarEmpresa_Modificar_Click(sender As Object, e As EventArgs) Handles ButtonAdministrarEmpresa_Modificar.Click
         Try
-            Dim nombreOriginal As String = DGVAdministrarEmpresas.CurrentRow.Cells("NombreEmpresa").Value
-            Dim RFCOriginal As String = DGVAdministrarEmpresas.CurrentRow.Cells("RFC").Value
+            'Dim nombreOriginal As String = DGVAdministrarEmpresas.CurrentRow.Cells("NombreEmpresa").Value
+            'Dim RFCOriginal As String = DGVAdministrarEmpresas.CurrentRow.Cells("RFC").Value
 
-            If (TextBoxAdministrarEmpresa_RazonSocial.Text <> nombreOriginal And TextBoxAdministrarEmpresa_RFC.Text <> RFCOriginal) Then
-                MessageBox.Show("No puede modificar el Nombre de la empresa y el RFC al mismo tiempo", "Ahí viene el SAT!", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                Return
-            End If
+            'If (TextBoxAdministrarEmpresa_RazonSocial.Text <> nombreOriginal And TextBoxAdministrarEmpresa_RFC.Text <> RFCOriginal) Then
+            '    MessageBox.Show("No puede modificar el Nombre de la empresa y el RFC al mismo tiempo", "Ahí viene el SAT!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            '    Return
+            'End If
 
             Dim update As New AdministrarEmpresas_Querys()
-            update.ModificarEmpresa(TextBoxAdministrarEmpresa_RazonSocial.Text, TextBoxAdministrarEmpresa_DomicilioFiscal.Text,
+            update.ModificarEmpresa(DGVAdministrarEmpresas.CurrentRow.Cells("IDEmpresa").Value, TextBoxAdministrarEmpresa_RazonSocial.Text, TextBoxAdministrarEmpresa_DomicilioFiscal.Text,
             TextBoxAdministrarEmpresa_Contacto.Text, TextBoxAdministrarEmpresa_RegistroPatronal.Text, TextBoxAdministrarEmpresa_RFC.Text,
             DateTimePickerAdministrarEmpresa_InicioOperaciones.Value)
             MessageBox.Show("Los datos se han modificado correctamente", "OH YES!", MessageBoxButtons.OK, MessageBoxIcon.Information)
