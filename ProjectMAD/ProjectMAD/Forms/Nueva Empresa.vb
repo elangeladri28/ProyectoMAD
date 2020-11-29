@@ -57,8 +57,10 @@
     End Sub
 
     Private Sub TextBoxNuevaEmpresa_Contacto_TextChanged(sender As Object, e As EventArgs) Handles TextBoxNuevaEmpresa_Contacto.TextChanged
-        If TextBoxNuevaEmpresa_Contacto.Text.Length <10 Then
-            LabelNuevaEmpresa_TelefonoVal.Text="El número debe ser de 10 dígitos"
+
+
+        If TextBoxNuevaEmpresa_Contacto.Text.Length < 10 Then
+            LabelNuevaEmpresa_TelefonoVal.Text = "El número debe ser de 10 dígitos"
             TextBoxNuevaEmpresa_Contacto.Focus()
         End If
         If TextBoxNuevaEmpresa_Contacto.Text.Length > 10 Then
@@ -71,14 +73,7 @@
     End Sub
 
     Private Sub TextBoxNuevaEmpresa_Contacto_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBoxNuevaEmpresa_Contacto.KeyPress
-        If Char.IsNumber(e.KeyChar) Then
-            e.Handled = False
-        ElseIf Char.IsControl(e.KeyChar) Then
-            e.Handled = False
-        ElseIf Char.IsSeparator(e.KeyChar) Then
-            e.Handled = False
-        Else
-            e.Handled = True
-        End If
+        Dim funcion As New Functions()
+        funcion.NotLetters(sender, e)
     End Sub
 End Class

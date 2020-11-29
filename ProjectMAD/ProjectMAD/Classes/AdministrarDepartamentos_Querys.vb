@@ -22,7 +22,7 @@ Public Class AdministrarDepartamentos_Querys
             Return ds
         Catch ex As Exception
             Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
-            MessageBox.Show(errorsito, "OH NO le sabes al chitpost!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show(errorsito, "OH, no le sabes al chitpost!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Function
 

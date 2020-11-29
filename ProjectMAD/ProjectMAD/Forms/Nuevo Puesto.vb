@@ -42,27 +42,15 @@
     End Sub
 
     Private Sub TextBoxNuevoPuesto_Nombre_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBoxNuevoPuesto_Nombre.KeyPress
-        If Char.IsLetter(e.KeyChar) Then
-            e.Handled = False
-        ElseIf Char.IsControl(e.KeyChar) Then
-            e.Handled = False
-        ElseIf Char.IsSeparator(e.KeyChar) Then
-            e.Handled = False
-        Else
-            e.Handled = True
-        End If
-
-
+        Dim funcion As New Functions()
+        funcion.NotSymbols(e)
     End Sub
 
 
 
     Private Sub TextBoxNuevoPuesto_ProporcionSalarial_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBoxNuevoPuesto_ProporcionSalarial.KeyPress
-
-        Dim DecimalSeparator As String = Application.CurrentCulture.NumberFormat.NumberDecimalSeparator
-        e.Handled = Not (Char.IsDigit(e.KeyChar) Or
-                     Asc(e.KeyChar) = 8 Or
-                     (e.KeyChar = DecimalSeparator And sender.Text.IndexOf(DecimalSeparator) = -1))
+        Dim funcion As New Functions()
+        funcion.NotLetters(sender, e)
 
     End Sub
 
