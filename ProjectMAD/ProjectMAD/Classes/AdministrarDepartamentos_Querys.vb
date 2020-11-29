@@ -97,12 +97,12 @@ Public Class AdministrarDepartamentos_Querys
         End Try
     End Function
 
-    Public Function GetOnlyMoneyDepto(Nombre As String)
+    Public Function GetOnlyMoneyDepto(Nombre As String, Empre As String)
         Try
             Dim con As New SQL_Connection()
             con.ConectarSQL()
 
-            Dim query As String = "EXEC GetOnlyMoneyDepto '" + Nombre + "';"
+            Dim query As String = "EXEC GetOnlyMoneyDepto '" + Nombre + "', '" + Empre + "';"
             Dim sqlCom As New SqlCommand(query, con.connection)
             dataadapter.SelectCommand = sqlCom
             dataadapter.Fill(ds, "Departamentos")
@@ -111,7 +111,7 @@ Public Class AdministrarDepartamentos_Querys
 
         Catch ex As Exception
             Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
-            MessageBox.Show(errorsito, "Oh, shimatta!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show(errorsito, "Oh, SIMP shimatta!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
 
     End Function

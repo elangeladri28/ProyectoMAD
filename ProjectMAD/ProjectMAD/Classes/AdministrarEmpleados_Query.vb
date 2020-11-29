@@ -43,5 +43,26 @@ Public Class AdministrarEmpleados_Query
         End Try
     End Function
 
+    Public Function InsertarEmpleado(Pass As String, Nombre As String, AP As String, AM As String,
+                                     EmpreTrab As String, Depto As String, Puesto As String, NivSal As Integer, FechaNac As Date,
+                                     Curp As String, NSS As String, RFC As String, Domicilio As String, Banco As String, NumCuenta As Integer,
+                                     Email As String, Tel As Integer, Nomcompleto As String)
+        Try
+            Dim con As New SQL_Connection()
+            con.ConectarSQL()
 
+            Dim query As String = "EXEC InsertarEmpleado '" + Pass + "', '" + Nombre + "', '" + AP + "', '" + AM + "', '" + EmpreTrab + "', '" +
+                Depto + "', '" + Puesto + "', " + NivSal.ToString + "','" + FechaNac + "','" + Curp + "','" + NSS + "','" + RFC + "','" +
+            Domicilio + "','" + Banco + "'," + NumCuenta + ", '" + Email + "'," + Tel + ",'" + Nomcompleto + "';"
+
+            Dim sqlCom As New SqlCommand(query, con.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(ds, "Puestos")
+            con.DesconectarSQL()
+            Return ds
+        Catch ex As Exception
+            Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
+            MessageBox.Show(errorsito, "OH Cieeelos!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Function
 End Class

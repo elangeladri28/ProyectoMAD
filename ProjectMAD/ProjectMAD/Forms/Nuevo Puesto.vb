@@ -83,17 +83,19 @@
 
     Private Sub ComboBoxNuevoPuesto_Departamento_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxNuevoPuesto_Departamento.SelectedIndexChanged
 
+
         Dim cargarDGV As New AdministrarDepartamentos_Querys()
-        Dim DeptoCombo As String = ComboBoxNuevoPuesto_Departamento.Text
-        DGVNuevoPuesto.DataSource = cargarDGV.GetOnlyMoneyDepto(DeptoCombo)
-        DGVNuevoPuesto.DataMember = "Departamentos"
+            Dim DeptoCombo As String = ComboBoxNuevoPuesto_Departamento.Text
+            Dim EmpreCombo As String = ComboBoxNuevoPuesto_Empresa.Text
+            DGVNuevoPuesto.DataSource = cargarDGV.GetOnlyMoneyDepto(DeptoCombo, EmpreCombo)
+            DGVNuevoPuesto.DataMember = "Departamentos"
 
-        If (DGVNuevoPuesto.Columns.Count <> 0) Then
-            DGVNuevoPuesto.Columns.Item(0).HeaderText = "SueldoBase"
-        End If
+            If (DGVNuevoPuesto.Columns.Count <> 0) Then
+                DGVNuevoPuesto.Columns.Item(0).HeaderText = "SueldoBase"
+            End If
 
-        TextBoxNuevoPuesto_SueldoBase.Text = ""
-        TextBoxNuevoPuesto_SueldoBase.Text = DGVNuevoPuesto.Rows(0).Cells("SueldoBase").Value
+            TextBoxNuevoPuesto_SueldoBase.Text = ""
+            TextBoxNuevoPuesto_SueldoBase.Text = DGVNuevoPuesto.Rows(0).Cells("SueldoBase").Value
 
     End Sub
 

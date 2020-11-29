@@ -45,7 +45,8 @@ Public Class FormAdministrarPuestos
 
             Dim dgv As New AdministrarDepartamentos_Querys()
             Dim dc As String = ComboBoxAdministrarPuestos_Departamento.Text
-            DataGridView1.DataSource = dgv.GetOnlyMoneyDepto(dc)
+            Dim de As String = ComboBoxAdministrarPuestos_Empresa.Text
+            DataGridView1.DataSource = dgv.GetOnlyMoneyDepto(dc, de)
             DataGridView1.DataMember = "Departamentos"
 
             If (DataGridView1.Columns.Count <> 0) Then

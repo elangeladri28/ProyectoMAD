@@ -22,7 +22,7 @@ Public Class AdministrarPuestos_Querys
             Return ds
         Catch ex As Exception
             Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
-            MessageBox.Show(errorsito, "Oh, shimatta!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show(errorsito, "Oh, SHUT!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Function
 
@@ -94,6 +94,25 @@ Public Class AdministrarPuestos_Querys
             Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
             MessageBox.Show(errorsito, "Oh, shimatta!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
+    End Function
+
+    Public Function GetOnlyMoneyPuesto(Puesto As String, Depto As String, Empresa As String)
+        Try
+            Dim con As New SQL_Connection()
+            con.ConectarSQL()
+
+            Dim query As String = "EXEC GetOnlyMoneyPuesto '" + Puesto + "', '" + Depto + "','" + Empresa + "';"
+            Dim sqlCom As New SqlCommand(query, con.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(ds, "Puestos")
+            con.DesconectarSQL()
+            Return ds
+
+        Catch ex As Exception
+            Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
+            MessageBox.Show(errorsito, "Oh, SIMP shimatta!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
     End Function
 
 End Class
