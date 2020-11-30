@@ -1,6 +1,10 @@
 ﻿Public Class FormNuevaEmpresa
     Private Sub FormNuevaEmpresa_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        TextBoxNuevaEmpresa_RazonSocial.Text = ""
+        TextBoxNuevaEmpresa_DomicilioFiscal.Text = ""
+        TextBoxNuevaEmpresa_Contacto.Text = ""
+        TextBoxNuevaEmpresa_RegistroPatronal.Text = ""
+        TextBoxNuevaEmpresa_RFC.Text = ""
     End Sub
 
     'Private Sub ButtonNuevaEmpresa_Guardar_Click(sender As Object, e As EventArgs) Handles ButtonNuevaEmpresa_Guardar.Click

@@ -83,5 +83,61 @@ Public Class AdministrarEmpleados_Query
         End Try
     End Function
 
+    Public Function ObtenerHeadCounter(Puesto As String, Departamento As String, Empresa As String)
+        Try
+            Dim con As New SQL_Connection()
+            con.ConectarSQL()
+
+            Dim query As String = "EXEC ObtenerHeadCounter '" + Puesto + "', '" + Departamento + "','" + Empresa + "';"
+            Dim sqlCom As New SqlCommand(query, con.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(ds, "Puestos")
+            con.DesconectarSQL()
+            Return ds
+
+        Catch ex As Exception
+            Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
+            MessageBox.Show(errorsito, "Oh, SIMP shimatta!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Function
+
+
+    Public Function ObtenerHeadCounterDepto(Departamento As String, Empresa As String)
+        Try
+            Dim con As New SQL_Connection()
+            con.ConectarSQL()
+
+            Dim query As String = "EXEC ObtenerHeadCounterDepto '" + Departamento + "','" + Empresa + "';"
+            Dim sqlCom As New SqlCommand(query, con.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(ds, "Departamentos")
+            con.DesconectarSQL()
+            Return ds
+
+        Catch ex As Exception
+            Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
+            MessageBox.Show(errorsito, "Oh, SIMP shimatta!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Function
+
+
+    Public Function ObtenerHeadCounterEmpresa(Empresa As String)
+        Try
+            Dim con As New SQL_Connection()
+            con.ConectarSQL()
+
+            Dim query As String = "EXEC ObtenerHeadCounterEmpresa '" + Empresa + "';"
+            Dim sqlCom As New SqlCommand(query, con.connection)
+            dataadapter.SelectCommand = sqlCom
+            dataadapter.Fill(ds, "Empresas")
+            con.DesconectarSQL()
+            Return ds
+
+        Catch ex As Exception
+            Dim errorsito As String = "¡Excepción en la base de datos!" + vbCrLf + ex.Message
+            MessageBox.Show(errorsito, "Oh, SIMP shimatta!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Function
+
 
 End Class

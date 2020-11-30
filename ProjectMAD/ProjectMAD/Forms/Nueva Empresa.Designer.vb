@@ -34,7 +34,6 @@ Partial Class FormNuevaEmpresa
         Me.LabelNuevaEmpresa_RFC = New System.Windows.Forms.Label()
         Me.TextBoxNuevaEmpresa_RFC = New System.Windows.Forms.TextBox()
         Me.ButtonNuevaEmpresa_Cancelar = New System.Windows.Forms.Button()
-        Me.ButtonNuevaEmpresa_Guardar = New System.Windows.Forms.Button()
         Me.LabelNuevaEmpresa_InicioOperaciones = New System.Windows.Forms.Label()
         Me.DateTimePickerNuevaEmpresa_InicioOperaciones = New System.Windows.Forms.DateTimePicker()
         Me.ButtonNuevaEmpresa_Insertar = New System.Windows.Forms.Button()
@@ -139,23 +138,13 @@ Partial Class FormNuevaEmpresa
         '
         'ButtonNuevaEmpresa_Cancelar
         '
-        Me.ButtonNuevaEmpresa_Cancelar.Location = New System.Drawing.Point(65, 558)
+        Me.ButtonNuevaEmpresa_Cancelar.Location = New System.Drawing.Point(63, 538)
         Me.ButtonNuevaEmpresa_Cancelar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonNuevaEmpresa_Cancelar.Name = "ButtonNuevaEmpresa_Cancelar"
         Me.ButtonNuevaEmpresa_Cancelar.Size = New System.Drawing.Size(99, 32)
         Me.ButtonNuevaEmpresa_Cancelar.TabIndex = 12
         Me.ButtonNuevaEmpresa_Cancelar.Text = "Cancelar"
         Me.ButtonNuevaEmpresa_Cancelar.UseVisualStyleBackColor = True
-        '
-        'ButtonNuevaEmpresa_Guardar
-        '
-        Me.ButtonNuevaEmpresa_Guardar.Location = New System.Drawing.Point(197, 558)
-        Me.ButtonNuevaEmpresa_Guardar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ButtonNuevaEmpresa_Guardar.Name = "ButtonNuevaEmpresa_Guardar"
-        Me.ButtonNuevaEmpresa_Guardar.Size = New System.Drawing.Size(99, 32)
-        Me.ButtonNuevaEmpresa_Guardar.TabIndex = 13
-        Me.ButtonNuevaEmpresa_Guardar.Text = "Guardar"
-        Me.ButtonNuevaEmpresa_Guardar.UseVisualStyleBackColor = True
         '
         'LabelNuevaEmpresa_InicioOperaciones
         '
@@ -179,12 +168,12 @@ Partial Class FormNuevaEmpresa
         '
         'ButtonNuevaEmpresa_Insertar
         '
-        Me.ButtonNuevaEmpresa_Insertar.Location = New System.Drawing.Point(136, 523)
+        Me.ButtonNuevaEmpresa_Insertar.Location = New System.Drawing.Point(196, 538)
         Me.ButtonNuevaEmpresa_Insertar.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonNuevaEmpresa_Insertar.Name = "ButtonNuevaEmpresa_Insertar"
-        Me.ButtonNuevaEmpresa_Insertar.Size = New System.Drawing.Size(100, 28)
+        Me.ButtonNuevaEmpresa_Insertar.Size = New System.Drawing.Size(100, 32)
         Me.ButtonNuevaEmpresa_Insertar.TabIndex = 15
-        Me.ButtonNuevaEmpresa_Insertar.Text = "Instertar"
+        Me.ButtonNuevaEmpresa_Insertar.Text = "Insertar"
         Me.ButtonNuevaEmpresa_Insertar.UseVisualStyleBackColor = True
         '
         'LabelNuevaEmpresa_TelefonoVal
@@ -206,7 +195,6 @@ Partial Class FormNuevaEmpresa
         Me.Controls.Add(Me.ButtonNuevaEmpresa_Insertar)
         Me.Controls.Add(Me.DateTimePickerNuevaEmpresa_InicioOperaciones)
         Me.Controls.Add(Me.LabelNuevaEmpresa_InicioOperaciones)
-        Me.Controls.Add(Me.ButtonNuevaEmpresa_Guardar)
         Me.Controls.Add(Me.ButtonNuevaEmpresa_Cancelar)
         Me.Controls.Add(Me.TextBoxNuevaEmpresa_RFC)
         Me.Controls.Add(Me.LabelNuevaEmpresa_RFC)
@@ -241,7 +229,6 @@ Partial Class FormNuevaEmpresa
     Friend WithEvents LabelNuevaEmpresa_RFC As Label
     Friend WithEvents TextBoxNuevaEmpresa_RFC As TextBox
     Friend WithEvents ButtonNuevaEmpresa_Cancelar As Button
-    Friend WithEvents ButtonNuevaEmpresa_Guardar As Button
     Friend WithEvents LabelNuevaEmpresa_InicioOperaciones As Label
     Friend WithEvents DateTimePickerNuevaEmpresa_InicioOperaciones As DateTimePicker
     Friend WithEvents ButtonNuevaEmpresa_Insertar As Button

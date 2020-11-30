@@ -1,5 +1,19 @@
 ﻿Public Class FormNuevoEmpleado
     Private Sub FormNuevoEmpleado_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        TextBoxNuevoEmpleado_Contraseña.Text = ""
+        TextBoxNuevoEmpleado_Nombres.Text = ""
+        TextBoxNuevoEmpleado_ApPaterno.Text = ""
+        TextBoxNuevoEmpleado_ApMaterno.Text = ""
+        TextBoxNuevoEmpleado_CURP.Text = ""
+        TextBoxNuevoEmpleado_NSS.Text = ""
+        TextBoxNuevoEmpleado_RFC.Text = ""
+        TextBoxNuevoEmpleado_Domicilio.Text = ""
+        TextBoxNuevoEmpleado_Banco.Text = ""
+        TextBoxNuevoEmpleado_NumCuenta.Text = ""
+        TextBoxNuevoEmpleado_Email.Text = ""
+        TextBoxNuevoEmpleado_Telefono.Text = ""
+
         Dim cargarCombo As New AdministrarEmpresas_Querys()
         ComboBoxNuevoEmpleado_Trabajo.DataSource = cargarCombo.GetAllEmpresasName()
         ComboBoxNuevoEmpleado_Trabajo.DisplayMember = "NombreEmpresa"
@@ -9,21 +23,6 @@
     Private Sub ButtonNuevoEmpleado_Cancelar_Click(sender As Object, e As EventArgs) Handles ButtonNuevoEmpleado_Cancelar.Click
         Dim Resp
         Resp = MsgBox("¿Estás seguro de que deseas salir?, ningún dato sera guardado", vbYesNo, "Advertencia")
-        If Resp = vbYes Then
-            Me.Close()
-        End If
-    End Sub
-
-    Private Sub ButtonNuevoEmpleado_Guardar_Click(sender As Object, e As EventArgs) Handles ButtonNuevoEmpleado_Guardar.Click
-
-        Try
-
-        Catch ex As Exception
-
-        End Try
-
-        Dim Resp
-        Resp = MsgBox("¿Está todo correcto?", vbYesNo, "Advertencia")
         If Resp = vbYes Then
             Me.Close()
         End If
@@ -121,5 +120,6 @@
             MessageBox.Show("No se ha añadido el empleado! Very muy mal", "No se puedo", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End Try
 
+        Me.Close()
     End Sub
 End Class

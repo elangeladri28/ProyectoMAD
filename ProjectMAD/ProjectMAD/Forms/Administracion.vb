@@ -46,4 +46,8 @@
     Private Sub EmpleadosToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles EmpleadosToolStripMenuItem1.Click
         adminEmpleados.ShowDialog()
     End Sub
+
+    Private Sub MenuHeadCounterEmpresa_Click(sender As Object, e As EventArgs) Handles MenuHeadCounterEmpresa.Click
+        FormReporteHeadCounterEmpresa.ShowDialog()
+    End Sub
 End Class

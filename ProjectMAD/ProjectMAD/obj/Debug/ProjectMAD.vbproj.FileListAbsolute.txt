@@ -40,3 +40,8 @@ C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Proyecto Cheto\ProjectMAD\P
 C:\Users\david\Documents\.git\ProyectoMAD\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.FormAdministrarPuestos.resources
 C:\Users\david\Documents\.git\ProyectoMAD\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.FormAdministrarEmpleados.resources
 C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Proyecto Cheto\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.FormAdministrarEmpleados.resources
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Proyecto Cheto\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.FormReporteHeadCounterEmpresa.resources
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Proyecto Cheto\ProjectMAD\ProjectMAD\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Proyecto Cheto\ProjectMAD\ProjectMAD\bin\Debug\itextsharp.dll
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Proyecto Cheto\ProjectMAD\ProjectMAD\bin\Debug\itextsharp.xml
+C:\Users\adria\Desktop\My carreer\Sexto semestre\MAD\Proyecto Cheto\ProjectMAD\ProjectMAD\obj\Debug\ProjectMAD.vbproj.CopyComplete
